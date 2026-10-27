@@ -1,5 +1,7 @@
 # 🍳 The RAG Cookbook — Sous-chef
 
+[![ci](https://github.com/silent-vector-26/sous-chef-rag-cookbook/actions/workflows/ci.yml/badge.svg)](https://github.com/silent-vector-26/sous-chef-rag-cookbook/actions/workflows/ci.yml)
+
 A recipe RAG app **and** a technical cookbook of RAG techniques, built on Azure AI Search + Azure OpenAI.
 
 - 🥕 **Cook with what you have** — "I have chicken, potatoes and carrots" → recipes ranked by the *fewest ingredients you still need to buy*, with a shopping list and "buy X to unlock N more recipes" tips.
