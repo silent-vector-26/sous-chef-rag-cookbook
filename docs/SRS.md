@@ -166,9 +166,9 @@ erDiagram
 ```mermaid
 flowchart LR
     subgraph RG[Resource group]
-        CA[Container App<br/>system identity]
+        CA[Container App<br/>user-assigned identity]
         AOAI[Azure OpenAI<br/>gpt-5.4-mini, embeddings]
-        AIS[AI Search Basic<br/>semantic ranker]
+        AIS[AI Search Free<br/>semantic ranker]
         CS[Content Safety]
         LA[Log Analytics] --> AI[App Insights]
     end
@@ -176,7 +176,7 @@ flowchart LR
     CA -- Index Data Contributor --> AIS
     CA -- Cognitive Services User --> CS
     CA -- telemetry --> AI
-    Dev([azd up]) --> RG
+    Dev([azd provision / deploy]) --> RG
 ```
 
 ## 12. Evaluation flow

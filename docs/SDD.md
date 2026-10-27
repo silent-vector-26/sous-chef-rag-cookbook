@@ -14,6 +14,45 @@ Companion to the [SRS](SRS.md). The SRS says *what* the system must do; this doc
 
 ## 2. Architecture overview
 
+### 2.1 Use cases
+
+```mermaid
+flowchart LR
+    Cook([Home cook])
+    Dev([Developer / reviewer])
+    Cook --> UC1[Find recipes from my ingredients]
+    Cook --> UC2[Ask the cookbook a question]
+    Cook --> UC3[Upload fridge photo]
+    Cook --> UC4[Run research agent]
+    Dev --> UC5[Run evaluation]
+    Dev --> UC6[Deploy with azd]
+    UC1 -.includes.-> UC7[Apply dietary filters]
+    UC2 -.includes.-> UC8[Screen input for safety]
+    UC1 -.includes.-> UC8
+```
+
+### 2.2 System context
+
+```mermaid
+flowchart TB
+    User([User]) --> UI[Streamlit UI<br/>Container Apps]
+    UI --> Safety[Content Safety<br/>Prompt Shields]
+    UI --> Core[RAG core<br/>ask / cook_with / agent]
+    Core --> LLM[Azure OpenAI<br/>chat + vision]
+    Core --> Rank[Ingredient ranker<br/>fewest-missing]
+    Core --> Store{{Store interface}}
+    Store --> Search[(Azure AI Search<br/>hybrid + semantic)]
+    Store --> Local[(LocalStore<br/>TF-IDF, offline)]
+    Ingest[Ingestion pipeline] --> Search
+    Ingest --> LLM
+    UI -. OpenTelemetry .-> AI[Application Insights]
+    MI[Managed identity] -. RBAC .-> LLM
+    MI -. RBAC .-> Search
+    MI -. RBAC .-> Safety
+```
+
+### 2.3 Component view
+
 ```mermaid
 flowchart LR
   UI[Streamlit UI / CLI] --> RAG[rag.py<br/>ask, cook_with]
@@ -88,6 +127,43 @@ classDiagram
 | D11 | Scale-to-zero Container App with remote ACR build | Always-on, App Service | Near-zero idle cost; no local Docker needed for deploy |
 
 ## 5. Data design
+
+### 5.1 Logical model
+
+```mermaid
+erDiagram
+    RECIPE ||--o{ INGREDIENT_LINE : has
+    RECIPE ||--o{ INGREDIENT : requires
+    RECIPE ||--o{ TAG : labelled
+    RECIPE {
+        string id PK
+        string title
+        string source
+        int page
+        string text
+        vector content_vector
+    }
+    INGREDIENT_LINE { string raw }
+    INGREDIENT { string canonical_name }
+    TAG { string name }
+```
+
+### 5.2 Ingestion pipeline
+
+```mermaid
+flowchart LR
+    A[Raw recipes JSON / cookbook text] --> B[Extract ingredient lines]
+    B --> C{Mode}
+    C -->|offline| D[Heuristic extractor]
+    C -->|--llm| E[LLM structured extraction]
+    D --> F[Normalize: singular, synonyms]
+    E --> F
+    F --> G[recipes.json]
+    G --> H[Embed title + ingredients + method]
+    H --> I[(AI Search index<br/>text, ingredients[], tags[], vector)]
+```
+
+### 5.3 Search index schema
 
 Search index `recipes` (created by `ingest/index_azure.py`):
 
@@ -196,6 +272,17 @@ flowchart LR
 - Reference cost: Free Search + scale to zero ≈ $5/month idle (Container Registry); Search Basic would add ≈ $73/month.
 
 ## 9. Quality and testing design
+
+```mermaid
+flowchart LR
+    G[eval/golden.json<br/>QA + pantry cases] --> H[run_eval]
+    H --> M1[Recall@5, MRR]
+    H --> M2[Citation accuracy]
+    H --> M3[Refusal rate]
+    H --> M4[Pantry top-1, sort order]
+    M1 & M2 & M3 & M4 --> R[eval/results/&lt;backend&gt;.json]
+    R --> C[Compare strategies: local vs hybrid vs semantic]
+```
 
 | Layer | Approach |
 |---|---|
