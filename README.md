@@ -24,7 +24,7 @@ flowchart LR
     UI -.-> AI[Application Insights]
     MI[Managed identity] -.RBAC.-> AIS & AOAI & SAFE
 ```
-Full requirements and diagrams: [`docs/SRS.md`](docs/SRS.md). Design and decisions: [`docs/SDD.md`](docs/SDD.md).
+Full requirements and diagrams: [`docs/SRS.md`](docs/SRS.md). Design and decisions: [`docs/SDD.md`](docs/SDD.md). Project write-up: [`docs/WRITEUP.md`](docs/WRITEUP.md).
 
 ## Design decisions (and the Azure AI skills they show)
 | Decision | Why | Skill area |
