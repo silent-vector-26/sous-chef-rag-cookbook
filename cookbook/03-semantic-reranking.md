@@ -8,7 +8,7 @@
 3. Use `@search.reranker_score` (0–4) as the relevance signal instead of raw RRF score.
 
 ## Taste test
-Compare top-3 for a vague query with and without semantic ranking. Reranker scores are also a better refusal threshold than BM25 scores.
+As an experiment, compare top-3 for a vague query with and without semantic ranking. The current Azure implementation always enables semantic ranking; a toggle would need to be added for a controlled comparison. It does not currently enforce a reranker-score refusal threshold.
 
 ## Chef's notes
-Retrieve wide (top 50), rerank, then send only top 3–5 to the LLM: better precision, lower token cost.
+The vector query requests 50 nearest neighbors; Azure reranks the hybrid candidates, and Q&A requests four final sources by default. Larger candidate pools can help recall while keeping the generation prompt small, but the precision/cost trade-off needs measurement.

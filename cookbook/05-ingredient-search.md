@@ -10,7 +10,7 @@
 3. **Retrieve candidates** with an OData filter on the `ingredients` collection:
    `ingredients/any(i: search.in(i, 'chicken,potato,carrot', ','))` — wide recall, cheap.
 4. **Re-rank in code** (not by an LLM — it is deterministic and testable):
-   `missing = recipe − pantry − staples`; sort by `(len(missing), −len(have), −retrieval_score)`.
+   `missing = recipe − pantry − staples`; sort by `(len(missing), -len(have), -retrieval_score, title)`.
 5. **Explain**: owned vs missing, a combined shopping list, and `unlock_suggestions` — the one purchase that completes the most recipes.
 
 ## Taste test
@@ -20,4 +20,4 @@ python -m ragcookbook.cli cook "I have eggs, potato, onion" --diet vegetarian
 ```
 
 ## Chef's notes
-Use the LLM for fuzzy language (parsing) and plain code for exact logic (set arithmetic). Staples (salt, oil, water) are excluded or every recipe looks "missing" something.
+Use the LLM for fuzzy language (parsing) and plain code for exact logic (set arithmetic). Staples (salt, pepper, water, oil) are excluded or every recipe looks "missing" something. Results are ordered within the retrieved candidate pool, not over an exhaustive global recipe catalog.
