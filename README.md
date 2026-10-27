@@ -16,7 +16,7 @@ flowchart LR
     CORE --> AIS[(AI Search: BM25 + vector + semantic)]
     CORE --> AOAI[Azure OpenAI]
 ```
-Full requirements and diagrams: [`docs/SRS.md`](docs/SRS.md).
+Full requirements and diagrams: [`docs/SRS.md`](docs/SRS.md). Design and decisions: [`docs/SDD.md`](docs/SDD.md).
 
 ## Quick start (offline, no Azure needed)
 ```powershell
@@ -77,6 +77,6 @@ The sample set is small by design; add your own cases to `eval/golden.json` and 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).
 
 ## Layout
-`docs/` SRS · `src/ragcookbook/` core · `ingest/` dataset + index · `app/` UI · `eval/` metrics · `cookbook/` recipes · `infra/` Bicep · `tests/`
+`docs/` SRS + SDD · `src/ragcookbook/` core · `ingest/` dataset + index · `app/` UI · `eval/` metrics · `cookbook/` recipes · `infra/` Bicep · `tests/`
 
 > Deployed and smoke-tested live on Azure (`azd up`-style flow: `azd provision`, `azd deploy`, `python -m ingest.index_azure`): hybrid search, ingredient ranking and grounded Q&A with refusal work against `gpt-5.4-mini`. If AI Search has no capacity in your region, set `azd env set AZURE_SEARCH_LOCATION <region>`. The vision and agent tabs and the full Azure eval run were not re-verified live.

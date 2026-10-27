@@ -45,7 +45,7 @@ Sous-chef is a retrieval-augmented generation (RAG) application over a corpus of
 | NFR-4 | Accuracy: pantry results sorted by missing count | 100% |
 | NFR-5 | Latency: pantry search (excluding LLM parse) | < 1 s |
 | NFR-6 | Observability: traces and logs exported to Application Insights | enabled when configured |
-| NFR-7 | Cost: dev deployment on Search Basic + pay-as-you-go models; Container Apps scale to zero | documented in README |
+| NFR-7 | Cost: dev deployment on Search Free tier + pay-as-you-go models; Container Apps scale to zero | documented in README |
 | NFR-8 | Reproducibility: infra as code, one-command deploy (`azd up`) | Bicep + azure.yaml |
 
 ## 6. Use cases
