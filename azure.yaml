@@ -1,0 +1,15 @@
+name: rag-cookbook
+metadata:
+  template: rag-cookbook@0.1.0
+infra:
+  provider: bicep
+  path: infra
+  module: main
+services:
+  web:
+    project: .
+    host: containerapp
+    language: python
+    docker:
+      path: ./Dockerfile
+      remoteBuild: true

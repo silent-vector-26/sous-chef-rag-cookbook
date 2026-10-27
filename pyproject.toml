@@ -1,0 +1,25 @@
+[project]
+name = "rag-cookbook"
+version = "0.1.0"
+description = "Sous-chef: a recipe RAG demo (Azure AI Search + Azure OpenAI) documented as a technical cookbook"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv>=1.0"]
+
+[project.optional-dependencies]
+azure = [
+  "openai>=1.40",
+  "azure-search-documents>=11.6.0",
+  "azure-identity>=1.17",
+  "azure-ai-contentsafety>=1.0.0",
+  "azure-ai-projects>=1.0.0",
+  "azure-monitor-opentelemetry>=1.6",
+]
+ui = ["streamlit>=1.38"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+{
+  "qa": [
+    {"q": "how do I make carbonara", "expect_id": "r012"},
+    {"q": "how long do I roast a whole chicken", "expect_id": "r001"},
+    {"q": "recipe for banana bread", "expect_id": "r023"},
+    {"q": "lentil soup with cumin", "expect_id": "r017"},
+    {"q": "baked salmon with dill", "expect_id": "r018"},
+    {"q": "what goes into a shepherd's pie", "expect_id": "r019"},
+    {"q": "how do I make a mushroom risotto", "expect_id": "r013"},
+    {"q": "what is the capital of France", "expect_id": null},
+    {"q": "explain quantum chromodynamics", "expect_id": null}
+  ],
+  "pantry": [
+    {"q": "I have chicken, potatoes and carrots", "expect_top": "r001", "expect_top_missing": 2},
+    {"q": "I have eggs, potato, onion and cheese", "expect_top": "r014", "expect_top_missing": 0},
+    {"q": "I have flour, milk, egg, sugar, baking powder and butter", "expect_top": "r015", "expect_top_missing": 0},
+    {"q": "I have salmon and lemon", "expect_top": "r018", "expect_top_missing": 1},
+    {"q": "I have spaghetti, bacon, eggs and parmesan", "expect_top": "r012", "expect_top_missing": 0}
+  ]
+}
