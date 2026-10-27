@@ -99,7 +99,7 @@ Golden set: 20 Q&A cases (13 answerable, 7 must-refuse including 3 prompt-inject
 Reasoning-model deployments (gpt-5.x) don't accept `temperature`, so LLM-dependent metrics such as citation accuracy can vary slightly between runs. Add your own cases to `eval/golden.json`.
 
 ## Data
-`data/recipes.raw.json` holds 205 recipes in original wording (no copyrighted text): 25 hand-written classics plus 180 synthetic recipes from `python -m ingest.generate_recipes` (LLM-generated across 15 cuisines/themes; dietary tags derived in code). They are demo data, not tested real-world recipes. `python -m ingest.build_dataset --llm` extracts canonical ingredients with an LLM and caches them in the raw file, so offline and CI builds are deterministic.
+`data/recipes.raw.json` holds 205 recipes in original wording (no copyrighted text): 25 hand-written classics plus 180 synthetic recipes from `python -m ingest.generate_recipes` (LLM-generated across 15 cuisines/themes; dietary tags derived in code). They are demo data, not tested real-world recipes. Recipe card photos in `app/static/img/` are AI-generated (`ingest/generate_images.py`, gpt-image-1-mini, one-time offline run) and may not match a dish exactly. `python -m ingest.build_dataset --llm` extracts canonical ingredients with an LLM and caches them in the raw file, so offline and CI builds are deterministic.
 
 ## Contributing & license
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).

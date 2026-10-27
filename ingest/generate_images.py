@@ -2,7 +2,8 @@
 
   python ingest/generate_images.py [--limit N]
 
-Needs the temporary `img-mini` deployment (gpt-image-1-mini) and `az login`.
+Needs a temporary Azure OpenAI deployment named `img` (gpt-image-1-mini, e.g. in
+swedencentral), AZURE_OPENAI_ENDPOINT pointing at it, API version 2025-04-01-preview, and `az login`.
 Output: app/static/img/<recipe id>.webp (~512px). Existing files are skipped.
 """
 import argparse
@@ -21,7 +22,7 @@ from PIL import Image  # noqa: E402
 from ragcookbook import llm  # noqa: E402
 
 OUT = ROOT / "app" / "static" / "img"
-DEPLOYMENT = "img-mini"
+DEPLOYMENT = "img"
 PROMPT = ("Appetizing overhead food photograph of {title}, plated on a rustic ceramic dish, "
           "natural window light, warm tones, shallow depth of field, no text, no people")
 
