@@ -4,6 +4,7 @@ COPY pyproject.toml ./
 RUN pip install --no-cache-dir python-dotenv openai azure-search-documents azure-identity streamlit azure-monitor-opentelemetry
 COPY src ./src
 COPY app ./app
+COPY .streamlit ./.streamlit
 COPY data ./data
 ENV PYTHONPATH=/app/src
 EXPOSE 8501
