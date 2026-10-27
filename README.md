@@ -79,4 +79,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELO
 ## Layout
 `docs/` SRS · `src/ragcookbook/` core · `ingest/` dataset + index · `app/` UI · `eval/` metrics · `cookbook/` recipes · `infra/` Bicep · `tests/`
 
-> Azure-mode code paths (AI Search, OpenAI, Content Safety, agent) are written against the documented SDKs but were not exercised against live resources in the authoring environment; the offline path, tests, UI and Bicep compilation were verified.
+> Deployed and smoke-tested live on Azure (`azd up`-style flow: `azd provision`, `azd deploy`, `python -m ingest.index_azure`): hybrid search, ingredient ranking and grounded Q&A with refusal work against `gpt-5.4-mini`. If AI Search has no capacity in your region, set `azd env set AZURE_SEARCH_LOCATION <region>`. The vision and agent tabs and the full Azure eval run were not re-verified live.

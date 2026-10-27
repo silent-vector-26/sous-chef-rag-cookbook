@@ -167,7 +167,7 @@ erDiagram
 flowchart LR
     subgraph RG[Resource group]
         CA[Container App<br/>system identity]
-        AOAI[Azure OpenAI<br/>gpt-4o-mini, embeddings]
+        AOAI[Azure OpenAI<br/>gpt-5.4-mini, embeddings]
         AIS[AI Search Basic<br/>semantic ranker]
         CS[Content Safety]
         LA[Log Analytics] --> AI[App Insights]

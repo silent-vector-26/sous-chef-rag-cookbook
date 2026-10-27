@@ -23,11 +23,12 @@ def _aoai():
     return _client
 
 
-def chat(messages: list[dict], json_mode: bool = False, temperature: float = 0.0) -> str:
+def chat(messages: list[dict], json_mode: bool = False) -> str:
+    # No temperature: reasoning-family deployments (gpt-5.x) only accept the default.
     kwargs = {"response_format": {"type": "json_object"}} if json_mode else {}
     r = _aoai().chat.completions.create(
-        model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-4o-mini"),
-        messages=messages, temperature=temperature, **kwargs)
+        model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini"),
+        messages=messages, **kwargs)
     return r.choices[0].message.content or ""
 
 

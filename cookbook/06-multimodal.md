@@ -3,7 +3,7 @@
 **Serves:** 1 · **Difficulty:** ★★☆ · **Code:** `llm.describe_image_ingredients`, UI uploader
 
 ## Method
-1. Send the photo as a base64 `image_url` to a vision-capable deployment (gpt-4o-mini).
+1. Send the photo as a base64 `image_url` to a vision-capable deployment (gpt-5.4-mini).
 2. Ask for JSON `{"ingredients": [...]}` listing only what is clearly visible.
 3. Normalize and feed straight into `cook_with(have=...)` — the rest of the pipeline is unchanged.
 

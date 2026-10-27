@@ -46,8 +46,8 @@ def run_agent(question: str, store: Store, max_steps: int = 5) -> tuple[str, lis
 
     for _ in range(max_steps):
         r = client.chat.completions.create(
-            model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-4o-mini"),
-            messages=messages, tools=TOOLS, temperature=0)
+            model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini"),
+            messages=messages, tools=TOOLS)
         msg = r.choices[0].message
         if not msg.tool_calls:
             return msg.content or "", trace
