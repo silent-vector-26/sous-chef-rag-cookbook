@@ -5,6 +5,9 @@ param environmentName string
 param location string = resourceGroup().location
 @description('Entra object id of the deploying user; gets data-plane roles for local ingestion. Empty to skip.')
 param principalId string = ''
+@description('Type of the deploying principal (User for local azd, ServicePrincipal for CI)')
+@allowed(['User', 'ServicePrincipal'])
+param principalType string = 'User'
 @description('Container image; azd replaces this on deploy')
 param containerImage string = 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
 @description('Region for Azure OpenAI / Content Safety (model availability)')
@@ -187,28 +190,28 @@ resource raSafety 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
 resource uOpenai 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (!empty(principalId)) {
   scope: openai
   name: guid(openai.id, principalId, roles.openaiUser)
-  properties: { principalId: principalId, principalType: 'User'
+  properties: { principalId: principalId, principalType: principalType
     roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.openaiUser) }
 }
 
 resource uSearchData 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (!empty(principalId)) {
   scope: search
   name: guid(search.id, principalId, roles.searchData)
-  properties: { principalId: principalId, principalType: 'User'
+  properties: { principalId: principalId, principalType: principalType
     roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.searchData) }
 }
 
 resource uSearchSvc 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (!empty(principalId)) {
   scope: search
   name: guid(search.id, principalId, roles.searchSvc)
-  properties: { principalId: principalId, principalType: 'User'
+  properties: { principalId: principalId, principalType: principalType
     roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.searchSvc) }
 }
 
 resource uSafety 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (!empty(principalId)) {
   scope: safety
   name: guid(safety.id, principalId, roles.csUser)
-  properties: { principalId: principalId, principalType: 'User'
+  properties: { principalId: principalId, principalType: principalType
     roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.csUser) }
 }
 
