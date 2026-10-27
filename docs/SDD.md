@@ -341,7 +341,7 @@ flowchart LR
 |---|---|---|
 | Azure vision and agent paths not verified live | Possible model-compat issues | Run them and add to the eval |
 | Free Search tier: shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle | Latency variance, possible loss of the index | Re-run `ingest.index_azure`; use `searchSku=basic` for real workloads |
-| Scale to zero | Cold-start delay or gateway timeout on first request | Set `minReplicas: 1` if needed |
+| Scale to zero | Cold-start delay on the first request | Accepted for a demo; `minReplicas` stays 0 (set to 1 only for production use) |
 | Small sample corpus (25 recipes) | Metrics are optimistic | Extend `ingest/build_dataset.py` with larger public-domain sources |
 | Heuristic ingredient extraction | Misses unusual phrasing | LLM-assisted extraction at ingest time |
 
