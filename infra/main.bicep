@@ -11,6 +11,9 @@ param containerImage string = 'mcr.microsoft.com/azuredocs/containerapps-hellowo
 param aiLocation string = location
 @description('Region for Azure AI Search (capacity varies by region)')
 param searchLocation string = location
+@description('Azure AI Search SKU. "free" costs nothing (50 MB, 3 indexes, shared capacity, one per subscription).')
+@allowed(['free', 'basic'])
+param searchSku string = 'free'
 
 var token = toLower(uniqueString(resourceGroup().id, environmentName))
 
@@ -70,7 +73,7 @@ resource embedModel 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01
 resource search 'Microsoft.Search/searchServices@2024-06-01-preview' = {
   name: 'srch-${token}'
   location: searchLocation
-  sku: { name: 'basic' }
+  sku: { name: searchSku }
   properties: {
     semanticSearch: 'free'
     disableLocalAuth: true
