@@ -33,7 +33,7 @@ jobs:
       AZURE_PRINCIPAL_TYPE: ServicePrincipal
       AZURE_BUDGET_EMAIL: ${{ vars.AZURE_BUDGET_EMAIL }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
