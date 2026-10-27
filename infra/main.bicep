@@ -17,6 +17,12 @@ param searchLocation string = location
 @description('Azure AI Search SKU. "free" costs nothing (50 MB, 3 indexes, shared capacity, one per subscription).')
 @allowed(['free', 'basic'])
 param searchSku string = 'free'
+@description('Monthly budget in USD for the resource group. Alerts fire at 50/80/100% actual and 100% forecast.')
+param budgetAmount int = 20
+@description('Email for budget alerts. Empty skips creating the budget (keeps personal addresses out of the repo).')
+param budgetEmail string = ''
+@description('First day of a month (yyyy-MM-01); it cannot be changed once the budget exists.')
+param budgetStartDate string = '2026-10-01'
 
 var token = toLower(uniqueString(resourceGroup().id, environmentName))
 
@@ -207,6 +213,22 @@ resource uSafety 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (!emp
   name: guid(safety.id, principalId, roles.csUser)
   properties: { principalId: principalId, principalType: principalType
     roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.csUser) }
+}
+
+resource budget 'Microsoft.Consumption/budgets@2023-05-01' = if (!empty(budgetEmail)) {
+  name: 'budget-${environmentName}'
+  properties: {
+    category: 'Cost'
+    amount: budgetAmount
+    timeGrain: 'Monthly'
+    timePeriod: { startDate: budgetStartDate }
+    notifications: {
+      actual50: { enabled: true, operator: 'GreaterThan', threshold: 50, thresholdType: 'Actual', contactEmails: [budgetEmail] }
+      actual80: { enabled: true, operator: 'GreaterThan', threshold: 80, thresholdType: 'Actual', contactEmails: [budgetEmail] }
+      actual100: { enabled: true, operator: 'GreaterThan', threshold: 100, thresholdType: 'Actual', contactEmails: [budgetEmail] }
+      forecast100: { enabled: true, operator: 'GreaterThan', threshold: 100, thresholdType: 'Forecasted', contactEmails: [budgetEmail] }
+    }
+  }
 }
 
 output AZURE_CONTAINER_REGISTRY_ENDPOINT string = acr.properties.loginServer

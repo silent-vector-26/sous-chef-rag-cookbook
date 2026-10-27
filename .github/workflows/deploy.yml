@@ -31,6 +31,7 @@ jobs:
       AZURE_SEARCH_LOCATION: ${{ vars.AZURE_SEARCH_LOCATION }}
       AZURE_PRINCIPAL_ID: ${{ vars.AZURE_PRINCIPAL_ID }}
       AZURE_PRINCIPAL_TYPE: ServicePrincipal
+      AZURE_BUDGET_EMAIL: ${{ vars.AZURE_BUDGET_EMAIL }}
     steps:
       - uses: actions/checkout@v4
         with:

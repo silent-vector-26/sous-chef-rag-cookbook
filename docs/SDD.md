@@ -313,7 +313,7 @@ Result: the deployment costs about **$5/month idle** (versus about $78–80 with
 |---|---|---|
 | Delete the registry after deploy and pull from a public image | ~$5/month | Only if the registry is not needed again |
 | Lower OpenAI deployment capacity (currently 30) | Nothing directly (pay per token) but limits runaway spend | Always reasonable for demos |
-| Azure budget with alerts on the resource group | Prevents surprises | Recommended |
+| ~~Azure budget with alerts on the resource group~~ **Implemented** (`infra/main.bicep`: $20/month, email alerts at 50/80/100% actual and 100% forecast; set AZURE_BUDGET_EMAIL to enable, empty skips it) | Prevents surprises | Always |
 | **Production recommendation:** `searchSku=basic` (or higher) and `minReplicas: 1` | Costs ~$73 + ~$5–15/month more | Removes cold starts, adds replicas/SLA and capacity beyond 50 MB; not needed for the demo |
 | Prompt caching and shorter prompts | Fewer input tokens | When traffic grows |
 | Cache frequent query embeddings | Fewer embedding calls | When traffic grows |
