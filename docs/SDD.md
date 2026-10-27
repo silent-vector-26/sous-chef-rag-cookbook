@@ -239,14 +239,16 @@ flowchart LR
   end
   MI -->|AcrPull| ACR[Container Registry]
   MI -->|Cognitive Services OpenAI User| AOAI[Azure OpenAI]
-  MI -->|Search Index Data Contributor,<br/>Search Service Contributor| SRCH[AI Search]
+  MI -->|Search Index Data Reader| SRCH[AI Search]
+  DEV -->|Search Index Data Contributor,<br/>Search Service Contributor| SRCH
   MI -->|Cognitive Services User| CS[Content Safety]
-  DEV -->|same roles as the app identity<br/>except AcrPull| AOAI
+  DEV -->|OpenAI User, Content Safety User| AOAI
 ```
 
 - `disableLocalAuth: true` on OpenAI, Search and Content Safety; ACR admin user disabled.
-- The app identity and the deploying user hold the same data-plane roles (OpenAI User, Search Index Data Contributor, Search Service Contributor, Cognitive Services User); the app additionally has AcrPull. Contributor rights are broader than strictly needed at runtime. Splitting out a read-only runtime role (Search Index Data Reader) is a possible hardening step.
-- Prompt injection: input screened by Prompt Shields; the system prompt tells the model to ignore instructions embedded in sources or the question.
+- Least privilege: the runtime app identity holds only AcrPull, Cognitive Services OpenAI User, Cognitive Services User and **Search Index Data Reader** (the app never writes to the index). Index creation and uploads need *Search Index Data Contributor* and *Search Service Contributor*, which are granted only to the deploying principal (the user locally, the CI identity in the pipeline).
+- The CI identity has **Contributor** plus **Role Based Access Control Administrator** on the resource group; the RBAC role carries an ABAC condition that limits it to assigning/removing only the six roles above (no Owner, no privilege escalation).
+- Prompt injection: input screened by Prompt Shields; the system prompt tells the model to ignore instructions embedded in sources or the question. Tests: 	ests/test_injection.py (7 attack phrasings blocked before retrieval, 4 benign cooking questions allowed, pantry path) and 3 injection cases in val/golden.json that must be refused against the live model (refusal rate 1.00). The test set exposed and fixed a gap in the offline heuristic (eveal the system prompt).
 - User-supplied values interpolated into OData filters are quote-escaped (`_esc`).
 - No secrets in the repo; `.env.example` holds only endpoints and deployment names.
 
@@ -269,7 +271,7 @@ flowchart LR
 - Single Bicep template at resource-group scope (`infra/main.bicep`), parameters mapped in `infra/main.parameters.json`.
 - Parameters: `location`, `aiLocation`, `searchLocation`, `searchSku` (`free` default), `principalId`.
 - Deploy flow: `azd provision` → `azd deploy` → `python -m ingest.index_azure` (needs the deployer RBAC roles; propagation can take minutes).
-- CI/CD: a merge to `main` triggers `ci`; on success `deploy.yml` (`workflow_run`) logs in with GitHub OIDC to an Entra app (`gh-sous-chef-deploy`, federated credential for `refs/heads/main`, Owner on the resource group so Bicep can create role assignments), then runs the same provision → deploy → index steps plus an HTTP smoke test. Deploys are serialized (`concurrency`), and `principalType` is `ServicePrincipal` in CI so the pipeline identity also gets the data-plane roles needed for indexing. Hardening option: replace Owner with Contributor + Role Based Access Control Administrator.
+- CI/CD: a merge to `main` triggers `ci`; on success `deploy.yml` (`workflow_run`) logs in with GitHub OIDC to an Entra app (`gh-sous-chef-deploy`, federated credential for `refs/heads/main`, Contributor + a condition-constrained Role Based Access Control Administrator on the resource group so Bicep can create the role assignments), then runs the same provision → deploy → index steps plus an HTTP smoke test. Deploys are serialized (`concurrency`), and `principalType` is `ServicePrincipal` in CI so the pipeline identity also gets the data-plane roles needed for indexing.
 - Reference cost: see §9 (Cost optimization).
 
 ## 9. Cost optimization

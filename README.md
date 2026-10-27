@@ -66,7 +66,7 @@ pip install -e ".[azure,ui]"
 python -m ingest.index_azure        # create index + upload embeddings
 streamlit run app/streamlit_app.py
 ```
-You need RBAC on your own identity for local runs: *Cognitive Services OpenAI User*, *Search Index Data Contributor*, *Search Service Contributor*.
+You need RBAC on your own identity for local runs: *Cognitive Services OpenAI User*, *Search Index Data Contributor*, *Search Service Contributor* (the deployed app itself only gets *Search Index Data Reader*).
 Cost: the default deployment uses the **Free** AI Search tier (50 MB, 3 indexes, one per subscription) and a scale-to-zero Container App, so idle cost is near zero (only Container Registry, ~$5/month). For production-grade capacity set `searchSku` to `basic` (~$73/month).
 
 ### CI/CD

@@ -11,7 +11,8 @@ from dataclasses import dataclass
 from . import config
 
 _INJECTION = re.compile(
-    r"ignore (all |any )?(previous|prior|above) (instructions|rules)|reveal (your )?(system )?prompt|"
+    r"ignore (all |any )?(previous|prior|above) (instructions|rules)|"
+    r"(reveal|show|print|repeat) (me )?(your |the )?(system |hidden |initial )?(prompt|instructions)|"
     r"disregard .* (instructions|rules)|you are now|developer mode|jailbreak", re.I)
 
 

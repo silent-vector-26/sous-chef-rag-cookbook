@@ -108,7 +108,8 @@ resource env 'Microsoft.App/managedEnvironments@2024-03-01' = {
 
 var roles = {
   openaiUser: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd' // Cognitive Services OpenAI User
-  searchData: '8ebe5a00-799e-43f5-93ac-243d3dce84a7' // Search Index Data Contributor
+  searchData: '8ebe5a00-799e-43f5-93ac-243d3dce84a7' // Search Index Data Contributor (deployer only)
+  searchReader: '1407120a-92aa-4202-b7e9-c0e197c71c8f' // Search Index Data Reader (app runtime)
   searchSvc: '7ca78c08-252a-4471-8644-bb5ff32d4ba0' // Search Service Contributor
   csUser: 'a97b65f3-24c7-4388-baec-2e87135dc908' // Cognitive Services User
   acrPull: '7f951dda-4ed3-4680-a7ca-43fe172d538d' // AcrPull
@@ -167,16 +168,9 @@ resource raOpenai 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
 
 resource raSearchData 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
   scope: search
-  name: guid(search.id, identity.id, roles.searchData)
+  name: guid(search.id, identity.id, roles.searchReader)
   properties: { principalId: appId, principalType: 'ServicePrincipal'
-    roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.searchData) }
-}
-
-resource raSearchSvc 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  scope: search
-  name: guid(search.id, identity.id, roles.searchSvc)
-  properties: { principalId: appId, principalType: 'ServicePrincipal'
-    roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.searchSvc) }
+    roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roles.searchReader) }
 }
 
 resource raSafety 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
