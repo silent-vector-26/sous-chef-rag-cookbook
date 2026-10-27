@@ -71,7 +71,7 @@ flowchart LR
   SAFE --> CS[(Content Safety)]
 ```
 
-The backend is chosen once by `config.backend()` (`BACKEND=local|azure`) and `store.get_store()`. No other module branches on infrastructure except `rag.ask` (extractive offline answer vs. LLM answer) and `safety.py`/`llm.py` (heuristic vs. service).
+The backend is selected by `config.backend()` (`BACKEND=local|azure`) and `store.get_store()`. The RAG layer uses the shared `Store` protocol; generation and safety helpers choose heuristic or service-backed behavior. The UI also gates vision and agent features by backend.
 
 ## 3. Module design
 
@@ -118,11 +118,11 @@ classDiagram
 | D2 | Ranking key `(len(missing), -len(have), -retrieval_score, title)` | Score-first | Matches the user's goal: cook with the fewest extra purchases; ties favour recipes that use more of what is owned |
 | D3 | Staples (salt, pepper, water, oil) never count as missing | Count everything | Avoids useless shopping suggestions |
 | D4 | Candidate retrieval uses an OData filter `search.in(i, '…', ',')` over `ingredients`, then ranks in Python | Pure vector search | Guarantees every candidate contains at least one owned ingredient; keeps ranking independent of embedding quality |
-| D5 | Hybrid query (BM25 + vector) with semantic reranking for Q&A | Vector only | Keyword exactness for ingredient and technique terms plus semantic recall; the reranker gives a calibrated score |
+| D5 | Hybrid query (BM25 + vector) with semantic reranking for Q&A | Vector only | Keyword exactness plus semantic recall; the reranker supplies a relevance signal, not a probability of correctness |
 | D6 | Refusal is enforced twice: local score threshold (`MIN_LOCAL_SCORE`) and an exact refusal phrase in the system prompt, detected in the reply | Prompt only | Defence in depth; refusal returns no citations and `grounded=False` |
-| D7 | Citations are derived from `[rNNN]` tags actually present in the reply, falling back to the top hit | Cite all retrieved | Shows only the sources used |
+| D7 | Citations are derived from `[rNNN]` tags present in the reply, falling back to the top hit | Cite all retrieved | Avoids listing every candidate, but fallback does not prove that the model used the source |
 | D8 | Entra-only auth with a user-assigned managed identity | Keys in env vars | NFR-1; no secrets to leak or rotate. `AZURE_CLIENT_ID` makes `DefaultAzureCredential` pick the user-assigned identity |
-| D9 | Reasoning-model chat deployment (`gpt-5.4-mini`) with no `temperature` argument | `gpt-4o-mini` | `gpt-4o-mini` is deprecated and cannot be newly deployed; gpt-5.x reasoning models reject `temperature` |
+| D9 | Current chat deployment (`gpt-5.4-mini`) with no `temperature` argument | Other regionally available chat models | The selected deployment rejected explicit `temperature`; model availability and parameter support must be checked for each deployment |
 | D10 | AI Search Free tier by default, `searchSku` / `searchLocation` parameters | Basic | NFR-7. Dataset is far below 50 MB. Region is a parameter because capacity varies (eastus2 was exhausted) |
 | D11 | Scale-to-zero Container App with remote ACR build | Always-on, App Service | Near-zero idle cost; no local Docker needed for deploy |
 
@@ -160,7 +160,7 @@ flowchart LR
     E --> F
     F --> G[recipes.json]
     G --> H[Embed title + ingredients + method]
-    H --> I[(AI Search index<br/>text, ingredients[], tags[], vector)]
+    H --> I[("AI Search index<br/>text, ingredients[], tags[], vector")]
 ```
 
 ### 5.3 Search index schema
@@ -229,6 +229,16 @@ flowchart TD
 
 A bounded tool-calling loop: the model may call `search_recipes` or `find_by_ingredients`, results are fed back, and the loop ends on a final message or the step limit. Every tool call is recorded and shown in the UI as the trace.
 
+### 6.4 Interface and bundled assets
+
+The Streamlit interface combines a photo-mosaic hero, a featured gallery, pantry chips and free-text input. Filters are inline rather than in a sidebar. Each search result is a single image tile containing the title, missing-count badge and an HTML `<details>` section for coverage, owned/missing ingredients, instructions and source attribution.
+
+The featured gallery reads cached `data/recipes.json` through `load_recipes()`, independently of the selected retrieval backend. It must not access `LocalStore.recipes` on a shared UI path; `AzureStore` only implements the retrieval protocol. UI regression tests cover initial load and filter reruns with both backend configurations.
+
+Recipe images are keyed by ID (`app/static/img/<id>.webp`), embedded as data URIs and cached by the UI. The 205 illustrative images were generated once offline with `gpt-image-1-mini`, resized to 512px WebP and bundled with the container (about 5.2 MB). `ingest/generate_images.py` is an offline utility; runtime image generation is not required. The temporary generation resource was deleted, and the exact one-time spend was not measured.
+
+Photo upload currently replaces the typed/chip ingredient list with detected ingredients; the lists are not merged. Dietary widgets constrain pantry results and Q&A retrieval, not the agent or featured gallery. Vision detections are shown in the result summary but cannot yet be corrected inline.
+
 ## 7. Security design
 
 ```mermaid
@@ -248,7 +258,8 @@ flowchart LR
 - `disableLocalAuth: true` on OpenAI, Search and Content Safety; ACR admin user disabled.
 - Least privilege: the runtime app identity holds only AcrPull, Cognitive Services OpenAI User, Cognitive Services User and **Search Index Data Reader** (the app never writes to the index). Index creation and uploads need *Search Index Data Contributor* and *Search Service Contributor*, which are granted only to the deploying principal (the user locally, the CI identity in the pipeline).
 - The CI identity has **Contributor** plus **Role Based Access Control Administrator** on the resource group; the RBAC role carries an ABAC condition that limits it to assigning/removing only the six roles above (no Owner, no privilege escalation).
-- Prompt injection: input screened by Prompt Shields; the system prompt tells the model to ignore instructions embedded in sources or the question. Tests: 	ests/test_injection.py (7 attack phrasings blocked before retrieval, 4 benign cooking questions allowed, pantry path) and 3 injection cases in val/golden.json that must be refused against the live model (refusal rate 1.00). The test set exposed and fixed a gap in the offline heuristic (eveal the system prompt).
+- Prompt injection: Q&A and pantry-text parsing call `check_input`. With an Azure Content Safety endpoint configured, it runs Prompt Shields and harm analysis; otherwise it uses the local regex heuristic. The Q&A system prompt instructs the model to ignore instructions inside sources. `tests/test_injection.py` and the three injection cases in `eval/golden.json` cover selected attacks, not a complete adversarial assessment.
+- Coverage boundary: the agent's top-level prompt, its direct search tool and image extraction do not all traverse this safety gate. Supplying `have` directly to `cook_with` skips pantry-text screening. Consistent entry-point protection is further production work.
 - User-supplied values interpolated into OData filters are quote-escaped (`_esc`).
 - No secrets in the repo; `.env.example` holds only endpoints and deployment names.
 
@@ -272,11 +283,13 @@ flowchart LR
 - Parameters: `location`, `aiLocation`, `searchLocation`, `searchSku` (`free` default), `principalId`.
 - Deploy flow: `azd provision` → `azd deploy` → `python -m ingest.index_azure` (needs the deployer RBAC roles; propagation can take minutes).
 - CI/CD: a merge to `main` triggers `ci`; on success `deploy.yml` (`workflow_run`) logs in with GitHub OIDC to an Entra app (`gh-sous-chef-deploy`, federated credential for `refs/heads/main`, Contributor + a condition-constrained Role Based Access Control Administrator on the resource group so Bicep can create the role assignments), then runs the same provision → deploy → index steps plus an HTTP smoke test. Deploys are serialized (`concurrency`), and `principalType` is `ServicePrincipal` in CI so the pipeline identity also gets the data-plane roles needed for indexing.
+- Repository variables: `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_SUBSCRIPTION_ID`, `AZURE_ENV_NAME`, `AZURE_LOCATION`, `AZURE_RESOURCE_GROUP`, `AZURE_SEARCH_LOCATION`, `AZURE_PRINCIPAL_ID`, and optional `AZURE_BUDGET_EMAIL`. The first client ID identifies the deployment identity in CI; the application uses its own managed identity at runtime.
+- The Docker build copies the UI, images and `.streamlit/config.toml` along with the core and data. Deployment's HTTP 200 check confirms availability only; it does not exercise recipe tiles, Q&A, the agent or upload.
 - Reference cost: see §9 (Cost optimization).
 
 ## 9. Cost optimization
 
-Prices are Azure retail pay-as-you-go (USD) at the time of writing; verify on the Azure pricing calculator.
+The following are indicative USD planning estimates, not measured invoices or guaranteed current prices. Verify region-specific rates, free allowances and your subscription's usage in Azure Cost Management before deployment.
 
 ### 9.1 Cost drivers
 
@@ -286,21 +299,21 @@ Prices are Azure retail pay-as-you-go (USD) at the time of writing; verify on th
 | Container Registry | Per day + storage | Basic: ~$0.167/day ≈ $5/month | Basic, no admin user | ~$5/month |
 | Container Apps | Per-second vCPU/memory + requests; monthly free grant | Always-on replica ≈ $5–15/month | `minReplicas: 0` (scale to zero) | ~$0 |
 | Azure OpenAI | Per token | Pay per use | `gpt-5.4-mini` + `text-embedding-3-small`, GlobalStandard/Standard | $0 when unused |
-| Content Safety | Per 1,000 text records | Pay per use | Called once per user input | $0 when unused |
-| Log Analytics / App Insights | Per GB ingested, 5 GB/month free | Pay per use | 30-day retention, demo volume | $0 |
+| Content Safety | Per text record / API usage | Pay per use | Prompt Shields plus harm analysis on screened text paths | $0 when unused |
+| Log Analytics / App Insights | Ingestion and retention | Pay per use, allowances vary | 30-day retention, demo volume | Usage-dependent |
 | Managed identity, RBAC | Free | — | — | $0 |
 
-Result: the deployment costs about **$5/month idle** (versus about $78–80 with Search Basic) and cents per demo session.
+Estimated idle baseline: **about $5/month**, mainly ACR Basic. Compute, builds, model calls, storage and telemetry can add charges. Recipe photographs are bundled assets, so viewing them adds no image-model inference charge; storage and delivery still use infrastructure.
 
 ### 9.2 Optimization decisions
 
 | # | Measure | Effect | Trade-off |
 |---|---|---|---|
-| C1 | AI Search Free tier by default | Removes the largest cost (~90%) | 50 MB, 3 indexes, shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle; cannot be upgraded in place |
+| C1 | AI Search Free tier by default | Removes the paid Search baseline | 50 MB, 3 indexes, shared capacity, no SLA; semantic quota and idle-service lifecycle are subject to Azure limits; cannot be upgraded in place |
 | C2 | Container App scales to zero | No compute cost while idle | Cold start on the first request (a gateway timeout is possible) |
-| C3 | Small chat model (`gpt-5.4-mini`) and small embeddings (`text-embedding-3-small`, 1536 dims) | Lowest per-token cost that meets the eval targets | Lower reasoning depth than larger models |
+| C3 | Small chat model (`gpt-5.4-mini`) and small embeddings (`text-embedding-3-small`, 1536 dims) | Lower-cost model selection, evaluated on the demo set | No exhaustive model/cost comparison was performed |
 | C4 | Ranking, shopping list and unlock tips in code, not LLM calls | Zero tokens for the core feature, plus determinism | — |
-| C5 | Only one LLM call per question or pantry message (agent capped at 5 steps) | Bounded token spend | Agent answers may be cut at the step limit |
+| C5 | One chat call for Q&A generation or pantry parsing; agent capped at 5 iterations | Limits ordinary request complexity | Q&A also embeds the query; agent iterations can contain multiple tool calls, so this is not a hard spend cap |
 | C6 | Only the top 4 sources are put into the prompt | Smaller prompts | Possible recall loss on broad questions |
 | C7 | Embeddings are computed once at ingest, not per document at query time (only the query is embedded) | One embedding call per search | Re-ingest needed when the corpus changes |
 | C8 | Content Safety is skipped by the offline backend | Free dev/CI | Heuristic only |
@@ -313,8 +326,8 @@ Result: the deployment costs about **$5/month idle** (versus about $78–80 with
 |---|---|---|
 | Delete the registry after deploy and pull from a public image | ~$5/month | Only if the registry is not needed again |
 | Lower OpenAI deployment capacity (currently 30) | Nothing directly (pay per token) but limits runaway spend | Always reasonable for demos |
-| ~~Azure budget with alerts on the resource group~~ **Implemented** (`infra/main.bicep`: $20/month, email alerts at 50/80/100% actual and 100% forecast; set AZURE_BUDGET_EMAIL to enable, empty skips it) | Prevents surprises | Always |
-| **Production recommendation:** `searchSku=basic` (or higher) and `minReplicas: 1` | Costs ~$73 + ~$5–15/month more | Removes cold starts, adds replicas/SLA and capacity beyond 50 MB; not needed for the demo |
+| **Implemented:** resource-group budget (`infra/main.bicep`: $20/month; alerts at 50/80/100% actual and 100% forecast; set `AZURE_BUDGET_EMAIL` to enable) | Notifies about spend; does not cap or stop it | Always |
+| **Production recommendation:** `searchSku=basic` (or higher) and `minReplicas: 1` | Increases recurring cost | Removes scale-to-zero cold starts and adds Search capacity; SLA eligibility depends on tier and replica configuration |
 | Prompt caching and shorter prompts | Fewer input tokens | When traffic grows |
 | Cache frequent query embeddings | Fewer embedding calls | When traffic grows |
 
@@ -368,7 +381,7 @@ dependencies | where name == "llm.chat"
 ```mermaid
 flowchart LR
     G[eval/golden.json<br/>QA + pantry cases] --> H[run_eval]
-    H --> M1[Recall@5, MRR]
+    H --> M1["Recall@5, MRR"]
     H --> M2[Citation accuracy]
     H --> M3[Refusal rate]
     H --> M4[Pantry top-1, sort order]
@@ -380,18 +393,30 @@ flowchart LR
 |---|---|
 | Unit | `tests/test_core.py`: normalization, pantry parsing, ranking, filters, unlock tips, grounding, injection (offline, deterministic) |
 | Evaluation | `eval/run_eval.py` on `eval/golden.json`: recall@k, citation rate, refusal rate, pantry sort correctness (NFR-2…4) |
-| CI | GitHub Actions: pytest, eval on the local backend, `az bicep build` |
-| Live | `BACKEND=azure python -m eval.run_eval` plus manual checks of the agent and fridge-photo paths against the deployed resources |
+| UI regression | `tests/test_ui.py`: Streamlit initial render and dietary-widget rerun with store mocks that expose only the shared interface |
+| CI | GitHub Actions: UI + dev dependencies, pytest, local evaluation, `az bicep build` |
+| Live | Azure evaluation for retrieval/answer metrics; interactive browser checks for pantry, Q&A, agent and upload |
+
+The evaluator's `citation_accuracy` is an expected-source hit rate, not claim-level groundedness. Its success exit code means metrics were computed, not that quality targets passed. Small synthetic data, citation fallback behavior and empty-list sorting can make individual metrics optimistic; see [evaluation methodology](../cookbook/08-evaluation.md).
+
+### Live UI check, 2026-10-27
+
+Browser checks against the deployed Azure app verified the homepage gallery, empty-input validation, pantry chips, ascending missing counts, keyboard expansion of recipe details inside tiles, free-text pantry entry, vegetarian filtering, a zero-missing limit, cited carbonara Q&A, refusal of an unrelated physics question, and an agent answer with a visible `find_by_ingredients` tool call. Screenshots in `docs/img/` were refreshed from the live interface.
+
+The photo path successfully extracted chicken, potato and carrot from a generated plated-food PNG and returned recipes. A repeated upload later failed with HTTP 400 before inference ([#13](https://github.com/silent-vector-26/sous-chef-rag-cookbook/issues/13)); upload reliability is therefore an open finding, not a clean pass. The fixture was not a real fridge photograph. These are workflow smoke checks, not a fresh golden-set evaluation or a vision accuracy benchmark.
 
 ## 12. Known limitations and risks
 
 | Item | Impact | Mitigation / next step |
 |---|---|---|
 | LLM-dependent metrics vary between runs (citation accuracy 0.86–1.00 over 5 runs) because gpt-5.x rejects `temperature` | Flaky eval numbers | Report ranges; add more cases and run several times |
-| Free Search tier: shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle | Latency variance, possible loss of the index | Re-run `ingest.index_azure`; use `searchSku=basic` for real workloads |
+| Free Search tier: shared capacity, no SLA, service quotas and idle-service lifecycle limits | Latency variance, possible index unavailability | Check current Azure limits; re-index when required; use a paid tier for real workloads |
 | Scale to zero | Cold-start delay on the first request | Accepted for a demo; `minReplicas` stays 0 (set to 1 only for production use) |
 | Corpus is synthetic (205 recipes; 180 LLM-generated) | Metrics are optimistic vs. real-world data | Ingest licensed or public-domain sources via `ingest/build_dataset.py --llm` |
 | Heuristic ingredient extraction | Misses unusual phrasing | LLM-assisted extraction at ingest time |
+| Inconsistent safety/dietary coverage across entry points | UI controls are not universal guarantees | Extend consistent controls before production; document current scope |
+| Generated imagery and untested recipes | Visuals can differ from instructions; dietary tags are not certified | Clearly disclose provenance; do not use for medical/allergy decisions |
+| Intermittent photo-upload HTTP 400 observed in live checks | Some uploads fail before ingredient extraction | Investigate session/upload behavior in [#13](https://github.com/silent-vector-26/sous-chef-rag-cookbook/issues/13); no root cause confirmed yet |
 
 ## 13. Traceability (design → requirements)
 

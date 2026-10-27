@@ -1,9 +1,9 @@
 # Software Requirements Specification — Sous-chef (RAG Cookbook)
 
-Version 0.1
+Version 0.1 · Portfolio demo · Documentation reviewed 2026-10-27
 
 ## 1. Purpose and scope
-Sous-chef is a retrieval-augmented generation (RAG) application over a corpus of public-domain-style cookbooks. It (a) answers cooking questions with citations, and (b) recommends recipes from the ingredients the user has, ranked by the **fewest additional ingredients to buy**. The project doubles as a technical cookbook (`cookbook/`) demonstrating one RAG technique per recipe.
+Sous-chef is a retrieval-augmented generation (RAG) application over a demonstration corpus of 25 hand-written and 180 LLM-generated recipes. It (a) answers cooking questions with citations, and (b) recommends recipes from the ingredients the user has, ranked by the **fewest additional ingredients to buy** within the retrieved candidate pool. The project doubles as a technical cookbook (`cookbook/`) demonstrating one RAG technique per recipe. Recipes, dietary tags and generated images are not independently validated.
 
 **Out of scope:** user accounts, nutrition/medical advice, grocery ordering, production-scale ingestion.
 
@@ -11,7 +11,7 @@ Sous-chef is a retrieval-augmented generation (RAG) application over a corpus of
 | Role | Need |
 |---|---|
 | Home cook | "What can I make with what I have, and what should I buy?" |
-| Hiring manager / reviewer | Evidence of production-grade RAG: retrieval quality, evaluation, safety, deployment |
+| Hiring manager / reviewer | Inspectable AI engineering: retrieval quality, domain logic, evaluation, safety boundaries and deployment |
 | Developer | Clear techniques, runnable offline, swappable backends |
 
 ## 3. Definitions
@@ -35,6 +35,13 @@ Sous-chef is a retrieval-augmented generation (RAG) application over a corpus of
 | FR-10 | The system SHALL screen user input for prompt injection and harmful content before retrieval/generation. |
 | FR-11 | The system SHALL run fully offline (`BACKEND=local`) for development and CI. |
 | FR-12 | The system SHALL provide an evaluation harness reporting retrieval, citation, refusal and pantry-ranking metrics. |
+| FR-13 | The UI SHALL combine each pantry result's image, title, owned/missing counts, expandable instructions and source in a single recipe tile. The featured gallery SHALL load with either backend without relying on store-specific attributes. |
+
+### Implementation boundaries
+
+The statements above are requirements, not a claim that every target has been met. FR-7 currently applies to pantry ranking and Q&A retrieval, not globally to the agent or featured gallery. FR-8 extracts ingredients but does not yet offer an edit/confirmation step; photo detections take precedence over typed/chip inputs. FR-10 is partial: Q&A and pantry-text parsing are screened, but the agent's initial prompt/direct search tool and image path do not all share that gate. An unset Content Safety endpoint selects heuristic checks even in Azure mode.
+
+FR-11 covers the offline pipeline and core UI; vision and agent capabilities require Azure. FR-2 citations identify returned sources, but the current evaluator does not prove support for every claim. Accuracy and latency targets below require explicit measurement, not just a successful CI exit code.
 
 ## 5. Non-functional requirements
 | ID | Requirement | Target |
@@ -94,7 +101,7 @@ flowchart LR
     E --> F
     F --> G[recipes.json]
     G --> H[Embed title + ingredients + method]
-    H --> I[(AI Search index<br/>text, ingredients[], tags[], vector)]
+    H --> I[("AI Search index<br/>text, ingredients[], tags[], vector")]
 ```
 
 ## 9. Query flows
@@ -173,7 +180,7 @@ flowchart LR
         LA[Log Analytics] --> AI[App Insights]
     end
     CA -- OpenAI User --> AOAI
-    CA -- Index Data Contributor --> AIS
+    CA -- Index Data Reader --> AIS
     CA -- Cognitive Services User --> CS
     CA -- telemetry --> AI
     Dev([azd provision / deploy]) --> RG
@@ -183,7 +190,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     G[eval/golden.json<br/>QA + pantry cases] --> H[run_eval]
-    H --> M1[Recall@5, MRR]
+    H --> M1["Recall@5, MRR"]
     H --> M2[Citation accuracy]
     H --> M3[Refusal rate]
     H --> M4[Pantry top-1, sort order]
@@ -204,4 +211,5 @@ flowchart LR
 | FR-10 | `safety.py` | `test_injection_blocked` |
 | FR-11 | `LocalStore`, `BACKEND=local` | all tests run offline |
 | FR-12 | `eval/run_eval.py` | `python -m eval.run_eval` |
+| FR-13 | `app/streamlit_app.py`, bundled dataset/images | `tests/test_ui.py`, live tile expansion and gallery checks |
 | NFR-1 | `infra/main.bicep` (disableLocalAuth, RBAC) | `az bicep build` |

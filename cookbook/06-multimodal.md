@@ -11,4 +11,6 @@
 Run with `BACKEND=azure`, upload a fridge photo in the "Cook with what I have" tab.
 
 ## Chef's notes
-Treat vision output as a suggestion: show the detected list and let the user edit it before searching.
+The UI shows the detected list after searching. Editing/confirming that list before retrieval is a recommended extension, not a feature currently implemented. When a photo is attached, detections replace the typed/chip pantry rather than being merged.
+
+Treat vision output as a suggestion, not a reliable inventory or allergy check. The image call is not screened by the text-only `check_input` path. Offline-generated card photographs are separate bundled assets; they are not generated from user uploads.
