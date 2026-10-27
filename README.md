@@ -73,9 +73,6 @@ The sample set is small by design; add your own cases to `eval/golden.json` and 
 ## Data
 `data/recipes.raw.json` contains 25 classic recipes written in original wording (no copyrighted text). To scale up, ingest public-domain cookbooks (e.g. Project Gutenberg) and use `python -m ingest.build_dataset --llm` for structured extraction; check each source's license.
 
-## Atlassian MCP (Jira / Confluence)
-`.mcp.json` registers the official [Atlassian remote MCP server](https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/) (`https://mcp.atlassian.com/v2/mcp`) so Copilot sessions can read Jira work items and Confluence pages. Sign in once via OAuth (in the Copilot app: Settings → project → Repository customizations → MCP servers → Sign in). No secrets are stored in the repo.
-
 ## Contributing & license
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).
 
