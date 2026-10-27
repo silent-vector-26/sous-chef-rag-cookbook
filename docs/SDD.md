@@ -330,7 +330,20 @@ OpenTelemetry spans are created by `ragcookbook/tracing.py` (a no-op when the SD
 
 Privacy: spans record sizes, counts, and outcomes only, never raw questions or pantry text.
 
-Useful KQL (Application Insights → Logs):
+Useful KQL (Application Insights → Logs). For workspace-based resources the same data is in `AppDependencies` (`Name`, `DurationMs`, `Properties`) in Log Analytics.
+
+Verified live (spans from `ask`, `cook_with` and the agent against the deployed Azure resources):
+
+| Name | Count | p50 (ms) |
+|---|---|---|
+| `rag.ask` | 3 | 3089 |
+| `safety.check_input` | 3 | 1133 |
+| `rag.retrieve` | 3 | 474 |
+| `agent.step` | 2 | 1902 |
+| `POST /openai/deployments/gpt-5.4-mini/chat/completions` | 12 | 1120 |
+| `POST /indexes('recipes')/docs/search.post.search` | 14 | 174 |
+
+Note: telemetry can take a few minutes to appear, and `az monitor app-insights query` may lag behind the workspace; query Log Analytics directly when verifying.
 
 ```kusto
 // Latency and outcome by operation
