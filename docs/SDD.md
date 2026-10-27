@@ -334,13 +334,13 @@ flowchart LR
 | Unit | `tests/test_core.py`: normalization, pantry parsing, ranking, filters, unlock tips, grounding, injection (offline, deterministic) |
 | Evaluation | `eval/run_eval.py` on `eval/golden.json`: recall@k, citation rate, refusal rate, pantry sort correctness (NFR-2…4) |
 | CI | GitHub Actions: pytest, eval on the local backend, `az bicep build` |
-| Live | Manual smoke test against Azure (ingredient ranking, grounded answer, refusal) |
+| Live | `BACKEND=azure python -m eval.run_eval` plus manual checks of the agent and fridge-photo paths against the deployed resources |
 
 ## 11. Known limitations and risks
 
 | Item | Impact | Mitigation / next step |
 |---|---|---|
-| Azure vision and agent paths not verified live | Possible model-compat issues | Run them and add to the eval |
+| LLM-dependent metrics vary between runs (citation accuracy 0.86–1.00 over 3 runs) because gpt-5.x rejects `temperature` | Flaky eval numbers | Report ranges; add more cases and run several times |
 | Free Search tier: shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle | Latency variance, possible loss of the index | Re-run `ingest.index_azure`; use `searchSku=basic` for real workloads |
 | Scale to zero | Cold-start delay on the first request | Accepted for a demo; `minReplicas` stays 0 (set to 1 only for production use) |
 | Small sample corpus (25 recipes) | Metrics are optimistic | Extend `ingest/build_dataset.py` with larger public-domain sources |

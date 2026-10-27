@@ -64,15 +64,15 @@ Every merge to `main` runs `ci` (tests, eval, Bicep build). When it passes, `dep
 | 08 | [Evaluation](cookbook/08-evaluation.md) |
 | 09 | [Safety](cookbook/09-safety.md) |
 
-## Evaluation (offline baseline)
-| metric | local |
-|---|---|
-| retrieval recall@5 / MRR | 1.00 / 1.00 |
-| citation accuracy | 1.00 |
-| refusal on unanswerable | 1.00 |
-| pantry top-1 / sorted by missing | 1.00 / 1.00 |
+## Evaluation
+| metric | local (offline) | Azure (hybrid + semantic, `gpt-5.4-mini`) |
+|---|---|---|
+| retrieval recall@5 / MRR | 1.00 / 1.00 | 1.00 / 1.00 |
+| citation accuracy | 1.00 | 0.86–1.00 (3 runs: 0.86, 1.00, 1.00) |
+| refusal on unanswerable | 1.00 | 1.00 |
+| pantry top-1 / sorted by missing | 1.00 / 1.00 | 1.00 / 1.00 |
 
-The sample set is small by design; add your own cases to `eval/golden.json` and record Azure (hybrid + semantic) results next to it.
+Reasoning-model deployments (gpt-5.x) don't accept `temperature`, so LLM-dependent metrics such as citation accuracy vary slightly between runs. The sample set is small by design (25 recipes); see the roadmap issue on expanding it. Add your own cases to `eval/golden.json`.
 
 ## Data
 `data/recipes.raw.json` contains 25 classic recipes written in original wording (no copyrighted text). To scale up, ingest public-domain cookbooks (e.g. Project Gutenberg) and use `python -m ingest.build_dataset --llm` for structured extraction; check each source's license.
@@ -83,4 +83,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELO
 ## Layout
 `docs/` SRS + SDD · `src/ragcookbook/` core · `ingest/` dataset + index · `app/` UI · `eval/` metrics · `cookbook/` recipes · `infra/` Bicep · `tests/`
 
-> Deployed and smoke-tested live on Azure (`azd up`-style flow: `azd provision`, `azd deploy`, `python -m ingest.index_azure`): hybrid search, ingredient ranking and grounded Q&A with refusal work against `gpt-5.4-mini`. If AI Search has no capacity in your region, set `azd env set AZURE_SEARCH_LOCATION <region>`. The vision and agent tabs and the full Azure eval run were not re-verified live.
+> Deployed and verified live on Azure: hybrid search, ingredient ranking, grounded Q&A with refusal, the multi-step research agent (tool trace) and fridge-photo ingredient extraction all work against `gpt-5.4-mini`, and the eval harness was run against the live backend (see Evaluation). If AI Search has no capacity in your region, set `azd env set AZURE_SEARCH_LOCATION <region>`.
