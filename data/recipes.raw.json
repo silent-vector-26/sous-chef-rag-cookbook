@@ -1,27 +1,6579 @@
 [
-{"id":"r001","title":"Roast Chicken with Potatoes and Carrots","page":12,"tags":["gluten-free","dairy-free"],"ingredient_lines":["1 whole chicken","1 lb potatoes, quartered","3 carrots, cut in chunks","1 onion, quartered","2 tbsp olive oil","1 tsp thyme","salt","pepper"],"text":"Heat the oven to 425F. Rub the chicken with oil, thyme, salt and pepper. Scatter potatoes, carrots and onion in a roasting pan, set the chicken on top and roast for 1 hour 15 minutes until the juices run clear. Rest 10 minutes before carving."},
-{"id":"r002","title":"Chicken and Vegetable Stew","page":18,"tags":["gluten-free","dairy-free"],"ingredient_lines":["4 chicken thighs","2 potatoes, cubed","2 carrots, sliced","1 onion, chopped","2 cloves garlic","4 cups water","1 bay leaf","salt"],"text":"Brown the chicken in a heavy pot, remove, and soften the onion and garlic. Return the chicken, add water, bay leaf, potatoes and carrots. Simmer gently for 45 minutes until the chicken is tender."},
-{"id":"r003","title":"Potato and Carrot Soup","page":22,"tags":["vegetarian","gluten-free"],"ingredient_lines":["3 potatoes, peeled","3 carrots, peeled","1 onion","4 cups water","2 tbsp butter","salt","pepper"],"text":"Melt the butter and soften the chopped onion. Add potatoes, carrots and water, then simmer 25 minutes. Blend until smooth and season to taste."},
-{"id":"r004","title":"Garlic Roasted Potatoes","page":25,"tags":["vegetarian","vegan","gluten-free","dairy-free"],"ingredient_lines":["2 lb potatoes","4 cloves garlic","3 tbsp olive oil","1 tsp rosemary","salt"],"text":"Toss cut potatoes with oil, garlic, rosemary and salt. Roast at 425F for 40 minutes, turning once, until golden and crisp."},
-{"id":"r005","title":"Glazed Carrots","page":27,"tags":["vegetarian","gluten-free"],"ingredient_lines":["1 lb carrots","2 tbsp butter","1 tbsp honey","1 tsp lemon juice","salt"],"text":"Simmer sliced carrots in a little water until nearly tender. Drain, add butter and honey, and cook until glossy. Finish with lemon juice."},
-{"id":"r006","title":"Chicken Pot Pie","page":31,"tags":["dairy-free-option"],"ingredient_lines":["2 chicken breasts, cooked","2 potatoes, diced","2 carrots, diced","1 cup peas","1 onion","2 tbsp flour","2 cups chicken stock","1 pie crust"],"text":"Cook onion, potatoes and carrots in stock until tender. Thicken with flour, stir in chicken and peas, pour into a crust, cover and bake at 400F for 35 minutes."},
-{"id":"r007","title":"Lemon Garlic Chicken","page":34,"tags":["gluten-free","dairy-free"],"ingredient_lines":["4 chicken thighs","3 cloves garlic","1 lemon","2 tbsp olive oil","1 tsp oregano","salt","pepper"],"text":"Marinate chicken in lemon juice, garlic, oil and oregano for 30 minutes. Roast at 400F for 35 minutes until browned."},
-{"id":"r008","title":"Chicken Fried Rice","page":38,"tags":["dairy-free"],"ingredient_lines":["2 cups cooked rice","1 chicken breast, diced","2 eggs","1 carrot, diced","1/2 cup peas","3 scallions","2 tbsp soy sauce","2 tbsp vegetable oil"],"text":"Scramble the eggs and set aside. Stir-fry chicken, carrot and peas in hot oil. Add rice and soy sauce, fold in eggs and scallions and serve hot."},
-{"id":"r009","title":"Beef and Potato Hash","page":41,"tags":["gluten-free","dairy-free"],"ingredient_lines":["1 lb ground beef","2 potatoes, diced","1 onion, diced","1 carrot, diced","2 tbsp oil","salt","pepper"],"text":"Fry the potatoes in oil until browning. Add onion, carrot and beef and cook until the beef is done. Season well."},
-{"id":"r010","title":"Classic Beef Stew","page":44,"tags":["dairy-free"],"ingredient_lines":["2 lb beef chuck, cubed","3 potatoes, cubed","3 carrots, sliced","1 onion","2 tbsp flour","2 tbsp tomato paste","4 cups beef stock","1 bay leaf"],"text":"Dredge beef in flour and brown. Add onion, tomato paste, stock and bay leaf, then simmer for 1.5 hours. Add potatoes and carrots for the last 30 minutes."},
-{"id":"r011","title":"Tomato Basil Pasta","page":47,"tags":["vegetarian","vegan","dairy-free"],"ingredient_lines":["12 oz spaghetti","4 tomatoes, chopped","3 cloves garlic","1 handful basil","3 tbsp olive oil","salt"],"text":"Cook pasta. Warm garlic in oil, add tomatoes and cook 10 minutes, then toss with pasta and torn basil."},
-{"id":"r012","title":"Spaghetti Carbonara","page":50,"tags":[],"ingredient_lines":["12 oz spaghetti","4 oz bacon","3 eggs","1/2 cup parmesan","pepper"],"text":"Cook pasta. Crisp the bacon. Beat eggs with parmesan and pepper, toss with hot pasta and bacon off the heat until creamy."},
-{"id":"r013","title":"Mushroom Risotto","page":53,"tags":["vegetarian","gluten-free"],"ingredient_lines":["1 1/2 cups arborio rice","8 oz mushrooms","1 onion","4 cups vegetable stock","1/2 cup parmesan","2 tbsp butter"],"text":"Soften onion and mushrooms in butter. Add rice, then stock a ladle at a time, stirring, for 20 minutes. Finish with parmesan."},
-{"id":"r014","title":"Vegetable Frittata","page":56,"tags":["vegetarian","gluten-free"],"ingredient_lines":["6 eggs","1 potato, thinly sliced","1 onion","1/2 cup cheese","2 tbsp oil","salt","pepper"],"text":"Fry potato and onion in an oven-safe pan until soft. Pour over beaten eggs and cheese and bake at 375F for 15 minutes."},
-{"id":"r015","title":"Pancakes","page":60,"tags":["vegetarian"],"ingredient_lines":["1 1/2 cups flour","1 1/4 cups milk","1 egg","2 tbsp sugar","3 tsp baking powder","3 tbsp butter, melted"],"text":"Whisk dry ingredients, add milk, egg and butter, and cook spoonfuls on a hot griddle until bubbles form, then flip."},
-{"id":"r016","title":"Chickpea and Spinach Curry","page":64,"tags":["vegetarian","vegan","gluten-free","dairy-free"],"ingredient_lines":["2 cans chickpeas","200 g spinach","1 onion","3 cloves garlic","1 can tomatoes","2 tsp curry powder","1 tbsp oil"],"text":"Soften onion and garlic in oil, add curry powder, tomatoes and chickpeas, simmer 15 minutes, and wilt in the spinach."},
-{"id":"r017","title":"Lentil Soup","page":67,"tags":["vegetarian","vegan","gluten-free","dairy-free"],"ingredient_lines":["1 cup lentils","2 carrots, diced","1 onion","2 cloves garlic","1 can tomatoes","5 cups water","1 tsp cumin"],"text":"Soften the vegetables, add lentils, tomatoes, cumin and water, and simmer 30 minutes until the lentils are tender."},
-{"id":"r018","title":"Baked Salmon with Lemon","page":70,"tags":["gluten-free","dairy-free"],"ingredient_lines":["4 salmon fillets","1 lemon","2 tbsp olive oil","2 tbsp dill","salt","pepper"],"text":"Place salmon on a tray, drizzle with oil and lemon, sprinkle with dill, and bake at 400F for 12 minutes."},
-{"id":"r019","title":"Shepherd's Pie","page":73,"tags":[],"ingredient_lines":["1 lb ground lamb","3 potatoes","2 carrots, diced","1 onion","1 cup peas","2 tbsp butter","1/4 cup milk","1 tbsp flour"],"text":"Boil and mash potatoes with butter and milk. Brown lamb with onion and carrots, stir in flour and peas, top with the mash, and bake at 400F for 25 minutes."},
-{"id":"r020","title":"Beef Tacos","page":76,"tags":["dairy-free-option"],"ingredient_lines":["1 lb ground beef","8 taco shells","1 tomato","1 cup lettuce","1 cup cheese","2 tbsp taco seasoning"],"text":"Brown the beef with seasoning. Fill shells with beef, tomato, lettuce and cheese."},
-{"id":"r021","title":"Egg Salad Sandwich","page":79,"tags":["vegetarian"],"ingredient_lines":["6 eggs, hard-boiled","3 tbsp mayonnaise","1 tsp mustard","8 slices bread","salt","pepper"],"text":"Chop the eggs, mix with mayonnaise and mustard, season, and spread on bread."},
-{"id":"r022","title":"Stuffed Bell Peppers","page":82,"tags":["gluten-free"],"ingredient_lines":["4 bell peppers","1 lb ground beef","1 cup cooked rice","1 can tomatoes","1 onion","1/2 cup cheese"],"text":"Hollow the peppers. Mix browned beef, rice, onion and tomatoes, fill the peppers, top with cheese, and bake at 375F for 35 minutes."},
-{"id":"r023","title":"Banana Bread","page":85,"tags":["vegetarian"],"ingredient_lines":["3 ripe bananas","1 3/4 cups flour","3/4 cup sugar","1 egg","1/3 cup butter, melted","1 tsp baking soda"],"text":"Mash bananas, mix in butter, sugar and egg, fold in flour and soda, and bake in a loaf pan at 350F for 60 minutes."},
-{"id":"r024","title":"Chicken Noodle Soup","page":88,"tags":["dairy-free"],"ingredient_lines":["2 chicken breasts","2 carrots, sliced","2 stalks celery","1 onion","6 cups chicken stock","2 cups egg noodles"],"text":"Simmer chicken with vegetables in stock for 20 minutes, shred the chicken, add noodles, and cook 8 minutes."},
-{"id":"r025","title":"Honey Mustard Chicken and Carrots","page":91,"tags":["gluten-free","dairy-free"],"ingredient_lines":["4 chicken thighs","4 carrots, halved","2 tbsp honey","2 tbsp mustard","1 tbsp oil","salt"],"text":"Whisk honey and mustard, coat chicken and carrots on a sheet pan, and roast at 425F for 35 minutes."}
+ {
+  "id": "r001",
+  "title": "Roast Chicken with Potatoes and Carrots",
+  "page": 12,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 whole chicken",
+   "1 lb potatoes, quartered",
+   "3 carrots, cut in chunks",
+   "1 onion, quartered",
+   "2 tbsp olive oil",
+   "1 tsp thyme",
+   "salt",
+   "pepper"
+  ],
+  "text": "Heat the oven to 425F. Rub the chicken with oil, thyme, salt and pepper. Scatter potatoes, carrots and onion in a roasting pan, set the chicken on top and roast for 1 hour 15 minutes until the juices run clear. Rest 10 minutes before carving.",
+  "ingredients": [
+   "chicken",
+   "potato",
+   "carrot",
+   "onion",
+   "oil",
+   "thyme",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r002",
+  "title": "Chicken and Vegetable Stew",
+  "page": 18,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 chicken thighs",
+   "2 potatoes, cubed",
+   "2 carrots, sliced",
+   "1 onion, chopped",
+   "2 cloves garlic",
+   "4 cups water",
+   "1 bay leaf",
+   "salt"
+  ],
+  "text": "Brown the chicken in a heavy pot, remove, and soften the onion and garlic. Return the chicken, add water, bay leaf, potatoes and carrots. Simmer gently for 45 minutes until the chicken is tender.",
+  "ingredients": [
+   "chicken",
+   "potato",
+   "carrot",
+   "onion",
+   "garlic",
+   "water",
+   "bay leaf",
+   "salt"
+  ]
+ },
+ {
+  "id": "r003",
+  "title": "Potato and Carrot Soup",
+  "page": 22,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "3 potatoes, peeled",
+   "3 carrots, peeled",
+   "1 onion",
+   "4 cups water",
+   "2 tbsp butter",
+   "salt",
+   "pepper"
+  ],
+  "text": "Melt the butter and soften the chopped onion. Add potatoes, carrots and water, then simmer 25 minutes. Blend until smooth and season to taste.",
+  "ingredients": [
+   "potato",
+   "carrot",
+   "onion",
+   "water",
+   "butter",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r004",
+  "title": "Garlic Roasted Potatoes",
+  "page": 25,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 lb potatoes",
+   "4 cloves garlic",
+   "3 tbsp olive oil",
+   "1 tsp rosemary",
+   "salt"
+  ],
+  "text": "Toss cut potatoes with oil, garlic, rosemary and salt. Roast at 425F for 40 minutes, turning once, until golden and crisp.",
+  "ingredients": [
+   "potato",
+   "garlic",
+   "oil",
+   "rosemary",
+   "salt"
+  ]
+ },
+ {
+  "id": "r005",
+  "title": "Glazed Carrots",
+  "page": 27,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb carrots",
+   "2 tbsp butter",
+   "1 tbsp honey",
+   "1 tsp lemon juice",
+   "salt"
+  ],
+  "text": "Simmer sliced carrots in a little water until nearly tender. Drain, add butter and honey, and cook until glossy. Finish with lemon juice.",
+  "ingredients": [
+   "carrot",
+   "butter",
+   "honey",
+   "lemon juice",
+   "salt"
+  ]
+ },
+ {
+  "id": "r006",
+  "title": "Chicken Pot Pie",
+  "page": 31,
+  "tags": [
+   "dairy-free-option"
+  ],
+  "ingredient_lines": [
+   "2 chicken breasts, cooked",
+   "2 potatoes, diced",
+   "2 carrots, diced",
+   "1 cup peas",
+   "1 onion",
+   "2 tbsp flour",
+   "2 cups chicken stock",
+   "1 pie crust"
+  ],
+  "text": "Cook onion, potatoes and carrots in stock until tender. Thicken with flour, stir in chicken and peas, pour into a crust, cover and bake at 400F for 35 minutes.",
+  "ingredients": [
+   "chicken",
+   "potato",
+   "carrot",
+   "pea",
+   "onion",
+   "flour",
+   "chicken stock",
+   "pie crust"
+  ]
+ },
+ {
+  "id": "r007",
+  "title": "Lemon Garlic Chicken",
+  "page": 34,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 chicken thighs",
+   "3 cloves garlic",
+   "1 lemon",
+   "2 tbsp olive oil",
+   "1 tsp oregano",
+   "salt",
+   "pepper"
+  ],
+  "text": "Marinate chicken in lemon juice, garlic, oil and oregano for 30 minutes. Roast at 400F for 35 minutes until browned.",
+  "ingredients": [
+   "chicken",
+   "garlic",
+   "lemon",
+   "oil",
+   "oregano",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r008",
+  "title": "Chicken Fried Rice",
+  "page": 38,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 cups cooked rice",
+   "1 chicken breast, diced",
+   "2 eggs",
+   "1 carrot, diced",
+   "1/2 cup peas",
+   "3 scallions",
+   "2 tbsp soy sauce",
+   "2 tbsp vegetable oil"
+  ],
+  "text": "Scramble the eggs and set aside. Stir-fry chicken, carrot and peas in hot oil. Add rice and soy sauce, fold in eggs and scallions and serve hot.",
+  "ingredients": [
+   "rice",
+   "chicken",
+   "egg",
+   "carrot",
+   "pea",
+   "green onion",
+   "soy sauce",
+   "oil"
+  ]
+ },
+ {
+  "id": "r009",
+  "title": "Beef and Potato Hash",
+  "page": 41,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground beef",
+   "2 potatoes, diced",
+   "1 onion, diced",
+   "1 carrot, diced",
+   "2 tbsp oil",
+   "salt",
+   "pepper"
+  ],
+  "text": "Fry the potatoes in oil until browning. Add onion, carrot and beef and cook until the beef is done. Season well.",
+  "ingredients": [
+   "beef",
+   "potato",
+   "onion",
+   "carrot",
+   "oil",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r010",
+  "title": "Classic Beef Stew",
+  "page": 44,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 lb beef chuck, cubed",
+   "3 potatoes, cubed",
+   "3 carrots, sliced",
+   "1 onion",
+   "2 tbsp flour",
+   "2 tbsp tomato paste",
+   "4 cups beef stock",
+   "1 bay leaf"
+  ],
+  "text": "Dredge beef in flour and brown. Add onion, tomato paste, stock and bay leaf, then simmer for 1.5 hours. Add potatoes and carrots for the last 30 minutes.",
+  "ingredients": [
+   "beef chuck",
+   "potato",
+   "carrot",
+   "onion",
+   "flour",
+   "tomato paste",
+   "beef stock",
+   "bay leaf"
+  ]
+ },
+ {
+  "id": "r011",
+  "title": "Tomato Basil Pasta",
+  "page": 47,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "12 oz spaghetti",
+   "4 tomatoes, chopped",
+   "3 cloves garlic",
+   "1 handful basil",
+   "3 tbsp olive oil",
+   "salt"
+  ],
+  "text": "Cook pasta. Warm garlic in oil, add tomatoes and cook 10 minutes, then toss with pasta and torn basil.",
+  "ingredients": [
+   "spaghetti",
+   "tomato",
+   "garlic",
+   "basil",
+   "oil",
+   "salt"
+  ]
+ },
+ {
+  "id": "r012",
+  "title": "Spaghetti Carbonara",
+  "page": 50,
+  "tags": [],
+  "ingredient_lines": [
+   "12 oz spaghetti",
+   "4 oz bacon",
+   "3 eggs",
+   "1/2 cup parmesan",
+   "pepper"
+  ],
+  "text": "Cook pasta. Crisp the bacon. Beat eggs with parmesan and pepper, toss with hot pasta and bacon off the heat until creamy.",
+  "ingredients": [
+   "spaghetti",
+   "bacon",
+   "egg",
+   "parmesan",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r013",
+  "title": "Mushroom Risotto",
+  "page": 53,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups arborio rice",
+   "8 oz mushrooms",
+   "1 onion",
+   "4 cups vegetable stock",
+   "1/2 cup parmesan",
+   "2 tbsp butter"
+  ],
+  "text": "Soften onion and mushrooms in butter. Add rice, then stock a ladle at a time, stirring, for 20 minutes. Finish with parmesan.",
+  "ingredients": [
+   "arborio rice",
+   "mushroom",
+   "onion",
+   "vegetable stock",
+   "parmesan",
+   "butter"
+  ]
+ },
+ {
+  "id": "r014",
+  "title": "Vegetable Frittata",
+  "page": 56,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "6 eggs",
+   "1 potato, thinly sliced",
+   "1 onion",
+   "1/2 cup cheese",
+   "2 tbsp oil",
+   "salt",
+   "pepper"
+  ],
+  "text": "Fry potato and onion in an oven-safe pan until soft. Pour over beaten eggs and cheese and bake at 375F for 15 minutes.",
+  "ingredients": [
+   "egg",
+   "potato",
+   "onion",
+   "cheese",
+   "oil",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r015",
+  "title": "Pancakes",
+  "page": 60,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups flour",
+   "1 1/4 cups milk",
+   "1 egg",
+   "2 tbsp sugar",
+   "3 tsp baking powder",
+   "3 tbsp butter, melted"
+  ],
+  "text": "Whisk dry ingredients, add milk, egg and butter, and cook spoonfuls on a hot griddle until bubbles form, then flip.",
+  "ingredients": [
+   "flour",
+   "milk",
+   "egg",
+   "sugar",
+   "baking powder",
+   "butter"
+  ]
+ },
+ {
+  "id": "r016",
+  "title": "Chickpea and Spinach Curry",
+  "page": 64,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 cans chickpeas",
+   "200 g spinach",
+   "1 onion",
+   "3 cloves garlic",
+   "1 can tomatoes",
+   "2 tsp curry powder",
+   "1 tbsp oil"
+  ],
+  "text": "Soften onion and garlic in oil, add curry powder, tomatoes and chickpeas, simmer 15 minutes, and wilt in the spinach.",
+  "ingredients": [
+   "chickpea",
+   "spinach",
+   "onion",
+   "garlic",
+   "tomato",
+   "curry powder",
+   "oil"
+  ]
+ },
+ {
+  "id": "r017",
+  "title": "Lentil Soup",
+  "page": 67,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 cup lentils",
+   "2 carrots, diced",
+   "1 onion",
+   "2 cloves garlic",
+   "1 can tomatoes",
+   "5 cups water",
+   "1 tsp cumin"
+  ],
+  "text": "Soften the vegetables, add lentils, tomatoes, cumin and water, and simmer 30 minutes until the lentils are tender.",
+  "ingredients": [
+   "lentil",
+   "carrot",
+   "onion",
+   "garlic",
+   "tomato",
+   "water",
+   "cumin"
+  ]
+ },
+ {
+  "id": "r018",
+  "title": "Baked Salmon with Lemon",
+  "page": 70,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 salmon fillets",
+   "1 lemon",
+   "2 tbsp olive oil",
+   "2 tbsp dill",
+   "salt",
+   "pepper"
+  ],
+  "text": "Place salmon on a tray, drizzle with oil and lemon, sprinkle with dill, and bake at 400F for 12 minutes.",
+  "ingredients": [
+   "salmon fillet",
+   "lemon",
+   "oil",
+   "dill",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r019",
+  "title": "Shepherd's Pie",
+  "page": 73,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb ground lamb",
+   "3 potatoes",
+   "2 carrots, diced",
+   "1 onion",
+   "1 cup peas",
+   "2 tbsp butter",
+   "1/4 cup milk",
+   "1 tbsp flour"
+  ],
+  "text": "Boil and mash potatoes with butter and milk. Brown lamb with onion and carrots, stir in flour and peas, top with the mash, and bake at 400F for 25 minutes.",
+  "ingredients": [
+   "ground lamb",
+   "potato",
+   "carrot",
+   "onion",
+   "pea",
+   "butter",
+   "milk",
+   "flour"
+  ]
+ },
+ {
+  "id": "r020",
+  "title": "Beef Tacos",
+  "page": 76,
+  "tags": [
+   "dairy-free-option"
+  ],
+  "ingredient_lines": [
+   "1 lb ground beef",
+   "8 taco shells",
+   "1 tomato",
+   "1 cup lettuce",
+   "1 cup cheese",
+   "2 tbsp taco seasoning"
+  ],
+  "text": "Brown the beef with seasoning. Fill shells with beef, tomato, lettuce and cheese.",
+  "ingredients": [
+   "ground beef",
+   "taco shell",
+   "tomato",
+   "lettuce",
+   "cheese",
+   "taco seasoning"
+  ]
+ },
+ {
+  "id": "r021",
+  "title": "Egg Salad Sandwich",
+  "page": 79,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "6 eggs, hard-boiled",
+   "3 tbsp mayonnaise",
+   "1 tsp mustard",
+   "8 slices bread",
+   "salt",
+   "pepper"
+  ],
+  "text": "Chop the eggs, mix with mayonnaise and mustard, season, and spread on bread.",
+  "ingredients": [
+   "egg",
+   "mayonnaise",
+   "mustard",
+   "bread",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r022",
+  "title": "Stuffed Bell Peppers",
+  "page": 82,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "4 bell peppers",
+   "1 lb ground beef",
+   "1 cup cooked rice",
+   "1 can tomatoes",
+   "1 onion",
+   "1/2 cup cheese"
+  ],
+  "text": "Hollow the peppers. Mix browned beef, rice, onion and tomatoes, fill the peppers, top with cheese, and bake at 375F for 35 minutes.",
+  "ingredients": [
+   "bell pepper",
+   "ground beef",
+   "rice",
+   "tomato",
+   "onion",
+   "cheese"
+  ]
+ },
+ {
+  "id": "r023",
+  "title": "Banana Bread",
+  "page": 85,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "3 ripe bananas",
+   "1 3/4 cups flour",
+   "3/4 cup sugar",
+   "1 egg",
+   "1/3 cup butter, melted",
+   "1 tsp baking soda"
+  ],
+  "text": "Mash bananas, mix in butter, sugar and egg, fold in flour and soda, and bake in a loaf pan at 350F for 60 minutes.",
+  "ingredients": [
+   "banana",
+   "flour",
+   "sugar",
+   "egg",
+   "butter",
+   "baking soda"
+  ]
+ },
+ {
+  "id": "r024",
+  "title": "Chicken Noodle Soup",
+  "page": 88,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 chicken breasts",
+   "2 carrots, sliced",
+   "2 stalks celery",
+   "1 onion",
+   "6 cups chicken stock",
+   "2 cups egg noodles"
+  ],
+  "text": "Simmer chicken with vegetables in stock for 20 minutes, shred the chicken, add noodles, and cook 8 minutes.",
+  "ingredients": [
+   "chicken",
+   "carrot",
+   "celery",
+   "onion",
+   "chicken stock",
+   "egg noodle"
+  ]
+ },
+ {
+  "id": "r025",
+  "title": "Honey Mustard Chicken and Carrots",
+  "page": 91,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 chicken thighs",
+   "4 carrots, halved",
+   "2 tbsp honey",
+   "2 tbsp mustard",
+   "1 tbsp oil",
+   "salt"
+  ],
+  "text": "Whisk honey and mustard, coat chicken and carrots on a sheet pan, and roast at 425F for 35 minutes.",
+  "ingredients": [
+   "chicken",
+   "carrot",
+   "honey",
+   "mustard",
+   "oil",
+   "salt"
+  ]
+ },
+ {
+  "id": "r026",
+  "title": "Weeknight Paprika Chicken Skillet",
+  "page": 94,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb boneless skinless chicken thighs",
+   "1 tbsp olive oil",
+   "1 small onion, sliced",
+   "2 cloves garlic, minced",
+   "1 red bell pepper, sliced",
+   "1 tsp smoked paprika",
+   "1/2 tsp dried oregano",
+   "1/2 cup chicken broth",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Season the chicken with salt, pepper, paprika, and oregano. Heat the oil in a large skillet over medium-high heat, brown the chicken for 4 to 5 minutes per side, then transfer to a plate. Add the onion and bell pepper to the pan and cook for 4 minutes, stir in the garlic for 30 seconds, return the chicken, add the broth, cover, and simmer on low for 10 to 12 minutes until the chicken reaches 165°F.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "onion",
+   "garlic",
+   "red bell pepper",
+   "smoked paprika",
+   "dried oregano",
+   "chicken broth",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r027",
+  "title": "Miso-Glazed Chicken Thighs",
+  "page": 97,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken thighs",
+   "2 tbsp white miso paste",
+   "1 tbsp soy sauce",
+   "1 tbsp honey",
+   "1 tbsp rice vinegar",
+   "1 tsp sesame oil",
+   "2 cloves garlic, grated",
+   "1 tsp grated ginger",
+   "2 scallions, sliced",
+   "1 tsp sesame seeds"
+  ],
+  "text": "Whisk the miso, soy sauce, honey, vinegar, sesame oil, garlic, and ginger into a smooth glaze. Brush it over the chicken thighs and place them on a foil-lined sheet pan. Bake at 425°F for 22 to 28 minutes, basting once halfway through, until the chicken is cooked through and nicely caramelized; finish with scallions and sesame seeds.",
+  "ingredients": [
+   "chicken",
+   "miso paste",
+   "soy sauce",
+   "honey",
+   "rice vinegar",
+   "oil",
+   "garlic",
+   "ginger",
+   "green onion",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r028",
+  "title": "Creamy Spinach Chicken Orzo",
+  "page": 100,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb boneless skinless chicken breast, cut into bite-size pieces",
+   "1 tbsp olive oil",
+   "1 cup orzo",
+   "2 cups chicken broth",
+   "1/2 cup heavy cream",
+   "3 cups baby spinach",
+   "2 cloves garlic, minced",
+   "1/2 cup grated parmesan",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Warm the oil in a deep skillet over medium heat and cook the chicken with salt and pepper for 4 to 5 minutes, until lightly browned. Stir in the garlic and orzo for 1 minute, then add the broth and simmer uncovered for about 10 minutes, stirring often, until the orzo is tender. Lower the heat, stir in the cream, spinach, and parmesan, and cook for 2 minutes until glossy and combined.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "orzo",
+   "chicken broth",
+   "heavy cream",
+   "baby spinach",
+   "garlic",
+   "parmesan",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r029",
+  "title": "Orange Ginger Chicken Stir-Fry",
+  "page": 103,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken breast, thinly sliced",
+   "2 tbsp vegetable oil",
+   "1 broccoli crown, cut into florets",
+   "1 carrot, thinly sliced",
+   "1 red bell pepper, sliced",
+   "1/4 cup orange juice",
+   "2 tbsp soy sauce",
+   "1 tbsp honey",
+   "1 tsp fresh ginger, grated",
+   "1 tsp cornstarch"
+  ],
+  "text": "Mix the orange juice, soy sauce, honey, ginger, and cornstarch in a small bowl. Heat 1 tablespoon of oil in a wok or skillet over medium-high heat and stir-fry the chicken for 5 to 6 minutes; remove it, then cook the vegetables in the remaining oil for 3 to 4 minutes. Return the chicken, pour in the sauce, and cook for 1 to 2 minutes until thickened and glossy.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "broccoli",
+   "carrot",
+   "red bell pepper",
+   "orange juice",
+   "soy sauce",
+   "honey",
+   "ginger",
+   "cornstarch"
+  ]
+ },
+ {
+  "id": "r030",
+  "title": "Sheet Pan Dijon Chicken with Green Beans",
+  "page": 106,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 chicken drumsticks",
+   "1 1/2 tbsp Dijon mustard",
+   "1 tbsp olive oil",
+   "1 tbsp lemon juice",
+   "1 tsp dried thyme",
+   "1 lb green beans, trimmed",
+   "1 small shallot, thinly sliced",
+   "salt",
+   "black pepper",
+   "1 tbsp chopped parsley"
+  ],
+  "text": "Stir together the mustard, olive oil, lemon juice, thyme, salt, and pepper, then coat the drumsticks well. Arrange the chicken on a sheet pan and roast at 425°F for 15 minutes. Add the green beans and shallot around the chicken, roast 20 to 25 minutes more until the chicken reaches 165°F, and scatter parsley over the top before serving.",
+  "ingredients": [
+   "chicken drumstick",
+   "dijon mustard",
+   "oil",
+   "lemon juice",
+   "thyme",
+   "green bean",
+   "shallot",
+   "salt",
+   "black pepper",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r031",
+  "title": "Turkey Taco Lettuce Skillet",
+  "page": 109,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground turkey",
+   "1 tbsp olive oil",
+   "1 small onion, chopped",
+   "2 cloves garlic, minced",
+   "2 tbsp taco seasoning",
+   "1/2 cup tomato sauce",
+   "1/2 cup corn kernels",
+   "1/2 cup black beans, drained",
+   "8 lettuce leaves",
+   "1 avocado, sliced"
+  ],
+  "text": "Heat the oil in a skillet over medium heat and cook the onion and turkey for 5 to 6 minutes, breaking up the meat as it browns. Add the garlic and taco seasoning and cook for 30 seconds, then stir in the tomato sauce, corn, and black beans and simmer for 4 minutes. Spoon the mixture into lettuce leaves and top with avocado.",
+  "ingredients": [
+   "ground turkey",
+   "oil",
+   "onion",
+   "garlic",
+   "taco seasoning",
+   "tomato sauce",
+   "corn",
+   "black bean",
+   "lettuce leaf",
+   "avocado"
+  ]
+ },
+ {
+  "id": "r032",
+  "title": "Garlic Herb Turkey Meatballs with Couscous",
+  "page": 112,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb ground turkey",
+   "1 egg",
+   "1/3 cup breadcrumbs",
+   "2 tbsp grated parmesan",
+   "2 cloves garlic, minced",
+   "1 tsp Italian seasoning",
+   "1 tbsp olive oil",
+   "1 cup couscous",
+   "1 1/4 cups chicken broth",
+   "2 tbsp chopped parsley"
+  ],
+  "text": "Combine the turkey, egg, breadcrumbs, parmesan, garlic, and Italian seasoning, then roll into meatballs. Brown them in olive oil in a large skillet over medium heat for 6 to 8 minutes, turning gently until golden on all sides. Add the broth, cover, and simmer for 8 minutes until cooked through, then stir in the couscous, cover off heat for 5 minutes, and fluff with parsley.",
+  "ingredients": [
+   "ground turkey",
+   "egg",
+   "breadcrumb",
+   "parmesan",
+   "garlic",
+   "italian seasoning",
+   "oil",
+   "couscous",
+   "chicken broth",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r033",
+  "title": "Coconut Curry Chicken Bites",
+  "page": 115,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken breast, cubed",
+   "1 tbsp coconut oil",
+   "1 onion, diced",
+   "2 tbsp red curry paste",
+   "1 can coconut milk",
+   "1 cup snap peas",
+   "1 lime, juiced",
+   "1/2 tsp salt",
+   "2 cups cooked rice",
+   "cilantro, for serving"
+  ],
+  "text": "Cook the onion in coconut oil over medium heat for 4 minutes, then add the curry paste and stir for 1 minute. Add the chicken and cook for 5 minutes, pour in the coconut milk, and simmer for 8 to 10 minutes until the chicken is done. Stir in the snap peas and lime juice for the last 2 minutes, then serve over rice with cilantro.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "onion",
+   "red curry paste",
+   "coconut milk",
+   "snap pea",
+   "lime",
+   "salt",
+   "rice",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r034",
+  "title": "Maple Mustard Chicken Tenders",
+  "page": 118,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken tenders",
+   "2 tbsp Dijon mustard",
+   "2 tbsp maple syrup",
+   "1 tbsp olive oil",
+   "1 tsp apple cider vinegar",
+   "1/2 tsp garlic powder",
+   "1/2 tsp paprika",
+   "salt",
+   "black pepper",
+   "chopped chives"
+  ],
+  "text": "Whisk the mustard, maple syrup, oil, vinegar, garlic powder, paprika, salt, and pepper into a quick glaze. Coat the chicken tenders and arrange them in a single layer on a baking sheet. Bake at 400°F for 16 to 18 minutes, flipping once halfway through, until the chicken is cooked through and the glaze is sticky; finish with chives.",
+  "ingredients": [
+   "chicken tender",
+   "dijon mustard",
+   "maple syrup",
+   "oil",
+   "apple cider vinegar",
+   "garlic powder",
+   "paprika",
+   "salt",
+   "black pepper",
+   "chive"
+  ]
+ },
+ {
+  "id": "r035",
+  "title": "Greek Chicken Pita Skillet",
+  "page": 121,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb chicken breast, sliced",
+   "1 tbsp olive oil",
+   "1 tsp dried oregano",
+   "1/2 tsp garlic powder",
+   "1 cup cherry tomatoes, halved",
+   "1/2 cucumber, diced",
+   "1/4 red onion, thinly sliced",
+   "1/2 cup plain yogurt",
+   "1 tbsp lemon juice",
+   "4 pita breads"
+  ],
+  "text": "Toss the chicken with olive oil, oregano, garlic powder, salt, and pepper, then cook it in a skillet over medium-high heat for 6 to 7 minutes until browned and cooked through. Mix the tomatoes, cucumber, red onion, yogurt, and lemon juice in a bowl. Warm the pita breads for 1 to 2 minutes, fill them with chicken and vegetables, and spoon the sauce over the top.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "oregano",
+   "garlic powder",
+   "cherry tomato",
+   "cucumber",
+   "red onion",
+   "yogurt",
+   "lemon juice",
+   "pita bread"
+  ]
+ },
+ {
+  "id": "r036",
+  "title": "Balsamic Peach Chicken Cutlets",
+  "page": 124,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb chicken cutlets",
+   "1 tbsp olive oil",
+   "2 peaches, sliced",
+   "2 tbsp balsamic vinegar",
+   "1 tbsp honey",
+   "1 small shallot, minced",
+   "1 tsp fresh thyme leaves",
+   "salt",
+   "black pepper",
+   "1 tbsp butter"
+  ],
+  "text": "Season the chicken with salt and pepper and sear it in olive oil over medium-high heat for 3 to 4 minutes per side, then set aside. In the same pan, cook the shallot for 1 minute, add the peaches, balsamic vinegar, honey, thyme, and butter, and simmer for 3 to 4 minutes until syrupy. Return the chicken to the pan for 1 minute to glaze and serve warm.",
+  "ingredients": [
+   "chicken cutlet",
+   "oil",
+   "peach",
+   "balsamic vinegar",
+   "honey",
+   "shallot",
+   "thyme",
+   "salt",
+   "black pepper",
+   "butter"
+  ]
+ },
+ {
+  "id": "r037",
+  "title": "One-Pan Turkey and Sweet Potato Skillet",
+  "page": 127,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground turkey",
+   "1 medium sweet potato, diced small",
+   "1 tbsp olive oil",
+   "1 small onion, chopped",
+   "1 clove garlic, minced",
+   "1 tsp chili powder",
+   "1/2 tsp cumin",
+   "1/2 cup chicken broth",
+   "2 cups kale, chopped",
+   "salt"
+  ],
+  "text": "Heat the oil in a large skillet over medium heat and cook the sweet potato and onion for 6 to 7 minutes, stirring often. Add the turkey, garlic, chili powder, cumin, and salt, and cook for 5 minutes until the turkey is no longer pink. Pour in the broth, cover, and simmer for 8 minutes, then stir in the kale and cook uncovered for 2 minutes until wilted.",
+  "ingredients": [
+   "ground turkey",
+   "sweet potato",
+   "oil",
+   "onion",
+   "garlic",
+   "chili powder",
+   "cumin",
+   "chicken broth",
+   "kale",
+   "salt"
+  ]
+ },
+ {
+  "id": "r038",
+  "title": "Red Wine Braised Beef Short Ribs",
+  "page": 130,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "3 lb beef short ribs",
+   "1 tablespoon olive oil",
+   "1 large onion, chopped",
+   "3 carrots, chopped",
+   "3 celery stalks, chopped",
+   "4 garlic cloves, minced",
+   "2 tablespoons tomato paste",
+   "2 cups red wine",
+   "2 cups beef broth",
+   "2 sprigs fresh thyme",
+   "salt and black pepper"
+  ],
+  "text": "Preheat the oven to 325°F. Season the ribs with salt and pepper, then sear them in olive oil in a Dutch oven until browned on all sides; remove and cook the onion, carrots, celery, garlic, and tomato paste for 3 minutes. Pour in the wine and broth, add thyme, return the ribs, cover, and braise for 2 1/2 to 3 hours until very tender.",
+  "ingredients": [
+   "beef short rib",
+   "oil",
+   "onion",
+   "carrot",
+   "celery stalk",
+   "garlic clove",
+   "tomato paste",
+   "red wine",
+   "beef broth",
+   "thyme",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r039",
+  "title": "Crispy Pork Chops with Apple Onion Pan Sauce",
+  "page": 133,
+  "tags": [],
+  "ingredient_lines": [
+   "4 bone-in pork chops",
+   "salt and black pepper",
+   "2 tablespoons flour",
+   "1 tablespoon butter",
+   "1 tablespoon olive oil",
+   "1 apple, thinly sliced",
+   "1 onion, thinly sliced",
+   "1/2 cup chicken broth",
+   "1 teaspoon Dijon mustard",
+   "1 teaspoon apple cider vinegar"
+  ],
+  "text": "Season the pork chops, lightly dust with flour, and sear in butter and oil over medium-high heat for 4 to 5 minutes per side until cooked through. Transfer to a plate, then sauté the apple and onion in the same pan for 5 minutes, stirring in broth, Dijon, and vinegar. Simmer for 2 minutes and spoon the sauce over the chops.",
+  "ingredients": [
+   "pork chop",
+   "salt",
+   "black pepper",
+   "flour",
+   "butter",
+   "oil",
+   "apple",
+   "onion",
+   "chicken broth",
+   "dijon mustard",
+   "apple cider vinegar"
+  ]
+ },
+ {
+  "id": "r040",
+  "title": "Rosemary Garlic Lamb Leg Roast",
+  "page": 136,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 leg of lamb, about 4 lb",
+   "4 garlic cloves, sliced",
+   "2 tablespoons chopped rosemary",
+   "2 tablespoons olive oil",
+   "1 tablespoon lemon juice",
+   "1 1/2 teaspoons salt",
+   "1 teaspoon black pepper",
+   "1 red onion, cut into wedges",
+   "1 cup water"
+  ],
+  "text": "Preheat the oven to 400°F. Rub the lamb with olive oil, lemon juice, salt, pepper, rosemary, and garlic, then place it in a roasting pan with the onion wedges and water. Roast for 20 minutes, reduce the temperature to 350°F, and continue roasting for 1 1/4 to 1 1/2 hours until the center reaches your preferred doneness.",
+  "ingredients": [
+   "leg of lamb",
+   "garlic",
+   "rosemary",
+   "oil",
+   "lemon juice",
+   "salt",
+   "black pepper",
+   "red onion",
+   "water"
+  ]
+ },
+ {
+  "id": "r041",
+  "title": "Pork Tenderloin with Mustard Cream Sauce",
+  "page": 139,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb pork tenderloin",
+   "salt and black pepper",
+   "1 tablespoon olive oil",
+   "1 shallot, minced",
+   "1 cup chicken broth",
+   "1/2 cup heavy cream",
+   "2 tablespoons whole-grain mustard",
+   "1 teaspoon dried thyme"
+  ],
+  "text": "Preheat the oven to 425°F. Sear the pork tenderloin in olive oil for about 2 minutes per side, then transfer to the oven and roast for 18 to 22 minutes until the internal temperature reaches 145°F. Rest the meat for 5 minutes, then simmer the shallot, broth, cream, mustard, and thyme in the pan for 3 to 4 minutes and serve over sliced pork.",
+  "ingredients": [
+   "pork tenderloin",
+   "salt",
+   "black pepper",
+   "oil",
+   "shallot",
+   "chicken broth",
+   "heavy cream",
+   "whole-grain mustard",
+   "dried thyme"
+  ]
+ },
+ {
+  "id": "r042",
+  "title": "Braised Lamb Shanks with Tomatoes and Herbs",
+  "page": 142,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 lamb shanks",
+   "salt and black pepper",
+   "2 tablespoons olive oil",
+   "1 onion, diced",
+   "2 carrots, diced",
+   "4 garlic cloves, minced",
+   "1 can crushed tomatoes",
+   "2 cups beef broth",
+   "1 teaspoon oregano",
+   "1 bay leaf"
+  ],
+  "text": "Preheat the oven to 325°F. Brown the lamb shanks in olive oil, then remove them and cook the onion, carrots, and garlic for 5 minutes before adding tomatoes, broth, oregano, and bay leaf. Return the shanks, cover tightly, and braise for 2 1/2 hours until the meat is falling off the bone.",
+  "ingredients": [
+   "lamb shank",
+   "salt",
+   "black pepper",
+   "oil",
+   "onion",
+   "carrot",
+   "garlic",
+   "crushed tomato",
+   "beef broth",
+   "oregano",
+   "bay leaf"
+  ]
+ },
+ {
+  "id": "r043",
+  "title": "Chinese-Style Beef and Broccoli Stir-Fry",
+  "page": 145,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/4 lb flank steak, thinly sliced",
+   "3 cups broccoli florets",
+   "2 tablespoons soy sauce",
+   "1 tablespoon cornstarch",
+   "2 tablespoons vegetable oil",
+   "3 garlic cloves, minced",
+   "1/2 cup beef broth",
+   "1 tablespoon oyster sauce",
+   "1 teaspoon sugar",
+   "2 green onions, sliced"
+  ],
+  "text": "Toss the beef with soy sauce and cornstarch, then sear it in hot oil over high heat for 2 to 3 minutes until browned. Add the garlic and broccoli, stir-fry for 2 minutes, then pour in the broth, oyster sauce, and sugar. Cook for another 2 minutes until the sauce thickens, then finish with green onions.",
+  "ingredients": [
+   "flank steak",
+   "broccoli",
+   "soy sauce",
+   "cornstarch",
+   "oil",
+   "garlic",
+   "beef broth",
+   "oyster sauce",
+   "sugar",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r044",
+  "title": "Pork Meatballs in Tomato Basil Sauce",
+  "page": 148,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb ground pork",
+   "1 egg",
+   "1/3 cup breadcrumbs",
+   "2 tablespoons grated Parmesan",
+   "2 garlic cloves, minced",
+   "1 teaspoon salt",
+   "1/2 teaspoon black pepper",
+   "2 cups marinara sauce",
+   "1 tablespoon olive oil",
+   "1/4 cup chopped basil"
+  ],
+  "text": "Mix the pork, egg, breadcrumbs, Parmesan, garlic, salt, and pepper, then form into 1 1/2-inch meatballs. Brown them in olive oil over medium heat for about 6 minutes, turning to color all sides. Add the marinara, cover, and simmer on low for 15 minutes, then stir in basil before serving.",
+  "ingredients": [
+   "pork",
+   "egg",
+   "breadcrumb",
+   "parmesan",
+   "garlic",
+   "salt",
+   "black pepper",
+   "marinara sauce",
+   "oil",
+   "basil"
+  ]
+ },
+ {
+  "id": "r045",
+  "title": "Lamb Kofta with Yogurt Herb Sauce",
+  "page": 151,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground lamb",
+   "1 small onion, grated",
+   "2 garlic cloves, minced",
+   "1 teaspoon ground cumin",
+   "1 teaspoon paprika",
+   "1 teaspoon salt",
+   "1/2 teaspoon black pepper",
+   "1 tablespoon olive oil",
+   "1 cup plain yogurt",
+   "2 tablespoons chopped mint"
+  ],
+  "text": "Combine the lamb, onion, garlic, cumin, paprika, salt, and pepper, then shape into small logs or patties. Cook in olive oil over medium heat for 8 to 10 minutes, turning occasionally until browned and cooked through. Stir together the yogurt and mint and serve as a cool sauce alongside the kofta.",
+  "ingredients": [
+   "ground lamb",
+   "onion",
+   "garlic",
+   "cumin",
+   "paprika",
+   "salt",
+   "black pepper",
+   "oil",
+   "plain yogurt",
+   "mint"
+  ]
+ },
+ {
+  "id": "r046",
+  "title": "Slow Cooker BBQ Pulled Pork Sandwich Filling",
+  "page": 154,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "3 lb pork shoulder",
+   "1 onion, sliced",
+   "1 cup barbecue sauce",
+   "1/2 cup apple cider",
+   "2 tablespoons apple cider vinegar",
+   "1 tablespoon brown sugar",
+   "1 teaspoon smoked paprika",
+   "1 teaspoon salt",
+   "6 hamburger buns"
+  ],
+  "text": "Place the onion in the slow cooker, set the pork shoulder on top, and mix the barbecue sauce, cider, vinegar, brown sugar, paprika, and salt; pour it over the meat. Cook on low for 8 to 9 hours or on high for 5 to 6 hours until the pork shreds easily. Pull it apart with forks, toss with the sauce, and pile onto buns.",
+  "ingredients": [
+   "pork shoulder",
+   "onion",
+   "barbecue sauce",
+   "apple cider",
+   "apple cider vinegar",
+   "brown sugar",
+   "smoked paprika",
+   "salt",
+   "hamburger bun"
+  ]
+ },
+ {
+  "id": "r047",
+  "title": "Moroccan Beef Tagine-Style Skillet",
+  "page": 157,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb beef chuck, cut into cubes",
+   "1 tablespoon olive oil",
+   "1 onion, chopped",
+   "2 garlic cloves, minced",
+   "1 teaspoon cinnamon",
+   "1 teaspoon ground cumin",
+   "1 can diced tomatoes",
+   "1 cup beef broth",
+   "1 cup chickpeas, drained",
+   "1/2 cup dried apricots, chopped"
+  ],
+  "text": "Brown the beef in olive oil over medium-high heat, then add the onion and garlic and cook for 3 minutes. Stir in cinnamon, cumin, tomatoes, broth, chickpeas, and apricots, cover, and simmer on low for 1 1/2 to 2 hours until the beef is tender. Uncover for the last 10 minutes if you want the sauce a little thicker.",
+  "ingredients": [
+   "beef chuck",
+   "oil",
+   "onion",
+   "garlic",
+   "cinnamon",
+   "cumin",
+   "diced tomato",
+   "beef broth",
+   "chickpea",
+   "dried apricot"
+  ]
+ },
+ {
+  "id": "r048",
+  "title": "Lemon Garlic Lamb Chops with Couscous",
+  "page": 160,
+  "tags": [],
+  "ingredient_lines": [
+   "8 lamb chops",
+   "salt and black pepper",
+   "2 tablespoons olive oil",
+   "3 garlic cloves, minced",
+   "1 tablespoon lemon zest",
+   "2 tablespoons lemon juice",
+   "1 cup couscous",
+   "1 1/4 cups hot water",
+   "2 tablespoons chopped parsley",
+   "1 tablespoon butter"
+  ],
+  "text": "Season the lamb chops with salt, pepper, garlic, lemon zest, and lemon juice, then sear in olive oil over medium-high heat for 3 to 4 minutes per side. While they rest for 5 minutes, stir couscous, hot water, butter, and parsley together in a bowl, cover, and let stand for 5 minutes. Fluff the couscous and serve with the chops.",
+  "ingredients": [
+   "lamb chop",
+   "salt",
+   "black pepper",
+   "oil",
+   "garlic",
+   "lemon zest",
+   "lemon juice",
+   "couscous",
+   "water",
+   "parsley",
+   "butter"
+  ]
+ },
+ {
+  "id": "r049",
+  "title": "Smothered Pork Shoulder with Onions and Peppers",
+  "page": 163,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 1/2 lb pork shoulder, cut into chunks",
+   "salt and black pepper",
+   "2 tablespoons flour",
+   "2 tablespoons oil",
+   "2 onions, sliced",
+   "2 bell peppers, sliced",
+   "3 garlic cloves, minced",
+   "1 cup chicken broth",
+   "1 tablespoon Worcestershire sauce",
+   "1 teaspoon dried thyme"
+  ],
+  "text": "Toss the pork with salt, pepper, and flour, then brown it in oil in a deep skillet over medium-high heat. Add the onions, peppers, and garlic and cook for 4 minutes, then pour in the broth, Worcestershire sauce, and thyme. Cover and simmer on low for 1 1/2 hours until the pork is tender and the sauce is rich.",
+  "ingredients": [
+   "pork shoulder",
+   "salt",
+   "black pepper",
+   "flour",
+   "oil",
+   "onion",
+   "bell pepper",
+   "garlic",
+   "chicken broth",
+   "worcestershire sauce",
+   "dried thyme"
+  ]
+ },
+ {
+  "id": "r050",
+  "title": "Lemon-Dill Cod with Roasted Fennel",
+  "page": 166,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb cod fillets",
+   "1 fennel bulb, thinly sliced",
+   "1 lemon, zested and juiced",
+   "2 tbsp olive oil",
+   "2 tbsp chopped dill",
+   "2 garlic cloves, minced",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper"
+  ],
+  "text": "Heat the oven to 425°F and toss the fennel with 1 tablespoon of the oil, salt, and pepper on a sheet pan; roast for 15 minutes. Nestle the cod on top, drizzle with the remaining oil, lemon juice, garlic, and zest, then roast 10 to 12 minutes more until the fish flakes easily. Finish with dill and serve hot.",
+  "ingredients": [
+   "cod fillet",
+   "fennel",
+   "lemon",
+   "oil",
+   "dill",
+   "garlic",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r051",
+  "title": "Garlic Butter Shrimp and Corn Skillet",
+  "page": 169,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb large shrimp, peeled and deveined",
+   "2 ears corn, kernels cut off",
+   "3 tbsp butter",
+   "3 garlic cloves, minced",
+   "1/2 tsp smoked paprika",
+   "1/2 tsp salt",
+   "1 tbsp lemon juice",
+   "2 tbsp chopped parsley"
+  ],
+  "text": "Melt the butter in a large skillet over medium heat, then cook the corn for 4 to 5 minutes until lightly browned. Add the garlic, shrimp, paprika, and salt, and cook 2 to 3 minutes per side until the shrimp turn pink. Stir in lemon juice and parsley, then serve right away.",
+  "ingredients": [
+   "shrimp",
+   "corn",
+   "butter",
+   "garlic",
+   "paprika",
+   "salt",
+   "lemon juice",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r052",
+  "title": "Crispy Salmon Rice Bowls with Cucumber Slaw",
+  "page": 172,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 salmon fillets",
+   "2 cups cooked rice",
+   "1 cucumber, thinly sliced",
+   "1 carrot, shredded",
+   "2 tbsp rice vinegar",
+   "1 tbsp sesame oil",
+   "2 tbsp soy sauce",
+   "1 tbsp sesame seeds"
+  ],
+  "text": "Heat the oven to 400°F and roast the salmon on a lined baking sheet for 12 to 15 minutes until just cooked through. Toss the cucumber, carrot, vinegar, sesame oil, and soy sauce, then divide the rice into bowls and top with the slaw and salmon. Sprinkle with sesame seeds before serving.",
+  "ingredients": [
+   "salmon fillet",
+   "rice",
+   "cucumber",
+   "carrot",
+   "rice vinegar",
+   "oil",
+   "soy sauce",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r053",
+  "title": "Tomato-Pepper Mussels in White Wine Broth",
+  "page": 175,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 lb mussels, scrubbed and debearded",
+   "2 tbsp olive oil",
+   "1 small onion, diced",
+   "2 garlic cloves, minced",
+   "1 cup diced tomatoes",
+   "1/2 cup dry white wine",
+   "1/2 tsp red pepper flakes",
+   "2 tbsp chopped parsley"
+  ],
+  "text": "Warm the olive oil in a large pot over medium heat and cook the onion for 5 minutes until soft, then add the garlic and red pepper flakes for 30 seconds. Stir in the tomatoes and wine, bring to a simmer, and add the mussels; cover and cook 5 to 7 minutes until they open. Discard any unopened mussels, scatter parsley over the top, and serve with crusty bread.",
+  "ingredients": [
+   "mussel",
+   "oil",
+   "onion",
+   "garlic",
+   "tomato",
+   "white wine",
+   "red pepper flake",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r054",
+  "title": "Coconut Lime Tilapia with Mango Salsa",
+  "page": 178,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb tilapia fillets",
+   "1 cup shredded coconut",
+   "1/2 cup panko breadcrumbs",
+   "1 egg, beaten",
+   "1 mango, diced",
+   "1/2 red onion, finely chopped",
+   "1 lime, juiced",
+   "2 tbsp chopped cilantro"
+  ],
+  "text": "Heat the oven to 425°F. Dip the tilapia in egg, then press into the coconut and panko mixture, place on a greased sheet pan, and bake for 12 to 14 minutes until crisp and opaque. Mix the mango, onion, lime juice, and cilantro for a quick salsa and spoon it over the fish.",
+  "ingredients": [
+   "tilapia fillet",
+   "coconut",
+   "panko breadcrumb",
+   "egg",
+   "mango",
+   "red onion",
+   "lime",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r055",
+  "title": "Scallop and Pea Orzo with Parmesan",
+  "page": 181,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb sea scallops",
+   "1 1/2 cups dry orzo",
+   "1 cup frozen peas",
+   "2 tbsp butter",
+   "2 garlic cloves, minced",
+   "2 1/2 cups chicken or vegetable broth",
+   "1/3 cup grated Parmesan",
+   "1 tbsp olive oil"
+  ],
+  "text": "Cook the orzo in broth over medium heat for about 9 minutes, stirring often, until tender and most of the liquid is absorbed. In a skillet, heat the olive oil and butter, sear the scallops for 2 minutes per side, and add the garlic and peas for the last minute. Fold the scallops, Parmesan, and orzo together, then serve immediately.",
+  "ingredients": [
+   "sea scallop",
+   "orzo",
+   "pea",
+   "butter",
+   "garlic",
+   "broth",
+   "parmesan",
+   "oil"
+  ]
+ },
+ {
+  "id": "r056",
+  "title": "Sheet Pan Haddock with Cherry Tomatoes and Zucchini",
+  "page": 184,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb haddock fillets",
+   "2 zucchini, sliced",
+   "2 cups cherry tomatoes",
+   "2 tbsp olive oil",
+   "1 tsp dried oregano",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper",
+   "1 lemon, cut into wedges"
+  ],
+  "text": "Heat the oven to 425°F. Toss the zucchini and tomatoes with olive oil, oregano, salt, and pepper on a sheet pan, then roast for 10 minutes. Add the haddock and roast 10 to 12 minutes more until the fish is flaky; serve with lemon wedges.",
+  "ingredients": [
+   "haddock fillet",
+   "zucchini",
+   "cherry tomato",
+   "oil",
+   "oregano",
+   "salt",
+   "black pepper",
+   "lemon"
+  ]
+ },
+ {
+  "id": "r057",
+  "title": "Spicy Tuna Patties with Herb Yogurt",
+  "page": 187,
+  "tags": [],
+  "ingredient_lines": [
+   "2 cans tuna, drained",
+   "1 egg",
+   "1/2 cup breadcrumbs",
+   "2 green onions, sliced",
+   "1 tsp chili flakes",
+   "1 tbsp lemon juice",
+   "1/2 cup plain yogurt",
+   "2 tbsp chopped dill"
+  ],
+  "text": "Mix the tuna, egg, breadcrumbs, green onions, chili flakes, and lemon juice, then form into 6 small patties. Pan-fry in a lightly oiled skillet over medium heat for 3 to 4 minutes per side until golden and heated through. Stir the yogurt and dill together and serve as a cool topping.",
+  "ingredients": [
+   "tuna",
+   "egg",
+   "breadcrumb",
+   "green onion",
+   "chili flake",
+   "lemon juice",
+   "yogurt",
+   "dill"
+  ]
+ },
+ {
+  "id": "r058",
+  "title": "Miso-Glazed Trout with Bok Choy",
+  "page": 190,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 trout fillets",
+   "2 heads baby bok choy, halved",
+   "2 tbsp white miso paste",
+   "1 tbsp honey",
+   "1 tbsp soy sauce",
+   "1 tbsp rice vinegar",
+   "1 tsp sesame oil",
+   "1 tsp grated ginger"
+  ],
+  "text": "Heat the oven to 400°F. Whisk the miso, honey, soy sauce, vinegar, sesame oil, and ginger, brush it over the trout, and arrange the bok choy around it on a baking dish. Bake for 14 to 16 minutes until the fish is cooked through and the bok choy is tender.",
+  "ingredients": [
+   "trout fillet",
+   "baby bok choy",
+   "miso paste",
+   "honey",
+   "soy sauce",
+   "rice vinegar",
+   "sesame oil",
+   "ginger"
+  ]
+ },
+ {
+  "id": "r059",
+  "title": "Herbed Clam and Potato Chowder",
+  "page": 193,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 lb littleneck clams",
+   "2 cups diced potatoes",
+   "1 small onion, diced",
+   "2 celery stalks, chopped",
+   "3 cups milk",
+   "2 tbsp butter",
+   "1 bay leaf",
+   "2 tbsp chopped chives"
+  ],
+  "text": "Melt the butter in a pot over medium heat and cook the onion and celery for 5 minutes. Add the potatoes, milk, bay leaf, and clams, then cover and simmer 12 to 15 minutes until the clams open and the potatoes are tender. Remove the bay leaf, discard any unopened clams, and finish with chives.",
+  "ingredients": [
+   "littleneck clam",
+   "potato",
+   "onion",
+   "celery",
+   "milk",
+   "butter",
+   "bay leaf",
+   "chive"
+  ]
+ },
+ {
+  "id": "r060",
+  "title": "Garlic Herb Swordfish with Green Beans",
+  "page": 196,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 swordfish steaks",
+   "1 lb green beans, trimmed",
+   "2 tbsp olive oil",
+   "3 garlic cloves, minced",
+   "1 tsp dried thyme",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper",
+   "1 lemon, sliced"
+  ],
+  "text": "Heat the oven to 425°F. Toss the green beans with 1 tablespoon of the oil, salt, pepper, and half the garlic, then roast on a sheet pan for 8 minutes. Push the beans aside, add the swordfish brushed with the remaining oil, thyme, and garlic, and roast 10 to 12 minutes more; serve with lemon slices.",
+  "ingredients": [
+   "swordfish steak",
+   "green bean",
+   "oil",
+   "garlic clove",
+   "thyme",
+   "salt",
+   "black pepper",
+   "lemon"
+  ]
+ },
+ {
+  "id": "r061",
+  "title": "Seafood Tomato Stew with Polenta",
+  "page": 199,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb mixed seafood (shrimp, scallops, and fish chunks)",
+   "1 onion, chopped",
+   "2 garlic cloves, minced",
+   "1 can crushed tomatoes",
+   "2 cups fish or vegetable broth",
+   "1 tsp smoked paprika",
+   "1 cup quick-cooking polenta",
+   "2 tbsp chopped basil"
+  ],
+  "text": "Cook the onion in a pot with a little oil over medium heat for 5 minutes, then stir in the garlic, tomatoes, broth, and paprika. Simmer for 15 minutes, add the seafood, and cook 4 to 6 minutes more until everything is just done. Meanwhile, cook the polenta according to package directions, then ladle the stew over it and top with basil.",
+  "ingredients": [
+   "mixed seafood",
+   "onion",
+   "garlic",
+   "crushed tomato",
+   "fish broth",
+   "vegetable broth",
+   "smoked paprika",
+   "polenta",
+   "basil"
+  ]
+ },
+ {
+  "id": "r062",
+  "title": "Spinach and Ricotta Stuffed Shells",
+  "page": 202,
+  "tags": [],
+  "ingredient_lines": [
+   "20 jumbo pasta shells",
+   "2 cups ricotta cheese",
+   "2 cups baby spinach, chopped",
+   "1 cup shredded mozzarella",
+   "1/2 cup grated parmesan",
+   "1 egg",
+   "2 cloves garlic, minced",
+   "2 cups marinara sauce",
+   "1 tbsp olive oil"
+  ],
+  "text": "Heat the oven to 375°F and cook the pasta shells until just tender, then drain. Mix the ricotta, spinach, mozzarella, parmesan, egg, garlic, and oil, stuff the shells, and arrange them in a baking dish over the marinara. Cover and bake for 25 minutes, then uncover and bake 10 minutes more until bubbly and lightly browned.",
+  "ingredients": [
+   "pasta shell",
+   "ricotta cheese",
+   "spinach",
+   "mozzarella",
+   "parmesan",
+   "egg",
+   "garlic",
+   "marinara sauce",
+   "oil"
+  ]
+ },
+ {
+  "id": "r063",
+  "title": "Sweet Potato Black Bean Enchilada Skillet",
+  "page": 205,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 medium sweet potatoes, diced",
+   "1 tbsp olive oil",
+   "1 small onion, diced",
+   "2 cloves garlic, minced",
+   "1 can black beans, drained and rinsed",
+   "1 1/2 cups enchilada sauce",
+   "1 cup corn kernels",
+   "1 cup shredded cheddar",
+   "8 small corn tortillas, cut into strips"
+  ],
+  "text": "Preheat the oven to 400°F. Sauté the sweet potatoes in oil for 8 minutes, add the onion and garlic for 3 minutes, then stir in the beans, enchilada sauce, corn, and tortilla strips. Top with cheddar and bake for 15-18 minutes until the potatoes are tender and the cheese is melted.",
+  "ingredients": [
+   "sweet potato",
+   "oil",
+   "onion",
+   "garlic",
+   "black bean",
+   "enchilada sauce",
+   "corn",
+   "cheddar",
+   "corn tortilla"
+  ]
+ },
+ {
+  "id": "r064",
+  "title": "Mushroom Barley Stew with Thyme",
+  "page": 208,
+  "tags": [],
+  "ingredient_lines": [
+   "2 tbsp butter or olive oil",
+   "1 onion, chopped",
+   "3 carrots, sliced",
+   "8 oz cremini mushrooms, sliced",
+   "3 cloves garlic, minced",
+   "3/4 cup pearl barley",
+   "5 cups vegetable broth",
+   "2 tsp fresh thyme leaves",
+   "salt and black pepper"
+  ],
+  "text": "Warm the butter or oil in a pot over medium heat, then cook the onion, carrots, and mushrooms for 8 minutes until the mushrooms release their juices. Add the garlic, barley, broth, thyme, salt, and pepper, then bring to a boil. Reduce to a simmer, cover, and cook for 35-40 minutes until the barley is tender and the stew is thick.",
+  "ingredients": [
+   "butter",
+   "oil",
+   "onion",
+   "carrot",
+   "cremini mushroom",
+   "garlic",
+   "pearl barley",
+   "vegetable broth",
+   "thyme",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r065",
+  "title": "Cauliflower Chickpea Coconut Rice Bowl",
+  "page": 211,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 cup jasmine rice",
+   "1 small cauliflower, cut into florets",
+   "1 can chickpeas, drained and rinsed",
+   "1 tbsp curry powder",
+   "1 tbsp olive oil",
+   "1 cup coconut milk",
+   "1 cup water",
+   "1 lime, cut into wedges",
+   "salt"
+  ],
+  "text": "Cook the rice according to the package directions. Toss the cauliflower and chickpeas with oil, curry powder, and salt, then roast at 425°F for 20-25 minutes until browned. Warm the coconut milk with water in a small pan, spoon it over the rice and vegetables, and finish with lime.",
+  "ingredients": [
+   "jasmine rice",
+   "cauliflower",
+   "chickpea",
+   "curry powder",
+   "oil",
+   "coconut milk",
+   "water",
+   "lime",
+   "salt"
+  ]
+ },
+ {
+  "id": "r066",
+  "title": "Broccoli Cheddar Quinoa Bake",
+  "page": 214,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 cup quinoa",
+   "2 cups vegetable broth",
+   "3 cups broccoli florets, chopped small",
+   "2 cups shredded cheddar",
+   "3 eggs",
+   "1 cup milk",
+   "1/2 tsp paprika",
+   "salt and black pepper"
+  ],
+  "text": "Heat the oven to 375°F and grease a baking dish. Simmer the quinoa in vegetable broth for about 15 minutes, then stir in the broccoli, cheddar, eggs, milk, paprika, salt, and pepper. Bake for 30-35 minutes until the center is set and the top is golden.",
+  "ingredients": [
+   "quinoa",
+   "vegetable broth",
+   "broccoli",
+   "cheddar",
+   "egg",
+   "milk",
+   "paprika",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r067",
+  "title": "Tomato Basil White Bean Gnocchi",
+  "page": 217,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb potato gnocchi",
+   "1 tbsp olive oil",
+   "3 cloves garlic, minced",
+   "1 can cannellini beans, drained and rinsed",
+   "2 cups cherry tomatoes, halved",
+   "1/2 cup vegetable broth",
+   "1/4 cup chopped basil",
+   "1/4 cup grated parmesan",
+   "salt and red pepper flakes"
+  ],
+  "text": "Bring a pot of water to a boil and cook the gnocchi until they float, then drain. In a skillet, heat the oil and cook the garlic and tomatoes for 4-5 minutes, add the beans and broth, and simmer for 3 minutes. Toss in the gnocchi, basil, parmesan, salt, and red pepper flakes, then serve right away.",
+  "ingredients": [
+   "potato gnocchi",
+   "oil",
+   "garlic",
+   "cannellini bean",
+   "cherry tomato",
+   "vegetable broth",
+   "basil",
+   "parmesan",
+   "salt",
+   "red pepper flake"
+  ]
+ },
+ {
+  "id": "r068",
+  "title": "Eggplant Parmesan Casserole",
+  "page": 220,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 medium eggplants, sliced into rounds",
+   "salt",
+   "2 cups breadcrumbs",
+   "1 cup flour",
+   "3 eggs, beaten",
+   "3 cups marinara sauce",
+   "2 cups shredded mozzarella",
+   "1/2 cup grated parmesan",
+   "olive oil spray"
+  ],
+  "text": "Sprinkle the eggplant with salt and let it sit for 15 minutes, then pat dry. Dredge each slice in flour, egg, and breadcrumbs, place on a baking sheet, and bake at 425°F for 20 minutes, flipping once. Layer the baked slices with marinara, mozzarella, and parmesan in a casserole dish, then bake 15 minutes more until melted and bubbling.",
+  "ingredients": [
+   "eggplant",
+   "salt",
+   "breadcrumb",
+   "flour",
+   "egg",
+   "marinara sauce",
+   "mozzarella",
+   "parmesan",
+   "oil"
+  ]
+ },
+ {
+  "id": "r069",
+  "title": "Zucchini Corn Fritters with Herbed Yogurt",
+  "page": 223,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 medium zucchini, grated",
+   "1 cup corn kernels",
+   "1/2 cup flour",
+   "2 eggs",
+   "1/4 cup chopped scallions",
+   "1/2 tsp baking powder",
+   "2 tbsp olive oil",
+   "1 cup plain yogurt",
+   "2 tbsp chopped dill"
+  ],
+  "text": "Squeeze excess moisture from the zucchini, then mix it with corn, flour, eggs, scallions, baking powder, and a pinch of salt. Heat the oil in a skillet over medium heat and cook spoonfuls of batter for 3-4 minutes per side until crisp and browned. Stir the yogurt and dill together and serve alongside the fritters.",
+  "ingredients": [
+   "zucchini",
+   "corn",
+   "flour",
+   "egg",
+   "green onion",
+   "baking powder",
+   "oil",
+   "yogurt",
+   "dill"
+  ]
+ },
+ {
+  "id": "r070",
+  "title": "Peanut Soba Noodles with Crispy Tofu",
+  "page": 226,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "8 oz soba noodles",
+   "1 block firm tofu, pressed and cubed",
+   "2 tbsp cornstarch",
+   "2 tbsp oil",
+   "1 cup shredded carrots",
+   "1 bell pepper, thinly sliced",
+   "3 tbsp peanut butter",
+   "2 tbsp soy sauce",
+   "1 tbsp rice vinegar",
+   "1 tsp honey"
+  ],
+  "text": "Cook the soba noodles according to the package directions, then drain. Toss the tofu with cornstarch and oil, and bake at 425°F for 20-25 minutes or pan-fry until crisp. Whisk the peanut butter, soy sauce, vinegar, honey, and a splash of water, then toss with the noodles, vegetables, and tofu.",
+  "ingredients": [
+   "soba noodle",
+   "firm tofu",
+   "cornstarch",
+   "oil",
+   "carrot",
+   "bell pepper",
+   "peanut butter",
+   "soy sauce",
+   "rice vinegar",
+   "honey"
+  ]
+ },
+ {
+  "id": "r071",
+  "title": "Butternut Squash and Sage Lasagna",
+  "page": 229,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "9 lasagna noodles",
+   "3 cups butternut squash puree",
+   "2 tbsp butter",
+   "1 tbsp chopped sage",
+   "2 cups ricotta",
+   "2 cups spinach, chopped",
+   "2 cups shredded mozzarella",
+   "1/2 cup grated parmesan",
+   "salt and black pepper"
+  ],
+  "text": "Heat the oven to 375°F and cook the lasagna noodles until flexible. Warm the squash puree with butter, sage, salt, and pepper, then layer noodles, squash, ricotta, spinach, mozzarella, and parmesan in a baking dish. Cover with foil and bake for 30 minutes, then uncover and bake 15 minutes more until browned.",
+  "ingredients": [
+   "lasagna noodle",
+   "butternut squash puree",
+   "butter",
+   "sage",
+   "ricotta",
+   "spinach",
+   "mozzarella",
+   "parmesan",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r072",
+  "title": "Corn and Poblano Polenta Bowls",
+  "page": 232,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 cup polenta",
+   "4 cups water",
+   "1 tsp salt",
+   "2 poblano peppers, sliced",
+   "1 1/2 cups corn kernels",
+   "1 tbsp olive oil",
+   "1 can black beans, drained and rinsed",
+   "1 avocado, sliced",
+   "lime wedges"
+  ],
+  "text": "Bring the water and salt to a boil, whisk in the polenta, and cook on low for 20-25 minutes, stirring often until creamy. Meanwhile, sauté the poblanos and corn in olive oil for 6-8 minutes, then warm the beans in the same pan. Spoon the polenta into bowls, top with the vegetables, beans, avocado, and lime.",
+  "ingredients": [
+   "polenta",
+   "water",
+   "salt",
+   "poblano pepper",
+   "corn kernel",
+   "oil",
+   "black bean",
+   "avocado",
+   "lime wedge"
+  ]
+ },
+ {
+  "id": "r073",
+  "title": "Lemon Herb Risotto with Asparagus and Peas",
+  "page": 235,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/4 cups arborio rice",
+   "1 tbsp olive oil",
+   "1 small onion, finely chopped",
+   "4 cups vegetable broth, warm",
+   "1 bunch asparagus, cut into pieces",
+   "1 cup peas",
+   "1 lemon, zested and juiced",
+   "1/3 cup grated parmesan",
+   "2 tbsp chopped parsley"
+  ],
+  "text": "Heat the oil in a wide pan over medium heat and cook the onion for 4 minutes until soft. Stir in the rice, then add the warm broth a ladle at a time, stirring often for about 18-20 minutes until creamy. Add the asparagus and peas during the last 5 minutes, then finish with lemon zest, lemon juice, parmesan, and parsley.",
+  "ingredients": [
+   "arborio rice",
+   "oil",
+   "onion",
+   "vegetable broth",
+   "asparagus",
+   "pea",
+   "lemon",
+   "parmesan",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r074",
+  "title": "Smoky Black Bean Stuffed Peppers",
+  "page": 238,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "4 large bell peppers, halved and seeded",
+   "1 tbsp olive oil",
+   "1 small yellow onion, diced",
+   "2 cloves garlic, minced",
+   "2 cups cooked black beans",
+   "1 cup cooked brown rice",
+   "1 cup corn kernels",
+   "1 tsp smoked paprika",
+   "1/2 tsp cumin",
+   "1 cup salsa",
+   "1 cup shredded vegan cheese",
+   "salt and black pepper"
+  ],
+  "text": "Heat the oven to 400°F and place the pepper halves cut-side up in a baking dish. In a skillet over medium heat, warm the olive oil and cook the onion for 5 minutes, then add the garlic, black beans, rice, corn, paprika, cumin, salsa, salt, and pepper and cook for 3 minutes. Spoon the filling into the peppers, top with vegan cheese, cover with foil, and bake for 25 minutes; uncover and bake 10 minutes more until the peppers are tender.",
+  "ingredients": [
+   "bell pepper",
+   "oil",
+   "onion",
+   "garlic",
+   "black bean",
+   "brown rice",
+   "corn kernel",
+   "smoked paprika",
+   "cumin",
+   "salsa",
+   "shredded vegan cheese",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r075",
+  "title": "Coconut Chickpea Tomato Stew",
+  "page": 241,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 tbsp coconut oil",
+   "1 onion, chopped",
+   "3 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "2 tsp curry powder",
+   "1 can chickpeas, drained and rinsed",
+   "1 can crushed tomatoes",
+   "1 can coconut milk",
+   "2 cups baby spinach",
+   "1 tbsp lime juice",
+   "salt",
+   "cooked rice, for serving"
+  ],
+  "text": "Melt the coconut oil in a pot over medium heat and cook the onion for 5 minutes until soft. Stir in the garlic, ginger, and curry powder for 1 minute, then add the chickpeas, tomatoes, coconut milk, and salt and simmer uncovered for 15 minutes. Stir in the spinach and lime juice, cook for 2 minutes more, and serve hot over rice.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "curry powder",
+   "chickpea",
+   "tomato",
+   "coconut milk",
+   "spinach",
+   "lime juice",
+   "salt",
+   "rice"
+  ]
+ },
+ {
+  "id": "r076",
+  "title": "Sheet Pan Harissa Cauliflower and Potatoes",
+  "page": 244,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 large cauliflower, cut into florets",
+   "1 1/2 lb baby potatoes, halved",
+   "2 tbsp olive oil",
+   "2 tbsp harissa paste",
+   "1 tsp ground cumin",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper",
+   "1 can chickpeas, drained and rinsed",
+   "2 tbsp chopped parsley",
+   "lemon wedges, for serving"
+  ],
+  "text": "Heat the oven to 425°F and line a large baking sheet with parchment. Toss the cauliflower, potatoes, olive oil, harissa, cumin, salt, and pepper, then spread them out on the pan and roast for 20 minutes. Add the chickpeas, stir once, and roast 15 minutes more until everything is browned and crisp at the edges; finish with parsley and lemon juice.",
+  "ingredients": [
+   "cauliflower",
+   "potato",
+   "oil",
+   "harissa paste",
+   "ground cumin",
+   "salt",
+   "black pepper",
+   "chickpea",
+   "parsley",
+   "lemon"
+  ]
+ },
+ {
+  "id": "r077",
+  "title": "Creamy Mushroom Polenta with Herbed Greens",
+  "page": 247,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "4 cups vegetable broth",
+   "1 cup polenta",
+   "1 tbsp olive oil",
+   "1 lb mushrooms, sliced",
+   "2 cloves garlic, minced",
+   "1 tsp thyme",
+   "4 cups chopped kale or Swiss chard",
+   "1/2 cup unsweetened oat milk",
+   "2 tbsp nutritional yeast",
+   "salt and black pepper"
+  ],
+  "text": "Bring the vegetable broth to a boil in a saucepan, whisk in the polenta, reduce the heat to low, and cook for 20 minutes, stirring often, until thick and creamy. Meanwhile, heat the olive oil in a skillet over medium-high heat and sauté the mushrooms for 6 minutes, then add the garlic, thyme, greens, salt, and pepper and cook until wilted. Stir the oat milk and nutritional yeast into the polenta, spoon into bowls, and top with the mushroom mixture.",
+  "ingredients": [
+   "vegetable broth",
+   "polenta",
+   "oil",
+   "mushroom",
+   "garlic",
+   "thyme",
+   "kale or swiss chard",
+   "oat milk",
+   "nutritional yeast",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r078",
+  "title": "Lemon Tahini Roasted Brussels Sprouts and Farro",
+  "page": 250,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb Brussels sprouts, halved",
+   "2 tbsp olive oil",
+   "salt and black pepper",
+   "1 cup farro",
+   "3 cups water",
+   "1/4 cup tahini",
+   "2 tbsp lemon juice",
+   "1 tbsp maple syrup",
+   "1 small garlic clove, grated",
+   "2 tbsp pumpkin seeds"
+  ],
+  "text": "Heat the oven to 425°F and toss the Brussels sprouts with olive oil, salt, and pepper; roast on a sheet pan for 20 to 25 minutes until deeply browned. While they roast, simmer the farro in water for about 20 minutes until tender, then drain any excess water. Whisk the tahini, lemon juice, maple syrup, garlic, and 2 to 3 tbsp water into a smooth sauce, then toss everything together and sprinkle with pumpkin seeds.",
+  "ingredients": [
+   "brussel sprout",
+   "oil",
+   "salt",
+   "black pepper",
+   "farro",
+   "water",
+   "tahini",
+   "lemon juice",
+   "maple syrup",
+   "garlic clove",
+   "pumpkin seed"
+  ]
+ },
+ {
+  "id": "r079",
+  "title": "Tofu and Broccoli Sesame Noodle Stir-Fry",
+  "page": 253,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "12 oz rice noodles",
+   "14 oz extra-firm tofu, cubed",
+   "2 tbsp cornstarch",
+   "2 tbsp neutral oil",
+   "3 cups broccoli florets",
+   "1 red bell pepper, sliced",
+   "2 cloves garlic, minced",
+   "1 tbsp soy sauce",
+   "2 tbsp sesame oil",
+   "2 tbsp rice vinegar",
+   "1 tbsp maple syrup",
+   "1 tsp chili flakes"
+  ],
+  "text": "Cook the rice noodles according to package directions, then drain and set aside. Toss the tofu with cornstarch and fry it in neutral oil over medium-high heat for 8 to 10 minutes until crisp; add the broccoli and bell pepper and cook for 4 minutes, then stir in the garlic, soy sauce, sesame oil, rice vinegar, maple syrup, and chili flakes. Add the noodles and toss for 1 to 2 minutes until glossy and heated through.",
+  "ingredients": [
+   "rice noodle",
+   "tofu",
+   "cornstarch",
+   "oil",
+   "broccoli",
+   "bell pepper",
+   "garlic",
+   "soy sauce",
+   "sesame oil",
+   "rice vinegar",
+   "maple syrup",
+   "chili flake"
+  ]
+ },
+ {
+  "id": "r080",
+  "title": "Roasted Tomato and White Bean Bruschetta Skillet",
+  "page": 256,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tbsp olive oil",
+   "4 cups cherry tomatoes",
+   "3 cloves garlic, smashed",
+   "1 tsp dried oregano",
+   "1 can cannellini beans, drained and rinsed",
+   "1/4 tsp red pepper flakes",
+   "salt and black pepper",
+   "1/4 cup basil leaves, torn",
+   "1 baguette, sliced and toasted",
+   "2 tbsp balsamic vinegar"
+  ],
+  "text": "Heat the oven to 400°F. In an oven-safe skillet, combine the olive oil, cherry tomatoes, garlic, oregano, salt, and pepper, then roast for 20 minutes until the tomatoes burst; stir in the cannellini beans and red pepper flakes and roast 8 minutes more. Finish with basil and balsamic vinegar, then spoon the mixture over toasted baguette slices.",
+  "ingredients": [
+   "oil",
+   "cherry tomato",
+   "garlic",
+   "oregano",
+   "cannellini bean",
+   "red pepper flake",
+   "salt",
+   "black pepper",
+   "basil leaf",
+   "baguette",
+   "balsamic vinegar"
+  ]
+ },
+ {
+  "id": "r081",
+  "title": "Sweet Potato and Kale Breakfast Hash",
+  "page": 259,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 medium sweet potatoes, diced",
+   "1 tbsp olive oil",
+   "1 onion, chopped",
+   "1 red bell pepper, chopped",
+   "2 cups chopped kale",
+   "1 tsp smoked paprika",
+   "1/2 tsp garlic powder",
+   "salt and black pepper",
+   "1 avocado, sliced",
+   "hot sauce, for serving"
+  ],
+  "text": "Heat the olive oil in a large skillet over medium heat and cook the sweet potatoes with a splash of water for 10 minutes, stirring often. Add the onion and bell pepper and cook 6 minutes more, then stir in the kale, smoked paprika, garlic powder, salt, and pepper and cook until the kale wilts and the potatoes are tender, about 4 minutes. Top with avocado and hot sauce before serving.",
+  "ingredients": [
+   "sweet potato",
+   "oil",
+   "onion",
+   "red bell pepper",
+   "kale",
+   "smoked paprika",
+   "garlic powder",
+   "salt",
+   "black pepper",
+   "avocado",
+   "hot sauce"
+  ]
+ },
+ {
+  "id": "r082",
+  "title": "Miso Ginger Eggplant Bowls",
+  "page": 262,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 medium eggplants, cubed",
+   "2 tbsp sesame oil",
+   "1 tbsp neutral oil",
+   "1 tbsp grated ginger",
+   "2 cloves garlic, minced",
+   "2 tbsp white miso",
+   "1 tbsp soy sauce",
+   "1 tbsp maple syrup",
+   "1 cup snap peas",
+   "2 cups cooked jasmine rice",
+   "sesame seeds",
+   "scallions, sliced"
+  ],
+  "text": "Heat the oven to 425°F and toss the eggplant with sesame oil; roast on a sheet pan for 20 minutes. Whisk the neutral oil, ginger, garlic, miso, soy sauce, and maple syrup together, then toss it with the hot eggplant and snap peas in a skillet over medium heat for 3 to 4 minutes until glazed and tender. Serve over rice and top with sesame seeds and scallions.",
+  "ingredients": [
+   "eggplant",
+   "oil",
+   "ginger",
+   "garlic",
+   "white miso",
+   "soy sauce",
+   "maple syrup",
+   "snap pea",
+   "jasmine rice",
+   "sesame seed",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r083",
+  "title": "Curried Lentil and Carrot Hand Pies",
+  "page": 265,
+  "tags": [],
+  "ingredient_lines": [
+   "1 tbsp olive oil",
+   "1 small onion, diced",
+   "2 carrots, grated",
+   "2 cloves garlic, minced",
+   "1 tsp curry powder",
+   "1 cup cooked green lentils",
+   "1/3 cup frozen peas",
+   "salt and black pepper",
+   "1 sheet puff pastry, thawed",
+   "2 tbsp plant milk"
+  ],
+  "text": "Preheat the oven to 400°F and line a baking sheet with parchment. Cook the onion in olive oil over medium heat for 4 minutes, then add the carrots, garlic, curry powder, lentils, peas, salt, and pepper and cook for 3 minutes before cooling slightly. Cut the puff pastry into squares, fill and seal them, brush with plant milk, and bake for 18 to 22 minutes until golden.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "carrot",
+   "garlic",
+   "curry powder",
+   "green lentil",
+   "pea",
+   "salt",
+   "black pepper",
+   "puff pastry",
+   "plant milk"
+  ]
+ },
+ {
+  "id": "r084",
+  "title": "Zucchini Pesto Flatbread",
+  "page": 268,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 naan or flatbreads",
+   "1/2 cup vegan pesto",
+   "1 medium zucchini, thinly sliced",
+   "1 cup cherry tomatoes, halved",
+   "1/2 red onion, thinly sliced",
+   "1 cup vegan mozzarella",
+   "1 tbsp olive oil",
+   "salt and black pepper",
+   "fresh basil, for garnish"
+  ],
+  "text": "Heat the oven to 450°F and place the flatbreads on a baking sheet. Spread each with pesto, then top with zucchini, cherry tomatoes, red onion, vegan mozzarella, olive oil, salt, and pepper. Bake for 10 to 12 minutes until the edges are crisp and the cheese is melted, then finish with fresh basil.",
+  "ingredients": [
+   "naan",
+   "flatbread",
+   "pesto",
+   "zucchini",
+   "cherry tomato",
+   "red onion",
+   "vegan mozzarella",
+   "oil",
+   "salt",
+   "black pepper",
+   "basil"
+  ]
+ },
+ {
+  "id": "r085",
+  "title": "Apple Walnut Farro Salad with Maple Mustard Dressing",
+  "page": 271,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 cup farro",
+   "3 cups water",
+   "2 apples, chopped",
+   "2 celery stalks, sliced",
+   "1/2 cup walnuts, toasted",
+   "1/4 cup dried cranberries",
+   "2 cups arugula",
+   "2 tbsp olive oil",
+   "1 tbsp Dijon mustard",
+   "1 tbsp maple syrup",
+   "1 tbsp apple cider vinegar",
+   "salt and black pepper"
+  ],
+  "text": "Simmer the farro in water for about 20 minutes until tender, then drain and cool slightly. Whisk the olive oil, Dijon mustard, maple syrup, apple cider vinegar, salt, and pepper in a large bowl, then add the farro, apples, celery, walnuts, cranberries, and arugula and toss well. Serve right away or chill for 15 minutes to let the flavors mingle.",
+  "ingredients": [
+   "farro",
+   "water",
+   "apple",
+   "celery",
+   "walnut",
+   "dried cranberry",
+   "arugula",
+   "oil",
+   "dijon mustard",
+   "maple syrup",
+   "apple cider vinegar",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r086",
+  "title": "Smoky Black Bean and Sweet Potato Soup",
+  "page": 274,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons olive oil",
+   "1 yellow onion, diced",
+   "3 cloves garlic, minced",
+   "1 large sweet potato, peeled and cubed",
+   "2 cans black beans, drained and rinsed",
+   "1 can diced tomatoes",
+   "4 cups vegetable broth",
+   "1 teaspoon smoked paprika",
+   "1 teaspoon ground cumin",
+   "salt and black pepper"
+  ],
+  "text": "Warm the oil in a large pot over medium heat, then cook the onion for 5 minutes until soft before adding the garlic for 30 seconds. Stir in the sweet potato, beans, tomatoes, broth, and seasonings, bring to a boil, then lower the heat and simmer uncovered for 20-25 minutes until the sweet potato is tender. Mash a few beans against the side of the pot for a thicker texture and serve hot.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "sweet potato",
+   "black bean",
+   "diced tomato",
+   "vegetable broth",
+   "smoked paprika",
+   "ground cumin",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r087",
+  "title": "Turkey, Kale, and White Bean Stew",
+  "page": 277,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 tablespoon olive oil",
+   "1 lb ground turkey",
+   "1 onion, chopped",
+   "2 carrots, sliced",
+   "3 cloves garlic, minced",
+   "1 can cannellini beans, drained and rinsed",
+   "4 cups chicken broth",
+   "3 cups chopped kale",
+   "1 teaspoon dried thyme",
+   "salt and pepper"
+  ],
+  "text": "Heat the oil in a Dutch oven over medium-high heat and brown the turkey for 5-6 minutes, breaking it up as it cooks. Add the onion, carrots, and garlic, then stir in the beans, broth, and thyme and simmer for 20 minutes over low heat. Add the kale for the last 5 minutes, cook until wilted, and season to taste before serving.",
+  "ingredients": [
+   "oil",
+   "ground turkey",
+   "onion",
+   "carrot",
+   "garlic",
+   "cannellini bean",
+   "chicken broth",
+   "kale",
+   "thyme",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r088",
+  "title": "Creamy Corn and Potato Chowder",
+  "page": 280,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "4 slices bacon, chopped",
+   "1 onion, diced",
+   "2 celery stalks, diced",
+   "3 cups potatoes, cubed",
+   "3 cups corn kernels",
+   "4 cups chicken broth",
+   "1 cup milk",
+   "1/2 cup heavy cream",
+   "1 teaspoon dried dill",
+   "salt and pepper"
+  ],
+  "text": "Cook the bacon in a soup pot over medium heat until crisp, then remove it and sauté the onion and celery in the drippings for 4 minutes. Add the potatoes, corn, broth, and dill, bring to a boil, and simmer for 18-20 minutes until the potatoes are soft. Stir in the milk and cream, warm gently for 2 minutes without boiling, and top with the bacon before serving.",
+  "ingredients": [
+   "bacon",
+   "onion",
+   "celery",
+   "potato",
+   "corn kernel",
+   "chicken broth",
+   "milk",
+   "heavy cream",
+   "dill",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r089",
+  "title": "Moroccan Chickpea and Carrot Stew",
+  "page": 283,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons olive oil",
+   "1 onion, sliced",
+   "4 carrots, cut into rounds",
+   "2 cloves garlic, minced",
+   "1 can chickpeas, drained and rinsed",
+   "1 can crushed tomatoes",
+   "2 cups vegetable broth",
+   "1 teaspoon ground cumin",
+   "1 teaspoon ground coriander",
+   "1/2 teaspoon cinnamon",
+   "salt"
+  ],
+  "text": "Set a pot over medium heat and cook the onion and carrots in olive oil for 6 minutes, then add the garlic and spices for 1 minute until fragrant. Stir in the chickpeas, tomatoes, and broth, bring to a simmer, and cook covered for 25 minutes until the carrots are tender. Uncover for the last 5 minutes if you want a thicker stew, then serve warm.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "carrot",
+   "garlic",
+   "chickpea",
+   "crushed tomato",
+   "vegetable broth",
+   "ground cumin",
+   "ground coriander",
+   "cinnamon",
+   "salt"
+  ]
+ },
+ {
+  "id": "r090",
+  "title": "Sausage, Cabbage, and Potato Soup",
+  "page": 286,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 tablespoon olive oil",
+   "1 lb Italian sausage, casings removed",
+   "1 onion, chopped",
+   "3 cloves garlic, minced",
+   "3 cups cabbage, shredded",
+   "3 potatoes, diced",
+   "5 cups chicken broth",
+   "1 teaspoon dried oregano",
+   "salt and black pepper"
+  ],
+  "text": "Brown the sausage in a large pot over medium heat for 6-7 minutes, then add the onion and garlic and cook until softened. Add the cabbage, potatoes, broth, and oregano, bring to a boil, then reduce to low and simmer for 25 minutes until the potatoes are tender. Taste and adjust seasoning before serving.",
+  "ingredients": [
+   "oil",
+   "italian sausage",
+   "onion",
+   "garlic",
+   "cabbage",
+   "potato",
+   "chicken broth",
+   "oregano",
+   "salt and black pepper"
+  ]
+ },
+ {
+  "id": "r091",
+  "title": "Lemony Chicken and Rice Soup",
+  "page": 289,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 tablespoon olive oil",
+   "1 onion, diced",
+   "2 carrots, diced",
+   "2 celery stalks, diced",
+   "1 lb chicken breast",
+   "6 cups chicken broth",
+   "3/4 cup long-grain rice",
+   "1 lemon, juiced",
+   "2 tablespoons chopped parsley",
+   "salt and pepper"
+  ],
+  "text": "In a soup pot over medium heat, cook the onion, carrots, and celery in olive oil for 5 minutes. Add the chicken and broth, bring to a simmer, and cook for 15 minutes before removing the chicken, shredding it, and returning it to the pot with the rice. Simmer another 15 minutes until the rice is tender, then stir in lemon juice and parsley just before serving.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "carrot",
+   "celery stalk",
+   "chicken",
+   "chicken broth",
+   "long-grain rice",
+   "lemon",
+   "parsley",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r092",
+  "title": "Three-Bean Chili with Corn",
+  "page": 292,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 tablespoon olive oil",
+   "1 onion, diced",
+   "1 green bell pepper, diced",
+   "3 cloves garlic, minced",
+   "1 can kidney beans, drained and rinsed",
+   "1 can pinto beans, drained and rinsed",
+   "1 can black beans, drained and rinsed",
+   "1 can crushed tomatoes",
+   "2 cups corn kernels",
+   "2 cups vegetable broth",
+   "2 tablespoons chili powder",
+   "1 teaspoon cumin"
+  ],
+  "text": "Cook the onion and bell pepper in olive oil over medium heat for 5 minutes, then add the garlic, chili powder, and cumin for 30 seconds. Stir in the beans, tomatoes, corn, and broth, bring to a boil, then lower the heat and simmer uncovered for 30 minutes, stirring occasionally. Let it rest for 5 minutes before serving so the flavors settle.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "bell pepper",
+   "garlic",
+   "kidney bean",
+   "pinto bean",
+   "black bean",
+   "crushed tomato",
+   "corn kernel",
+   "vegetable broth",
+   "chili powder",
+   "cumin"
+  ]
+ },
+ {
+  "id": "r093",
+  "title": "Beef, Tomato, and Red Wine Stew",
+  "page": 295,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons vegetable oil",
+   "1 1/2 lb beef chuck, cut into cubes",
+   "1 onion, chopped",
+   "2 carrots, chopped",
+   "2 cloves garlic, minced",
+   "2 tablespoons tomato paste",
+   "1 cup red wine",
+   "3 cups beef broth",
+   "2 bay leaves",
+   "1 teaspoon dried thyme",
+   "salt and pepper"
+  ],
+  "text": "Heat the oil in a heavy pot over medium-high heat and brown the beef in batches for about 8 minutes total. Add the onion and carrots, cook for 4 minutes, then stir in the garlic and tomato paste for 1 minute before adding the wine, broth, bay leaves, and thyme. Cover and simmer on low for 1 1/2 to 2 hours at a gentle bubble until the beef is tender.",
+  "ingredients": [
+   "oil",
+   "beef chuck",
+   "onion",
+   "carrot",
+   "garlic",
+   "tomato paste",
+   "red wine",
+   "beef broth",
+   "bay leaf",
+   "thyme",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r094",
+  "title": "Spiced Red Lentil and Tomato Soup",
+  "page": 298,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons olive oil",
+   "1 onion, chopped",
+   "3 cloves garlic, minced",
+   "1 cup red lentils, rinsed",
+   "1 can diced tomatoes",
+   "5 cups vegetable broth",
+   "1 teaspoon ground cumin",
+   "1/2 teaspoon turmeric",
+   "1/4 teaspoon chili flakes",
+   "salt and pepper"
+  ],
+  "text": "Cook the onion in olive oil over medium heat for 4 minutes, then add the garlic, cumin, turmeric, and chili flakes for 30 seconds. Stir in the lentils, tomatoes, and broth, bring to a boil, and simmer uncovered for 20 minutes until the lentils break down. Blend lightly if desired, then season and serve hot.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "red lentil",
+   "diced tomato",
+   "vegetable broth",
+   "ground cumin",
+   "turmeric",
+   "chili flake",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r095",
+  "title": "Pork and Apple Stew",
+  "page": 301,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 tablespoon olive oil",
+   "1 1/2 lb pork shoulder, cubed",
+   "1 onion, sliced",
+   "2 apples, peeled and chopped",
+   "2 carrots, sliced",
+   "3 cups chicken broth",
+   "1 tablespoon Dijon mustard",
+   "1 teaspoon dried sage",
+   "salt and black pepper"
+  ],
+  "text": "Brown the pork in olive oil over medium-high heat for 6-8 minutes, then add the onion and cook for 3 minutes more. Stir in the apples, carrots, broth, mustard, and sage, bring to a simmer, cover, and cook on low for 1 hour until the pork is tender. Uncover for the last 10 minutes if you prefer a slightly thicker broth.",
+  "ingredients": [
+   "oil",
+   "pork shoulder",
+   "onion",
+   "apple",
+   "carrot",
+   "chicken broth",
+   "dijon mustard",
+   "sage",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r096",
+  "title": "Mediterranean White Bean and Spinach Soup",
+  "page": 304,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons olive oil",
+   "1 onion, diced",
+   "3 cloves garlic, minced",
+   "2 cans white beans, drained and rinsed",
+   "1 can diced tomatoes",
+   "5 cups vegetable broth",
+   "2 teaspoons Italian seasoning",
+   "3 cups baby spinach",
+   "1 tablespoon lemon juice",
+   "salt and pepper"
+  ],
+  "text": "Heat the olive oil in a soup pot over medium heat, then cook the onion for 5 minutes before adding the garlic and Italian seasoning for 30 seconds. Add the beans, tomatoes, and broth, bring to a boil, and simmer for 20 minutes so the flavors mingle. Stir in the spinach and lemon juice at the end and cook for 2 minutes until just wilted.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "white bean",
+   "diced tomato",
+   "vegetable broth",
+   "italian seasoning",
+   "baby spinach",
+   "lemon juice",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r097",
+  "title": "Chicken and Mushroom Barley Soup",
+  "page": 307,
+  "tags": [],
+  "ingredient_lines": [
+   "1 tablespoon butter",
+   "1 tablespoon olive oil",
+   "1 onion, chopped",
+   "2 carrots, diced",
+   "8 oz mushrooms, sliced",
+   "1 lb chicken thighs",
+   "6 cups chicken broth",
+   "3/4 cup pearl barley",
+   "1 teaspoon dried thyme",
+   "salt and pepper"
+  ],
+  "text": "Melt the butter with the oil in a large pot over medium heat, then cook the onion, carrots, and mushrooms for 6 minutes. Add the chicken, broth, barley, and thyme, bring to a boil, and reduce to a simmer for 45 minutes until the barley is tender and the chicken is cooked through. Remove the chicken, shred it, return it to the pot, and season before serving.",
+  "ingredients": [
+   "butter",
+   "oil",
+   "onion",
+   "carrot",
+   "mushroom",
+   "chicken",
+   "chicken broth",
+   "pearl barley",
+   "thyme",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r098",
+  "title": "Lemon Pesto Penne with Cherry Tomatoes",
+  "page": 310,
+  "tags": [],
+  "ingredient_lines": [
+   "12 oz penne pasta",
+   "2 cups cherry tomatoes, halved",
+   "2 cups baby spinach",
+   "1/4 cup basil pesto",
+   "1 lemon, zested and juiced",
+   "2 tbsp olive oil",
+   "2 cloves garlic, minced",
+   "1/3 cup grated Parmesan",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Bring a large pot of salted water to a boil and cook the penne until al dente, about 10-11 minutes. Meanwhile, warm the olive oil in a skillet over medium heat, then cook the garlic for 30 seconds and add the tomatoes until they start to burst, about 4 minutes. Toss in the spinach, drained pasta, pesto, lemon zest, lemon juice, and Parmesan, then cook 1 minute more and season with salt and pepper before serving.",
+  "ingredients": [
+   "penne pasta",
+   "cherry tomato",
+   "baby spinach",
+   "basil pesto",
+   "lemon",
+   "oil",
+   "garlic",
+   "parmesan",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r099",
+  "title": "Creamy Mushroom Orzo Skillet",
+  "page": 313,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups orzo",
+   "8 oz cremini mushrooms, sliced",
+   "1 small onion, diced",
+   "2 cloves garlic, minced",
+   "2 1/2 cups vegetable broth",
+   "1/2 cup heavy cream",
+   "2 tbsp butter",
+   "2 tbsp chopped parsley",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Melt the butter in a large skillet over medium heat and cook the onion and mushrooms until browned, about 8-10 minutes. Stir in the garlic and orzo, then pour in the broth and simmer uncovered for 10-12 minutes, stirring often, until the orzo is tender and most of the liquid is absorbed. Add the cream, parsley, salt, and pepper, then cook 2 minutes more until glossy and rich.",
+  "ingredients": [
+   "orzo",
+   "cremini mushroom",
+   "onion",
+   "garlic",
+   "vegetable broth",
+   "heavy cream",
+   "butter",
+   "parsley",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r100",
+  "title": "Spicy Sesame Udon with Bok Choy",
+  "page": 316,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "14 oz udon noodles",
+   "2 heads baby bok choy, chopped",
+   "1 red bell pepper, sliced",
+   "2 tbsp sesame oil",
+   "2 tbsp soy sauce",
+   "1 tbsp rice vinegar",
+   "1 tbsp chili garlic sauce",
+   "1 tbsp honey",
+   "2 green onions, sliced",
+   "1 tbsp sesame seeds"
+  ],
+  "text": "Cook the udon according to package directions, then drain and set aside. In a hot skillet over medium-high heat, add the sesame oil, bok choy, and bell pepper and stir-fry for 3-4 minutes until just tender. Whisk together the soy sauce, rice vinegar, chili garlic sauce, and honey, toss with the noodles and vegetables for 2 minutes, then finish with green onions and sesame seeds.",
+  "ingredients": [
+   "udon noodle",
+   "bok choy",
+   "red bell pepper",
+   "oil",
+   "soy sauce",
+   "rice vinegar",
+   "chili garlic sauce",
+   "honey",
+   "green onion",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r101",
+  "title": "Saffron Tomato Rice with Roasted Chickpeas",
+  "page": 319,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups jasmine rice",
+   "1 can chickpeas, drained and rinsed",
+   "1 can diced tomatoes",
+   "2 3/4 cups vegetable broth",
+   "1 small onion, chopped",
+   "2 cloves garlic, minced",
+   "1/2 tsp saffron threads",
+   "2 tbsp olive oil",
+   "1 tsp paprika",
+   "salt"
+  ],
+  "text": "Heat the oven to 425°F and roast the chickpeas with 1 tablespoon olive oil, paprika, and salt for 20-25 minutes until crisp. In a saucepan, warm the remaining oil and cook the onion until soft, about 5 minutes, then add the garlic, rice, tomatoes, broth, and saffron. Bring to a boil, cover, and simmer on low for 18 minutes; let stand 5 minutes, fluff, and top with the roasted chickpeas.",
+  "ingredients": [
+   "jasmine rice",
+   "chickpea",
+   "diced tomato",
+   "vegetable broth",
+   "onion",
+   "garlic",
+   "saffron thread",
+   "oil",
+   "paprika",
+   "salt"
+  ]
+ },
+ {
+  "id": "r102",
+  "title": "Garlic Lime Rice Noodles with Shrimp",
+  "page": 322,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "8 oz rice noodles",
+   "1 lb shrimp, peeled and deveined",
+   "2 tbsp vegetable oil",
+   "3 cloves garlic, minced",
+   "1 cup snap peas",
+   "1 red chili, sliced",
+   "2 tbsp lime juice",
+   "1 tbsp fish sauce",
+   "1 tsp sugar",
+   "2 tbsp chopped cilantro"
+  ],
+  "text": "Soak or cook the rice noodles according to the package, then drain well. Heat the oil in a large pan over medium-high heat and cook the shrimp for 2-3 minutes per side, then add the garlic, snap peas, and chili and cook 2 minutes more. Toss in the noodles with lime juice, fish sauce, sugar, and cilantro, stirring for 1 minute until everything is hot and coated.",
+  "ingredients": [
+   "rice noodle",
+   "shrimp",
+   "oil",
+   "garlic",
+   "snap pea",
+   "red chili",
+   "lime juice",
+   "fish sauce",
+   "sugar",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r103",
+  "title": "One-Pot Tomato Basil Ziti",
+  "page": 325,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "12 oz ziti pasta",
+   "1 small onion, diced",
+   "3 cloves garlic, minced",
+   "1 can crushed tomatoes",
+   "3 cups chicken broth",
+   "1/2 cup half-and-half",
+   "1 tsp Italian seasoning",
+   "1/4 cup chopped basil",
+   "2 tbsp olive oil",
+   "salt"
+  ],
+  "text": "Warm the olive oil in a deep skillet or pot over medium heat and cook the onion for 4 minutes until softened. Add the garlic, ziti, crushed tomatoes, broth, Italian seasoning, and a pinch of salt, then bring to a boil and cook uncovered at a lively simmer for 11-13 minutes, stirring often. Stir in the half-and-half and basil, cook 2 minutes more, and serve as soon as the pasta is tender.",
+  "ingredients": [
+   "ziti pasta",
+   "onion",
+   "garlic",
+   "crushed tomato",
+   "chicken broth",
+   "half-and-half",
+   "italian seasoning",
+   "basil",
+   "oil",
+   "salt"
+  ]
+ },
+ {
+  "id": "r104",
+  "title": "Miso Butter Soba with Green Beans",
+  "page": 328,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "8 oz soba noodles",
+   "8 oz green beans, trimmed",
+   "2 tbsp butter",
+   "1 tbsp white miso paste",
+   "1 tbsp soy sauce",
+   "1 tbsp rice vinegar",
+   "1 tsp brown sugar",
+   "1 tsp toasted sesame oil",
+   "1 tbsp sesame seeds",
+   "2 green onions, sliced"
+  ],
+  "text": "Cook the soba and green beans in separate pots of boiling water, draining when the noodles are just tender and the beans are bright green, about 4-5 minutes for the beans and 5-6 minutes for the noodles. Melt the butter in a skillet over low heat, then whisk in the miso, soy sauce, rice vinegar, brown sugar, and sesame oil. Toss in the soba and green beans for 1-2 minutes, then top with sesame seeds and green onions.",
+  "ingredients": [
+   "soba noodle",
+   "green bean",
+   "butter",
+   "miso paste",
+   "soy sauce",
+   "rice vinegar",
+   "brown sugar",
+   "sesame oil",
+   "sesame seed",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r105",
+  "title": "Turkey and Spinach Rice Pilaf",
+  "page": 331,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground turkey",
+   "1 1/2 cups long-grain rice",
+   "1 small onion, chopped",
+   "2 cloves garlic, minced",
+   "2 cups baby spinach",
+   "3 cups chicken broth",
+   "1 tsp cumin",
+   "1/2 tsp smoked paprika",
+   "2 tbsp olive oil",
+   "salt"
+  ],
+  "text": "Heat the olive oil in a wide pot over medium heat and cook the turkey with the onion until the meat is no longer pink, about 7-8 minutes. Stir in the garlic, rice, cumin, and smoked paprika, then pour in the broth and bring to a boil. Cover, reduce to low, and cook for 18 minutes; fold in the spinach, cover for 2 more minutes, and fluff before serving.",
+  "ingredients": [
+   "ground turkey",
+   "long-grain rice",
+   "onion",
+   "garlic",
+   "spinach",
+   "chicken broth",
+   "cumin",
+   "smoked paprika",
+   "oil",
+   "salt"
+  ]
+ },
+ {
+  "id": "r106",
+  "title": "Cheesy Broccoli Pasta Bake",
+  "page": 334,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "12 oz rotini pasta",
+   "3 cups broccoli florets",
+   "2 cups milk",
+   "2 tbsp butter",
+   "2 tbsp flour",
+   "2 cups shredded cheddar cheese",
+   "1/2 cup grated Parmesan",
+   "1 tsp mustard powder",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat the oven to 400°F and cook the pasta and broccoli in boiling salted water until the pasta is almost tender, about 8 minutes, then drain. In a saucepan, melt the butter, whisk in the flour for 1 minute, and slowly add the milk until smooth and thickened, about 3-4 minutes; stir in the cheddar, Parmesan, mustard powder, salt, and pepper. Combine with the pasta and broccoli, transfer to a baking dish, and bake for 20 minutes until bubbling and lightly browned.",
+  "ingredients": [
+   "rotini pasta",
+   "broccoli",
+   "milk",
+   "butter",
+   "flour",
+   "cheddar cheese",
+   "parmesan",
+   "mustard powder",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r107",
+  "title": "Teriyaki Beef and Noodle Stir-Fry",
+  "page": 337,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "12 oz egg noodles",
+   "1 lb flank steak, thinly sliced",
+   "2 cups broccoli florets",
+   "1 carrot, julienned",
+   "2 tbsp vegetable oil",
+   "1/3 cup teriyaki sauce",
+   "2 cloves garlic, minced",
+   "1 tsp grated ginger",
+   "2 green onions, sliced",
+   "1 tbsp sesame seeds"
+  ],
+  "text": "Cook the egg noodles according to the package directions and drain. Heat the oil in a large skillet or wok over high heat, then sear the beef for 2-3 minutes until browned and remove to a plate. Add the broccoli, carrot, garlic, and ginger, stir-fry for 3 minutes, then return the beef with the noodles and teriyaki sauce; toss for 2 minutes and finish with green onions and sesame seeds.",
+  "ingredients": [
+   "egg noodle",
+   "flank steak",
+   "broccoli",
+   "carrot",
+   "oil",
+   "teriyaki sauce",
+   "garlic",
+   "ginger",
+   "green onion",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r108",
+  "title": "Herbed Lemon Rice with Salmon Flakes",
+  "page": 340,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups basmati rice",
+   "1 1/2 lb salmon fillet",
+   "3 cups water",
+   "1 lemon, sliced and juiced",
+   "2 tbsp olive oil",
+   "1 small shallot, minced",
+   "2 tbsp chopped dill",
+   "2 tbsp chopped parsley",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat the oven to 425°F and roast the salmon on a lined baking sheet with olive oil, salt, pepper, and lemon slices for 12-15 minutes until it flakes easily. While it cooks, simmer the rice with water, shallot, and a pinch of salt covered for 15 minutes, then rest off the heat for 5 minutes. Fluff the rice with lemon juice, dill, and parsley, then fold in chunks of the salmon before serving.",
+  "ingredients": [
+   "basmati rice",
+   "salmon",
+   "water",
+   "lemon",
+   "oil",
+   "shallot",
+   "dill",
+   "parsley",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r109",
+  "title": "Coconut Curry Rice with Peas",
+  "page": 343,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups basmati rice",
+   "1 can coconut milk",
+   "1 cup frozen peas",
+   "1 small onion, diced",
+   "2 cloves garlic, minced",
+   "1 tbsp curry powder",
+   "1 tbsp coconut oil",
+   "2 cups water",
+   "1 lime, juiced",
+   "salt"
+  ],
+  "text": "Warm the coconut oil in a saucepan over medium heat and cook the onion until translucent, about 5 minutes. Stir in the garlic and curry powder for 30 seconds, then add the rice, coconut milk, water, and a little salt; bring to a boil, cover, and simmer on low for 15 minutes. Stir in the peas, cover for 5 minutes more, then finish with lime juice and fluff before serving.",
+  "ingredients": [
+   "basmati rice",
+   "coconut milk",
+   "pea",
+   "onion",
+   "garlic",
+   "curry powder",
+   "coconut oil",
+   "water",
+   "lime",
+   "salt"
+  ]
+ },
+ {
+  "id": "r110",
+  "title": "Charred Corn and Tomato Herb Salad",
+  "page": 346,
+  "tags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 ears corn, husked",
+   "2 cups cherry tomatoes, halved",
+   "1 small red onion, thinly sliced",
+   "1/4 cup chopped fresh basil",
+   "2 tablespoons olive oil",
+   "1 tablespoon red wine vinegar",
+   "1 teaspoon honey",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat a grill pan or outdoor grill to medium-high, about 425°F, and cook the corn for 8-10 minutes, turning until lightly charred. Let it cool for 5 minutes, then cut the kernels from the cob and toss with tomatoes, onion, and basil. Whisk the olive oil, vinegar, honey, salt, and pepper, then pour over the salad and serve right away or chill for 20 minutes.",
+  "ingredients": [
+   "corn",
+   "cherry tomato",
+   "red onion",
+   "basil",
+   "oil",
+   "red wine vinegar",
+   "honey",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r111",
+  "title": "Cucumber Dill Yogurt Salad",
+  "page": 349,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 cucumbers, thinly sliced",
+   "1/2 small red onion, very thinly sliced",
+   "1/2 cup plain Greek yogurt",
+   "2 tablespoons lemon juice",
+   "1 tablespoon chopped dill",
+   "1 teaspoon olive oil",
+   "1 small garlic clove, grated",
+   "salt",
+   "black pepper"
+  ],
+  "text": "In a bowl, stir together the yogurt, lemon juice, dill, olive oil, garlic, salt, and pepper until smooth. Add the cucumbers and onion and toss gently to coat. Chill for at least 15 minutes before serving so the flavors can blend.",
+  "ingredients": [
+   "cucumber",
+   "red onion",
+   "greek yogurt",
+   "lemon juice",
+   "dill",
+   "oil",
+   "garlic clove",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r112",
+  "title": "Roasted Beet and Orange Arugula Salad",
+  "page": 352,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "3 medium beets, trimmed",
+   "4 cups arugula",
+   "2 oranges, peeled and sliced",
+   "1/4 cup crumbled goat cheese",
+   "2 tablespoons pumpkin seeds",
+   "2 tablespoons olive oil",
+   "1 tablespoon balsamic vinegar",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat the oven to 400°F and roast the beets on a lined pan for 45-55 minutes, until tender when pierced with a knife. Cool, peel, and slice the beets, then arrange them with arugula, oranges, goat cheese, and pumpkin seeds. Drizzle with olive oil and balsamic vinegar, then season with salt and pepper just before serving.",
+  "ingredients": [
+   "beet",
+   "arugula",
+   "orange",
+   "goat cheese",
+   "pumpkin seed",
+   "oil",
+   "balsamic vinegar",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r113",
+  "title": "Warm Lentil and Spinach Side Salad",
+  "page": 355,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 cup brown lentils, rinsed",
+   "3 cups water",
+   "3 cups baby spinach",
+   "1/2 cup diced cucumber",
+   "1/4 cup chopped parsley",
+   "2 tablespoons olive oil",
+   "1 tablespoon Dijon mustard",
+   "1 tablespoon lemon juice",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Simmer the lentils in water for 20-25 minutes, until tender but not mushy, then drain well. Whisk the olive oil, mustard, lemon juice, salt, and pepper in a large bowl. Add the warm lentils, spinach, cucumber, and parsley, tossing until the spinach just begins to wilt, and serve warm or at room temperature.",
+  "ingredients": [
+   "brown lentil",
+   "water",
+   "spinach",
+   "cucumber",
+   "parsley",
+   "oil",
+   "dijon mustard",
+   "lemon juice",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r114",
+  "title": "Shaved Brussels Sprouts Salad with Parmesan",
+  "page": 358,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb Brussels sprouts, trimmed",
+   "1/3 cup grated Parmesan",
+   "1/4 cup sliced almonds",
+   "1 apple, julienned",
+   "2 tablespoons olive oil",
+   "1 tablespoon apple cider vinegar",
+   "1 teaspoon maple syrup",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Slice the Brussels sprouts very thinly with a knife or shredding blade, then place them in a bowl with the apple, Parmesan, and almonds. Whisk together the olive oil, vinegar, maple syrup, salt, and pepper. Toss everything well and let the salad sit for 10 minutes before serving so the sprouts soften slightly.",
+  "ingredients": [
+   "brussel sprout",
+   "parmesan",
+   "almond",
+   "apple",
+   "oil",
+   "apple cider vinegar",
+   "maple syrup",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r115",
+  "title": "Garlic Parmesan Roasted Green Beans",
+  "page": 361,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 lb green beans, trimmed",
+   "2 tablespoons olive oil",
+   "2 cloves garlic, minced",
+   "1/4 cup grated Parmesan",
+   "1 tablespoon lemon zest",
+   "salt",
+   "black pepper",
+   "red pepper flakes"
+  ],
+  "text": "Heat the oven to 425°F. Toss the green beans with olive oil, garlic, salt, black pepper, and a pinch of red pepper flakes, then spread them on a baking sheet in a single layer. Roast for 14-18 minutes, sprinkle with Parmesan and lemon zest, and serve immediately.",
+  "ingredients": [
+   "green bean",
+   "oil",
+   "garlic",
+   "parmesan",
+   "lemon zest",
+   "salt",
+   "black pepper",
+   "red pepper flake"
+  ]
+ },
+ {
+  "id": "r116",
+  "title": "Sesame Ginger Carrot Ribbon Salad",
+  "page": 364,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 large carrots, peeled into ribbons",
+   "1/2 red bell pepper, thinly sliced",
+   "2 tablespoons rice vinegar",
+   "1 tablespoon sesame oil",
+   "1 teaspoon soy sauce",
+   "1 teaspoon honey",
+   "1 teaspoon grated fresh ginger",
+   "1 tablespoon sesame seeds",
+   "2 green onions, sliced"
+  ],
+  "text": "Whisk the rice vinegar, sesame oil, soy sauce, honey, and ginger in a bowl. Add the carrot ribbons and bell pepper, then toss until evenly coated. Finish with sesame seeds and green onions, and let it rest for 5-10 minutes before serving.",
+  "ingredients": [
+   "carrot",
+   "bell pepper",
+   "rice vinegar",
+   "sesame oil",
+   "soy sauce",
+   "honey",
+   "ginger",
+   "sesame seed",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r117",
+  "title": "Creamy Broccoli Grape Salad",
+  "page": 367,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "4 cups small broccoli florets",
+   "1 cup red grapes, halved",
+   "1/4 cup diced celery",
+   "1/4 cup sunflower seeds",
+   "1/3 cup mayonnaise",
+   "2 tablespoons plain yogurt",
+   "1 tablespoon apple cider vinegar",
+   "1 teaspoon sugar",
+   "salt"
+  ],
+  "text": "Blanch the broccoli in boiling water for 1 minute, then drain and rinse under cold water; pat dry. Stir together the mayonnaise, yogurt, vinegar, sugar, and salt in a large bowl, then fold in the broccoli, grapes, celery, and sunflower seeds. Chill for 30 minutes before serving.",
+  "ingredients": [
+   "broccoli",
+   "grape",
+   "celery",
+   "sunflower seed",
+   "mayonnaise",
+   "yogurt",
+   "apple cider vinegar",
+   "sugar",
+   "salt"
+  ]
+ },
+ {
+  "id": "r118",
+  "title": "Herbed Roasted Zucchini and Onions",
+  "page": 370,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "3 zucchini, cut into thick half-moons",
+   "1 large yellow onion, sliced",
+   "2 tablespoons olive oil",
+   "1 teaspoon dried oregano",
+   "1 teaspoon chopped thyme or 1/2 teaspoon dried thyme",
+   "2 cloves garlic, minced",
+   "salt",
+   "black pepper",
+   "1 tablespoon chopped parsley"
+  ],
+  "text": "Heat the oven to 425°F. Toss the zucchini and onion with olive oil, oregano, thyme, garlic, salt, and pepper, then spread on a baking sheet. Roast for 20-25 minutes, stirring once halfway through, and finish with parsley before serving.",
+  "ingredients": [
+   "zucchini",
+   "yellow onion",
+   "oil",
+   "oregano",
+   "thyme",
+   "garlic",
+   "salt",
+   "black pepper",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r119",
+  "title": "Tomato Peach Basil Salad",
+  "page": 373,
+  "tags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "3 ripe peaches, sliced",
+   "2 cups cherry tomatoes, halved",
+   "1/4 small red onion, thinly sliced",
+   "1/4 cup torn basil",
+   "2 tablespoons olive oil",
+   "1 tablespoon white balsamic vinegar",
+   "1 teaspoon honey",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Combine the peaches, tomatoes, onion, and basil in a wide serving bowl. Whisk the olive oil, vinegar, honey, salt, and pepper together, then drizzle over the salad. Toss very gently and let sit for 10 minutes so the juices mingle.",
+  "ingredients": [
+   "peach",
+   "cherry tomato",
+   "red onion",
+   "basil",
+   "oil",
+   "white balsamic vinegar",
+   "honey",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r120",
+  "title": "Roasted Cauliflower with Tahini Drizzle",
+  "page": 376,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 large head cauliflower, cut into florets",
+   "2 tablespoons olive oil",
+   "1/2 teaspoon cumin",
+   "1/2 teaspoon paprika",
+   "salt",
+   "black pepper",
+   "3 tablespoons tahini",
+   "1 tablespoon lemon juice",
+   "2-4 tablespoons warm water"
+  ],
+  "text": "Heat the oven to 425°F and toss the cauliflower with olive oil, cumin, paprika, salt, and pepper. Roast on a baking sheet for 25-30 minutes, stirring once, until browned at the edges. Mix the tahini, lemon juice, and warm water into a pourable sauce, then drizzle over the cauliflower before serving.",
+  "ingredients": [
+   "cauliflower",
+   "oil",
+   "cumin",
+   "paprika",
+   "salt",
+   "black pepper",
+   "tahini",
+   "lemon juice",
+   "water"
+  ]
+ },
+ {
+  "id": "r121",
+  "title": "Radish and Herb Butter Lettuce Salad",
+  "page": 379,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 head butter lettuce, torn",
+   "1 bunch radishes, thinly sliced",
+   "1/2 cucumber, sliced",
+   "1/4 cup chopped dill and chives",
+   "2 tablespoons olive oil",
+   "1 tablespoon lemon juice",
+   "1 teaspoon Dijon mustard",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Place the lettuce, radishes, cucumber, and herbs in a salad bowl. Whisk the olive oil, lemon juice, Dijon mustard, salt, and pepper in a small bowl until emulsified. Toss lightly with the greens and serve immediately for the freshest crunch.",
+  "ingredients": [
+   "butter lettuce",
+   "radish",
+   "cucumber",
+   "dill",
+   "chive",
+   "oil",
+   "lemon juice",
+   "dijon mustard",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r122",
+  "title": "Spinach and Feta Breakfast Strata",
+  "page": 382,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "8 slices day-old bread, cubed",
+   "6 large eggs",
+   "2 cups milk",
+   "1 cup shredded mozzarella",
+   "1 cup crumbled feta",
+   "2 cups baby spinach, chopped",
+   "1 small onion, diced",
+   "2 tablespoons butter",
+   "1 teaspoon salt",
+   "1/2 teaspoon black pepper"
+  ],
+  "text": "Preheat the oven to 350°F and grease a 9x13-inch baking dish. Sauté the onion in butter for 5 minutes, then stir in the spinach just until wilted. Whisk the eggs, milk, salt, and pepper, then layer the bread, vegetables, and cheeses in the dish and pour the egg mixture over top. Bake for 35-40 minutes, until puffed and set in the center.",
+  "ingredients": [
+   "bread",
+   "egg",
+   "milk",
+   "mozzarella",
+   "feta",
+   "spinach",
+   "onion",
+   "butter",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r123",
+  "title": "Cinnamon Swirl Apple Pancakes",
+  "page": 385,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups all-purpose flour",
+   "2 tablespoons sugar",
+   "1 tablespoon baking powder",
+   "1/2 teaspoon salt",
+   "1 1/4 cups milk",
+   "2 eggs",
+   "3 tablespoons melted butter",
+   "2 apples, peeled and diced",
+   "1 teaspoon cinnamon",
+   "2 tablespoons brown sugar"
+  ],
+  "text": "Mix the flour, sugar, baking powder, and salt in one bowl, then whisk the milk, eggs, and melted butter in another. Fold the wet ingredients into the dry ingredients, then stir in the apples. In a small bowl, combine cinnamon and brown sugar; spoon batter onto a buttered skillet over medium heat, sprinkle a little cinnamon sugar on each pancake, and cook for 2-3 minutes per side.",
+  "ingredients": [
+   "flour",
+   "sugar",
+   "baking powder",
+   "salt",
+   "milk",
+   "egg",
+   "butter",
+   "apple",
+   "cinnamon",
+   "brown sugar"
+  ]
+ },
+ {
+  "id": "r124",
+  "title": "Savory Cheddar Herb Scones",
+  "page": 388,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 cups all-purpose flour",
+   "1 tablespoon baking powder",
+   "1/2 teaspoon salt",
+   "1/4 teaspoon black pepper",
+   "1/2 cup cold butter, cubed",
+   "1 cup shredded cheddar",
+   "2 tablespoons chopped chives",
+   "1 tablespoon chopped parsley",
+   "3/4 cup buttermilk",
+   "1 egg, beaten"
+  ],
+  "text": "Heat the oven to 400°F and line a baking sheet with parchment paper. Cut the butter into the flour, baking powder, salt, and pepper until the mixture looks like coarse crumbs, then stir in the cheese and herbs. Add the buttermilk just until a dough forms, shape into a 1-inch thick round, cut into wedges, and bake for 16-18 minutes until golden.",
+  "ingredients": [
+   "flour",
+   "baking powder",
+   "salt",
+   "black pepper",
+   "butter",
+   "cheddar",
+   "chive",
+   "parsley",
+   "buttermilk",
+   "egg"
+  ]
+ },
+ {
+  "id": "r125",
+  "title": "Smoked Sausage Breakfast Skillet",
+  "page": 391,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb smoked sausage, sliced",
+   "4 cups Yukon gold potatoes, diced",
+   "1 bell pepper, chopped",
+   "1 small onion, sliced",
+   "4 eggs",
+   "2 tablespoons olive oil",
+   "1 teaspoon paprika",
+   "1/2 teaspoon salt",
+   "1/4 teaspoon black pepper",
+   "2 tablespoons chopped parsley"
+  ],
+  "text": "Warm the olive oil in a large skillet over medium-high heat and cook the potatoes for 10-12 minutes, stirring often, until browned and tender. Add the sausage, onion, bell pepper, paprika, salt, and pepper, and cook for another 5 minutes. Make 4 small wells in the skillet, crack in the eggs, cover, and cook for 4-6 minutes until the whites are set.",
+  "ingredients": [
+   "smoked sausage",
+   "potato",
+   "bell pepper",
+   "onion",
+   "egg",
+   "oil",
+   "paprika",
+   "salt",
+   "black pepper",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r126",
+  "title": "Blueberry Ricotta Toast Bake",
+  "page": 394,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "6 thick slices brioche",
+   "1 1/2 cups ricotta",
+   "2 eggs",
+   "1/4 cup maple syrup",
+   "1 teaspoon vanilla extract",
+   "2 cups blueberries",
+   "1 tablespoon lemon zest",
+   "1 tablespoon butter",
+   "2 tablespoons sliced almonds",
+   "powdered sugar"
+  ],
+  "text": "Preheat the oven to 375°F and butter an 8x8-inch baking dish. Whisk the ricotta, eggs, maple syrup, and vanilla together, then spread the brioche slices in the dish and pour the mixture over them. Scatter the blueberries, lemon zest, and almonds on top, then bake for 25-30 minutes until the center is set and the top is lightly browned. Dust with powdered sugar before serving.",
+  "ingredients": [
+   "brioche",
+   "ricotta",
+   "egg",
+   "maple syrup",
+   "vanilla extract",
+   "blueberry",
+   "lemon zest",
+   "butter",
+   "almond",
+   "powdered sugar"
+  ]
+ },
+ {
+  "id": "r127",
+  "title": "Tomato Basil Shakshuka with Potatoes",
+  "page": 397,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tablespoons olive oil",
+   "1 small onion, diced",
+   "1 red bell pepper, diced",
+   "2 cups cooked potatoes, cubed",
+   "3 cloves garlic, minced",
+   "1 can crushed tomatoes",
+   "1 teaspoon cumin",
+   "1/2 teaspoon chili flakes",
+   "6 eggs",
+   "1/4 cup basil leaves",
+   "salt and pepper"
+  ],
+  "text": "Heat the olive oil in a skillet over medium heat and cook the onion and bell pepper for 6-7 minutes. Stir in the potatoes, garlic, tomatoes, cumin, chili flakes, salt, and pepper, then simmer for 10 minutes until slightly thickened. Make 6 little wells, crack in the eggs, cover, and cook for 6-8 minutes until the whites are just set; finish with basil.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "red bell pepper",
+   "potato",
+   "garlic",
+   "crushed tomato",
+   "cumin",
+   "chili flake",
+   "egg",
+   "basil leaf",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r128",
+  "title": "Maple Pecan Baked Oatmeal",
+  "page": 400,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "3 cups rolled oats",
+   "1 teaspoon baking powder",
+   "1 teaspoon cinnamon",
+   "1/2 teaspoon salt",
+   "2 eggs",
+   "2 1/2 cups milk",
+   "1/3 cup maple syrup",
+   "2 tablespoons melted butter",
+   "1 cup chopped pecans",
+   "1 cup diced pears"
+  ],
+  "text": "Preheat the oven to 350°F and grease a 9-inch square baking dish. Stir together the oats, baking powder, cinnamon, salt, pecans, and pears in the dish, then whisk the eggs, milk, maple syrup, and butter and pour over the top. Bake for 35-40 minutes until the center is set and the edges are golden. Let it rest for 10 minutes before slicing.",
+  "ingredients": [
+   "rolled oat",
+   "baking powder",
+   "cinnamon",
+   "salt",
+   "egg",
+   "milk",
+   "maple syrup",
+   "butter",
+   "pecan",
+   "pear"
+  ]
+ },
+ {
+  "id": "r129",
+  "title": "Ham and Swiss Croissant Casserole",
+  "page": 403,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "6 croissants, torn into pieces",
+   "8 oz deli ham, chopped",
+   "1 1/2 cups shredded Swiss cheese",
+   "5 eggs",
+   "2 cups half-and-half",
+   "1 teaspoon Dijon mustard",
+   "1/2 teaspoon salt",
+   "1/4 teaspoon black pepper",
+   "1 tablespoon chopped thyme",
+   "1 tablespoon butter"
+  ],
+  "text": "Set the oven to 375°F and butter a baking dish. Layer the croissant pieces, ham, and Swiss cheese in the dish, then whisk the eggs, half-and-half, mustard, salt, pepper, and thyme. Pour the custard over everything, pressing the bread down slightly, and let it soak for 10 minutes before baking for 30-35 minutes until puffed and browned.",
+  "ingredients": [
+   "croissant",
+   "ham",
+   "swiss cheese",
+   "egg",
+   "half-and-half",
+   "dijon mustard",
+   "salt",
+   "black pepper",
+   "thyme",
+   "butter"
+  ]
+ },
+ {
+  "id": "r130",
+  "title": "Lemon Poppy Seed Yogurt Muffins",
+  "page": 406,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 cups all-purpose flour",
+   "1/2 cup sugar",
+   "2 teaspoons baking powder",
+   "1/2 teaspoon salt",
+   "1 cup plain yogurt",
+   "2 eggs",
+   "1/3 cup vegetable oil",
+   "2 tablespoons lemon juice",
+   "1 tablespoon lemon zest",
+   "1 tablespoon poppy seeds"
+  ],
+  "text": "Preheat the oven to 400°F and line a 12-cup muffin tin with paper liners. Whisk the flour, sugar, baking powder, salt, and poppy seeds in one bowl, then mix the yogurt, eggs, oil, lemon juice, and zest in another. Combine the wet and dry ingredients just until blended, divide among the cups, and bake for 16-19 minutes until the tops spring back.",
+  "ingredients": [
+   "flour",
+   "sugar",
+   "baking powder",
+   "salt",
+   "yogurt",
+   "egg",
+   "oil",
+   "lemon juice",
+   "lemon zest",
+   "poppy seed"
+  ]
+ },
+ {
+  "id": "r131",
+  "title": "Mushroom Goat Cheese Omelet Bake",
+  "page": 409,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "8 eggs",
+   "1/4 cup milk",
+   "2 tablespoons butter",
+   "8 oz mushrooms, sliced",
+   "1 small shallot, minced",
+   "1 cup shredded spinach",
+   "1/2 cup crumbled goat cheese",
+   "1/2 teaspoon salt",
+   "1/4 teaspoon black pepper",
+   "1 tablespoon chopped chives"
+  ],
+  "text": "Preheat the oven to 375°F. Cook the mushrooms and shallot in butter over medium heat for 6-7 minutes until browned, then add the spinach and stir just until wilted. Whisk the eggs, milk, salt, and pepper, pour into a greased baking dish, scatter the mushroom mixture and goat cheese on top, and bake for 18-22 minutes until the center is firm.",
+  "ingredients": [
+   "egg",
+   "milk",
+   "butter",
+   "mushroom",
+   "shallot",
+   "spinach",
+   "goat cheese",
+   "salt",
+   "black pepper",
+   "chive"
+  ]
+ },
+ {
+  "id": "r132",
+  "title": "Strawberry Almond Breakfast Parfaits",
+  "page": 412,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 cups plain Greek yogurt",
+   "1 tablespoon honey",
+   "1 teaspoon vanilla extract",
+   "2 cups strawberries, sliced",
+   "1 cup granola",
+   "1/2 cup toasted almonds, chopped",
+   "1 tablespoon chia seeds",
+   "mint leaves for garnish",
+   "pinch of salt"
+  ],
+  "text": "Stir the yogurt with honey, vanilla, and a tiny pinch of salt until smooth. Layer the yogurt, strawberries, granola, almonds, and chia seeds into glasses or bowls, repeating until everything is used. Chill for 10 minutes if you want a colder parfait, then garnish with mint and serve right away.",
+  "ingredients": [
+   "greek yogurt",
+   "honey",
+   "vanilla extract",
+   "strawberry",
+   "granola",
+   "almond",
+   "chia seed",
+   "mint leaf",
+   "salt"
+  ]
+ },
+ {
+  "id": "r133",
+  "title": "Chorizo Sweet Potato Breakfast Tacos",
+  "page": 415,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "8 small corn tortillas",
+   "8 oz chorizo",
+   "2 medium sweet potatoes, peeled and diced",
+   "4 eggs",
+   "1 tablespoon olive oil",
+   "1/2 teaspoon cumin",
+   "1/4 teaspoon salt",
+   "1 avocado, sliced",
+   "1/4 cup cilantro, chopped",
+   "lime wedges"
+  ],
+  "text": "Cook the sweet potatoes in olive oil over medium heat for 12-15 minutes, stirring occasionally, until tender and browned. Add the chorizo and cumin and cook for 5 minutes, then scramble in the eggs until just set. Warm the tortillas in a dry skillet for 30 seconds per side, fill with the mixture, and top with avocado, cilantro, and lime.",
+  "ingredients": [
+   "corn tortilla",
+   "chorizo",
+   "sweet potato",
+   "egg",
+   "oil",
+   "cumin",
+   "salt",
+   "avocado",
+   "cilantro",
+   "lime"
+  ]
+ },
+ {
+  "id": "r134",
+  "title": "Cinnamon Sugar Pull-Apart Bread",
+  "page": 418,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "3 1/2 cups all-purpose flour",
+   "2 1/4 tsp active dry yeast",
+   "1/4 cup granulated sugar",
+   "1 tsp salt",
+   "3/4 cup warm milk",
+   "1/4 cup melted butter",
+   "2 eggs",
+   "1/2 cup brown sugar",
+   "2 tsp ground cinnamon"
+  ],
+  "text": "Mix the flour, yeast, sugar, and salt, then stir in the warm milk, melted butter, and eggs until a soft dough forms. Knead for 8 minutes, let rise covered for 1 hour, then roll out, sprinkle with brown sugar and cinnamon, stack into strips, and place in a loaf pan. Let rise 30 minutes more, then bake at 350°F for 30-35 minutes until deep golden.",
+  "ingredients": [
+   "flour",
+   "yeast",
+   "sugar",
+   "salt",
+   "milk",
+   "butter",
+   "egg",
+   "cinnamon"
+  ]
+ },
+ {
+  "id": "r135",
+  "title": "Blueberry Lemon Scones",
+  "page": 421,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 cups all-purpose flour",
+   "1/3 cup sugar",
+   "1 tbsp baking powder",
+   "1/2 tsp salt",
+   "1/2 cup cold butter, cubed",
+   "1 cup fresh blueberries",
+   "1 tbsp lemon zest",
+   "2/3 cup heavy cream",
+   "1 egg"
+  ],
+  "text": "Whisk the flour, sugar, baking powder, and salt, then cut in the butter until the mixture looks crumbly. Fold in the blueberries and lemon zest, then add the cream and egg just until the dough comes together. Shape into a disk, cut into wedges, and bake at 400°F for 18-22 minutes until lightly browned.",
+  "ingredients": [
+   "flour",
+   "sugar",
+   "baking powder",
+   "salt",
+   "butter",
+   "blueberry",
+   "lemon zest",
+   "heavy cream",
+   "egg"
+  ]
+ },
+ {
+  "id": "r136",
+  "title": "Chocolate Chip Banana Muffins",
+  "page": 424,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 ripe bananas, mashed",
+   "2 cups all-purpose flour",
+   "1/2 cup sugar",
+   "1/4 cup brown sugar",
+   "1 tsp baking soda",
+   "1/2 tsp salt",
+   "1/2 cup melted butter",
+   "2 eggs",
+   "3/4 cup chocolate chips"
+  ],
+  "text": "Stir together the mashed bananas, melted butter, eggs, and sugars, then mix in the flour, baking soda, and salt until combined. Fold in the chocolate chips and divide the batter into a lined muffin tin. Bake at 375°F for 18-20 minutes, then cool for 10 minutes before serving.",
+  "ingredients": [
+   "banana",
+   "flour",
+   "sugar",
+   "brown sugar",
+   "baking soda",
+   "salt",
+   "butter",
+   "egg",
+   "chocolate chip"
+  ]
+ },
+ {
+  "id": "r137",
+  "title": "Rustic Rosemary Focaccia",
+  "page": 427,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 cups bread flour",
+   "2 1/4 tsp instant yeast",
+   "1 1/2 tsp salt",
+   "1 3/4 cups warm water",
+   "1/4 cup olive oil",
+   "2 tbsp chopped rosemary",
+   "coarse salt",
+   "black pepper"
+  ],
+  "text": "Combine the flour, yeast, salt, warm water, and half the olive oil into a sticky dough, then cover and let rise for 1 hour. Spread the dough into an oiled pan, dimple the surface, and drizzle with the remaining oil, rosemary, coarse salt, and pepper. Bake at 425°F for 22-25 minutes until crisp and deeply golden.",
+  "ingredients": [
+   "bread flour",
+   "instant yeast",
+   "salt",
+   "water",
+   "oil",
+   "rosemary",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r138",
+  "title": "Strawberry Hand Pies",
+  "page": 430,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 sheets puff pastry, thawed",
+   "2 cups strawberries, chopped",
+   "1/3 cup sugar",
+   "1 tbsp cornstarch",
+   "1 tsp vanilla extract",
+   "1 egg",
+   "1 tbsp milk",
+   "powdered sugar"
+  ],
+  "text": "Cook the strawberries, sugar, cornstarch, and vanilla in a small pan over medium heat for 5 minutes until thickened, then cool slightly. Cut the pastry into squares, fill each with the fruit mixture, fold over, and crimp the edges. Brush with egg wash and milk, then bake at 400°F for 16-18 minutes until puffed and browned.",
+  "ingredients": [
+   "puff pastry",
+   "strawberry",
+   "sugar",
+   "cornstarch",
+   "vanilla extract",
+   "egg",
+   "milk",
+   "powdered sugar"
+  ]
+ },
+ {
+  "id": "r139",
+  "title": "Almond Butter Oat Cookies",
+  "page": 433,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 cup rolled oats",
+   "1 cup all-purpose flour",
+   "1/2 tsp baking soda",
+   "1/2 tsp salt",
+   "1/2 cup almond butter",
+   "1/2 cup brown sugar",
+   "1 egg",
+   "1 tsp vanilla extract",
+   "1/2 cup chopped almonds"
+  ],
+  "text": "Mix the oats, flour, baking soda, and salt in one bowl, then whisk the almond butter, brown sugar, egg, and vanilla in another. Stir everything together and fold in the chopped almonds. Scoop onto a baking sheet and bake at 350°F for 10-12 minutes until set at the edges.",
+  "ingredients": [
+   "rolled oat",
+   "flour",
+   "baking soda",
+   "salt",
+   "almond butter",
+   "brown sugar",
+   "egg",
+   "vanilla extract",
+   "almond"
+  ]
+ },
+ {
+  "id": "r140",
+  "title": "Pumpkin Spice Coffee Cake",
+  "page": 436,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 cups all-purpose flour",
+   "1 cup pumpkin puree",
+   "1 cup sugar",
+   "1/2 cup vegetable oil",
+   "2 eggs",
+   "1 tbsp pumpkin pie spice",
+   "1 tsp baking powder",
+   "1/2 tsp baking soda",
+   "1/2 tsp salt"
+  ],
+  "text": "Whisk the pumpkin puree, sugar, oil, and eggs until smooth, then stir in the flour, spice, baking powder, baking soda, and salt. Pour the batter into a greased pan and top with a simple streusel if you like. Bake at 350°F for 35-40 minutes, or until a toothpick comes out clean.",
+  "ingredients": [
+   "flour",
+   "pumpkin puree",
+   "sugar",
+   "oil",
+   "egg",
+   "pumpkin pie spice",
+   "baking powder",
+   "baking soda",
+   "salt"
+  ]
+ },
+ {
+  "id": "r141",
+  "title": "Cherry Almond Tea Loaf",
+  "page": 439,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 3/4 cups all-purpose flour",
+   "1 tsp baking powder",
+   "1/2 tsp salt",
+   "1/2 cup sugar",
+   "2 eggs",
+   "1/2 cup milk",
+   "1/3 cup melted butter",
+   "1 cup dried cherries",
+   "1 tsp almond extract"
+  ],
+  "text": "Mix the flour, baking powder, salt, and sugar, then add the eggs, milk, melted butter, and almond extract and stir until just combined. Fold in the dried cherries and spoon the batter into a loaf pan. Bake at 350°F for 45-50 minutes, then cool before slicing.",
+  "ingredients": [
+   "flour",
+   "baking powder",
+   "salt",
+   "sugar",
+   "egg",
+   "milk",
+   "butter",
+   "dried cherry",
+   "almond extract"
+  ]
+ },
+ {
+  "id": "r142",
+  "title": "Vanilla Bean Custard Tart",
+  "page": 442,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 tart shell, baked",
+   "2 cups whole milk",
+   "4 egg yolks",
+   "1/2 cup sugar",
+   "3 tbsp cornstarch",
+   "1 tsp vanilla bean paste",
+   "1 tbsp butter",
+   "fresh berries"
+  ],
+  "text": "Warm the milk in a saucepan, then whisk the yolks, sugar, and cornstarch in a bowl. Slowly pour in the hot milk, return the mixture to the pan, and cook over medium heat for 4-6 minutes until thick, then stir in the vanilla and butter. Pour into the tart shell, chill for 2 hours, and top with berries before serving.",
+  "ingredients": [
+   "tart shell",
+   "milk",
+   "egg yolk",
+   "sugar",
+   "cornstarch",
+   "vanilla bean paste",
+   "butter",
+   "berry"
+  ]
+ },
+ {
+  "id": "r143",
+  "title": "Peanut Butter Brownie Bars",
+  "page": 445,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 cup butter",
+   "1 1/2 cups sugar",
+   "3 eggs",
+   "3/4 cup cocoa powder",
+   "1 cup all-purpose flour",
+   "1/2 tsp salt",
+   "1/2 cup peanut butter",
+   "1/2 cup chocolate chunks"
+  ],
+  "text": "Melt the butter, then whisk in the sugar, eggs, cocoa, flour, and salt until glossy. Spread half the batter in a lined pan, dollop with peanut butter, add the rest of the batter, and scatter chocolate chunks on top. Bake at 350°F for 28-32 minutes, then cool completely before cutting into bars.",
+  "ingredients": [
+   "butter",
+   "sugar",
+   "egg",
+   "cocoa powder",
+   "flour",
+   "salt",
+   "peanut butter",
+   "chocolate"
+  ]
+ },
+ {
+  "id": "r144",
+  "title": "Orange Olive Oil Cake",
+  "page": 448,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 cups all-purpose flour",
+   "1 cup sugar",
+   "1 tsp baking powder",
+   "1/2 tsp baking soda",
+   "1/2 tsp salt",
+   "3 eggs",
+   "3/4 cup olive oil",
+   "3/4 cup orange juice",
+   "1 tbsp orange zest"
+  ],
+  "text": "Whisk the flour, sugar, baking powder, baking soda, and salt together, then add the eggs, olive oil, orange juice, and zest and mix until smooth. Pour into a greased cake pan and tap gently to remove air bubbles. Bake at 350°F for 30-35 minutes, then cool and dust with powdered sugar if desired.",
+  "ingredients": [
+   "flour",
+   "sugar",
+   "baking powder",
+   "baking soda",
+   "salt",
+   "egg",
+   "oil",
+   "orange juice",
+   "orange zest"
+  ]
+ },
+ {
+  "id": "r145",
+  "title": "Coconut Pineapple Cake Squares",
+  "page": 451,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 cups cake flour",
+   "1 cup sugar",
+   "2 tsp baking powder",
+   "1/2 tsp salt",
+   "3/4 cup coconut milk",
+   "1/2 cup melted butter",
+   "2 eggs",
+   "1 cup crushed pineapple, drained",
+   "1/2 cup shredded coconut"
+  ],
+  "text": "Stir the flour, sugar, baking powder, and salt together, then mix in the coconut milk, melted butter, and eggs until just smooth. Fold in the pineapple and shredded coconut, then spread the batter into a greased square pan. Bake at 350°F for 32-38 minutes until the center is set and the top is lightly browned.",
+  "ingredients": [
+   "cake flour",
+   "sugar",
+   "baking powder",
+   "salt",
+   "coconut milk",
+   "butter",
+   "egg",
+   "pineapple",
+   "coconut"
+  ]
+ },
+ {
+  "id": "r146",
+  "title": "Chicken Tinga Tostada Skillet",
+  "page": 454,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken thighs",
+   "1 tbsp oil",
+   "1 onion, sliced",
+   "3 garlic cloves, minced",
+   "2 chipotle peppers in adobo, chopped",
+   "1 cup crushed tomatoes",
+   "1 tsp cumin",
+   "salt",
+   "8 tostada shells",
+   "1 cup shredded lettuce"
+  ],
+  "text": "Heat the oil in a skillet over medium-high heat, then brown the chicken for 3-4 minutes per side. Add the onion, garlic, chipotles, tomatoes, cumin, and salt, cover, and simmer on low for 20 minutes or until the chicken is tender and shreds easily. Shred the chicken, spoon it over the tostadas, and top with lettuce and any extras you like.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "onion",
+   "garlic clove",
+   "chipotle pepper",
+   "crushed tomato",
+   "cumin",
+   "salt",
+   "tostada shell",
+   "lettuce"
+  ]
+ },
+ {
+  "id": "r147",
+  "title": "Beef Picadillo with Potatoes and Raisins",
+  "page": 457,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground beef",
+   "2 potatoes, diced",
+   "1 onion, chopped",
+   "2 garlic cloves, minced",
+   "1 cup diced tomatoes",
+   "1/4 cup raisins",
+   "1 tsp ground cumin",
+   "1/2 tsp cinnamon",
+   "salt and pepper",
+   "2 tbsp oil"
+  ],
+  "text": "Warm the oil in a large skillet over medium heat, then cook the onion, garlic, and beef until the meat is browned, about 6-8 minutes. Stir in the potatoes, tomatoes, raisins, cumin, cinnamon, salt, and pepper, then add a splash of water, cover, and cook on low for 20-25 minutes until the potatoes are tender. Uncover for the last 5 minutes to thicken the sauce before serving with rice or tortillas.",
+  "ingredients": [
+   "ground beef",
+   "potato",
+   "onion",
+   "garlic",
+   "tomato",
+   "raisin",
+   "cumin",
+   "cinnamon",
+   "salt",
+   "pepper",
+   "oil"
+  ]
+ },
+ {
+  "id": "r148",
+  "title": "Pozole Verde with Pork",
+  "page": 460,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb pork shoulder, cubed",
+   "1 tbsp oil",
+   "1 onion, chopped",
+   "4 garlic cloves, minced",
+   "6 cups chicken broth",
+   "2 cups tomatillos, husked and chopped",
+   "2 poblano peppers, roasted and chopped",
+   "2 cans hominy, drained",
+   "1 tsp oregano",
+   "salt"
+  ],
+  "text": "Heat the oil in a pot over medium-high heat and brown the pork on all sides, about 5 minutes. Add the onion, garlic, broth, tomatillos, poblanos, hominy, oregano, and salt, then simmer covered at 325°F for 1 1/2 to 2 hours, or until the pork is very tender. Serve hot with shredded cabbage, radishes, and lime.",
+  "ingredients": [
+   "pork shoulder",
+   "oil",
+   "onion",
+   "garlic",
+   "chicken broth",
+   "tomatillo",
+   "poblano pepper",
+   "hominy",
+   "oregano",
+   "salt"
+  ]
+ },
+ {
+  "id": "r149",
+  "title": "Black Bean and Cheese Enchiladas",
+  "page": 463,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "12 corn tortillas",
+   "2 cups black beans, cooked",
+   "2 cups shredded cheese",
+   "1 onion, finely chopped",
+   "2 cups enchilada sauce",
+   "1 tbsp oil",
+   "1 tsp cumin",
+   "salt",
+   "chopped cilantro"
+  ],
+  "text": "Preheat the oven to 375°F and lightly oil a baking dish. Mix the black beans with the onion, cumin, and a pinch of salt, then spoon into tortillas with a little cheese, roll them up, and place seam-side down in the dish. Pour the enchilada sauce over the top, scatter on the remaining cheese, and bake for 20-25 minutes until bubbling; finish with cilantro.",
+  "ingredients": [
+   "corn tortilla",
+   "black bean",
+   "cheese",
+   "onion",
+   "enchilada sauce",
+   "oil",
+   "cumin",
+   "salt",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r150",
+  "title": "Arroz con Pollo One-Pot Dinner",
+  "page": 466,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken drumsticks or thighs",
+   "2 cups long-grain rice",
+   "1 onion, diced",
+   "1 bell pepper, diced",
+   "3 garlic cloves, minced",
+   "1 cup peas",
+   "1 can diced tomatoes",
+   "4 cups chicken broth",
+   "1 tsp paprika",
+   "salt and pepper"
+  ],
+  "text": "Season the chicken with salt and pepper, then brown it in a large pot over medium-high heat for 4 minutes per side. Add the onion, bell pepper, garlic, rice, tomatoes, broth, and paprika, then bring to a boil, cover, and cook on low for 25 minutes. Stir in the peas, rest for 5 minutes off the heat, and fluff before serving.",
+  "ingredients": [
+   "chicken drumstick or thigh",
+   "rice",
+   "onion",
+   "bell pepper",
+   "garlic",
+   "pea",
+   "tomato",
+   "chicken broth",
+   "paprika",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r151",
+  "title": "Peruvian-Style Roasted Chicken with Aji Verde",
+  "page": 469,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 whole chicken, cut into pieces",
+   "2 tbsp oil",
+   "3 garlic cloves, minced",
+   "1 tbsp lime juice",
+   "1 tsp cumin",
+   "salt and pepper",
+   "1 bunch cilantro",
+   "1 jalapeño",
+   "1/2 cup mayonnaise",
+   "1 avocado"
+  ],
+  "text": "Preheat the oven to 400°F and rub the chicken with oil, garlic, lime juice, cumin, salt, and pepper. Roast on a sheet pan for 40-45 minutes, turning once, until the skin is browned and the chicken reaches 165°F. Blend the cilantro, jalapeño, mayonnaise, avocado, and a squeeze of lime into a bright sauce, then serve it alongside the chicken.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "garlic",
+   "lime juice",
+   "cumin",
+   "salt",
+   "pepper",
+   "cilantro",
+   "jalape o",
+   "mayonnaise",
+   "avocado"
+  ]
+ },
+ {
+  "id": "r152",
+  "title": "Sweet Potato and Poblano Tamale Pie",
+  "page": 472,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 sweet potatoes, peeled and cubed",
+   "1 poblano pepper, chopped",
+   "1 onion, chopped",
+   "1 cup corn kernels",
+   "1 can black beans, drained",
+   "2 cups cornbread batter",
+   "1 tsp chili powder",
+   "1/2 tsp cumin",
+   "salt",
+   "1 cup shredded cheese"
+  ],
+  "text": "Preheat the oven to 375°F and grease a baking dish. Roast or sauté the sweet potatoes with the poblano, onion, chili powder, cumin, and salt until just tender, about 10-12 minutes, then stir in the corn and black beans. Spread the mixture in the dish, pour the cornbread batter over the top, sprinkle with cheese, and bake for 25-30 minutes until golden.",
+  "ingredients": [
+   "sweet potato",
+   "poblano pepper",
+   "onion",
+   "corn",
+   "black bean",
+   "cornbread batter",
+   "chili powder",
+   "cumin",
+   "salt",
+   "cheese"
+  ]
+ },
+ {
+  "id": "r153",
+  "title": "Cuban Mojo Pork Rice Bowls",
+  "page": 475,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb pork tenderloin",
+   "3 garlic cloves, minced",
+   "1/4 cup orange juice",
+   "2 tbsp lime juice",
+   "1 tsp oregano",
+   "2 cups cooked rice",
+   "1 avocado, sliced",
+   "1 cup cucumber, diced",
+   "1 tbsp oil",
+   "salt and pepper"
+  ],
+  "text": "Marinate the pork with garlic, orange juice, lime juice, oregano, salt, and pepper for at least 15 minutes. Sear it in oil over medium-high heat for 2-3 minutes per side, then finish in a 400°F oven for 12-15 minutes until it reaches 145°F and rests juicy. Slice the pork and serve over rice with avocado and cucumber.",
+  "ingredients": [
+   "pork tenderloin",
+   "garlic",
+   "orange juice",
+   "lime juice",
+   "oregano",
+   "rice",
+   "avocado",
+   "cucumber",
+   "oil",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r154",
+  "title": "Shrimp Ceviche Lettuce Cups",
+  "page": 478,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb shrimp, peeled and cooked",
+   "1/2 cup lime juice",
+   "1 tomato, diced",
+   "1/2 red onion, minced",
+   "1 jalapeño, minced",
+   "1 avocado, diced",
+   "1/4 cup cilantro, chopped",
+   "salt",
+   "butter lettuce leaves",
+   "tortilla chips"
+  ],
+  "text": "Chop the cooked shrimp into bite-size pieces and toss with lime juice, tomato, red onion, jalapeño, cilantro, and salt. Let it sit in the refrigerator for 15-20 minutes so the flavors meld, then fold in the avocado right before serving. Spoon into lettuce leaves and serve chilled with tortilla chips.",
+  "ingredients": [
+   "shrimp",
+   "lime juice",
+   "tomato",
+   "red onion",
+   "jalape o",
+   "avocado",
+   "cilantro",
+   "salt",
+   "butter lettuce",
+   "tortilla chip"
+  ]
+ },
+ {
+  "id": "r155",
+  "title": "Plantain and Black Bean Empanadas",
+  "page": 481,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 ripe plantains",
+   "1 can black beans, drained",
+   "1 onion, minced",
+   "1 tsp cumin",
+   "1/2 tsp smoked paprika",
+   "1 package empanada dough discs",
+   "1 egg, beaten",
+   "1 cup shredded cheese",
+   "oil for brushing"
+  ],
+  "text": "Cook the plantains in a skillet over medium heat until softened and lightly caramelized, about 8 minutes, then mash them with the black beans, onion, cumin, paprika, and cheese. Fill each dough disc with the mixture, fold and seal the edges, and brush the tops with beaten egg and a little oil. Bake at 400°F for 18-22 minutes until golden and crisp.",
+  "ingredients": [
+   "plantain",
+   "black bean",
+   "onion",
+   "cumin",
+   "smoked paprika",
+   "empanada dough disc",
+   "egg",
+   "cheese",
+   "oil"
+  ]
+ },
+ {
+  "id": "r156",
+  "title": "Tortilla Soup with Avocado and Crispy Strips",
+  "page": 484,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "8 corn tortillas",
+   "1 tbsp oil",
+   "1 onion, chopped",
+   "2 garlic cloves, minced",
+   "1 can diced tomatoes",
+   "6 cups chicken broth",
+   "1 tsp chili powder",
+   "1 can black beans, drained",
+   "1 avocado, diced",
+   "lime wedges"
+  ],
+  "text": "Cut 4 tortillas into strips and fry or bake them at 400°F for 8-10 minutes until crisp, then set aside. In a pot, cook the onion and garlic in oil for 3-4 minutes, add the tomatoes, broth, chili powder, and black beans, and simmer for 15 minutes. Ladle into bowls and top with avocado, crispy tortilla strips, and lime.",
+  "ingredients": [
+   "corn tortilla",
+   "oil",
+   "onion",
+   "garlic",
+   "tomato",
+   "chicken broth",
+   "chili powder",
+   "black bean",
+   "avocado",
+   "lime"
+  ]
+ },
+ {
+  "id": "r157",
+  "title": "Corn and Chicken Flautas with Green Sauce",
+  "page": 487,
+  "tags": [],
+  "ingredient_lines": [
+   "2 cups shredded cooked chicken",
+   "1 cup corn kernels",
+   "1/2 cup cream cheese",
+   "1 tsp chili powder",
+   "12 small flour tortillas",
+   "oil for brushing",
+   "1 cup salsa verde",
+   "1/2 cup sour cream",
+   "shredded lettuce",
+   "cotija cheese"
+  ],
+  "text": "Preheat the oven to 425°F and mix the chicken, corn, cream cheese, and chili powder in a bowl. Spoon the filling into tortillas, roll tightly, and place seam-side down on a baking sheet; brush lightly with oil and bake for 15-18 minutes until crisp. Serve with warm salsa verde, sour cream, lettuce, and cotija.",
+  "ingredients": [
+   "chicken",
+   "corn",
+   "cream cheese",
+   "chili powder",
+   "flour tortilla",
+   "oil",
+   "salsa verde",
+   "sour cream",
+   "lettuce",
+   "cotija cheese"
+  ]
+ },
+ {
+  "id": "r158",
+  "title": "Butter Chicken with Tomato Cashew Sauce",
+  "page": 490,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb boneless chicken thighs, cut into bite-size pieces",
+   "1 cup plain yogurt",
+   "2 tbsp lemon juice",
+   "2 tsp garam masala",
+   "1 tsp ground cumin",
+   "3 tbsp butter",
+   "1 onion, finely chopped",
+   "3 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "1 cup tomato puree",
+   "1/2 cup cashews, soaked and blended with water",
+   "1/2 cup heavy cream",
+   "salt",
+   "cooked basmati rice, for serving"
+  ],
+  "text": "Mix the chicken with yogurt, lemon juice, garam masala, cumin, and a pinch of salt, then marinate for at least 20 minutes. Cook the chicken in 1 tbsp butter over medium-high heat for 6 to 8 minutes until browned, then remove it. In the same pan, sauté the onion, garlic, and ginger for 5 minutes, add tomato puree and the cashew paste, and simmer 10 minutes at a gentle bubble. Stir in the cream, return the chicken, and cook 5 more minutes until hot; serve with basmati rice.",
+  "ingredients": [
+   "chicken",
+   "yogurt",
+   "lemon juice",
+   "garam masala",
+   "ground cumin",
+   "butter",
+   "onion",
+   "garlic",
+   "ginger",
+   "tomato puree",
+   "cashew",
+   "heavy cream",
+   "salt",
+   "basmati rice"
+  ]
+ },
+ {
+  "id": "r159",
+  "title": "Chana Masala with Spinach",
+  "page": 493,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tbsp oil",
+   "1 onion, diced",
+   "3 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "2 tsp ground coriander",
+   "1 tsp cumin",
+   "1/2 tsp turmeric",
+   "1/2 tsp chili powder",
+   "2 cans chickpeas, drained and rinsed",
+   "1 can crushed tomatoes",
+   "1/2 cup water",
+   "4 cups baby spinach",
+   "1 tsp garam masala",
+   "salt",
+   "lemon wedges, for serving"
+  ],
+  "text": "Heat the oil in a skillet over medium heat and cook the onion for 6 to 7 minutes until soft. Add the garlic, ginger, coriander, cumin, turmeric, and chili powder, and stir for 1 minute, then add the chickpeas, tomatoes, and water. Simmer uncovered for 15 minutes over medium-low heat, stirring occasionally, until thickened. Fold in the spinach and garam masala for 2 minutes until wilted, then finish with salt and lemon juice.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "cilantro",
+   "cumin",
+   "turmeric",
+   "chili powder",
+   "chickpea",
+   "crushed tomato",
+   "water",
+   "spinach",
+   "garam masala",
+   "salt",
+   "lemon wedge"
+  ]
+ },
+ {
+  "id": "r160",
+  "title": "South Indian Coconut Lentil Dal",
+  "page": 496,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 cup red lentils, rinsed",
+   "1 tbsp oil",
+   "1 tsp mustard seeds",
+   "1/2 tsp cumin seeds",
+   "8 curry leaves",
+   "1 onion, chopped",
+   "2 cloves garlic, minced",
+   "1 tsp grated ginger",
+   "1/2 tsp turmeric",
+   "1 cup coconut milk",
+   "3 cups water",
+   "salt",
+   "chopped cilantro, for garnish",
+   "cooked rice, for serving"
+  ],
+  "text": "Combine the lentils, water, and turmeric in a pot and bring to a boil, then reduce heat and simmer for 15 to 18 minutes until soft. In a small pan, heat the oil over medium heat and crackle the mustard seeds, cumin seeds, and curry leaves for 30 seconds, then add the onion, garlic, and ginger and cook 5 minutes. Stir the tempering and coconut milk into the dal, simmer 3 minutes more, and season with salt. Serve hot over rice with cilantro.",
+  "ingredients": [
+   "red lentil",
+   "oil",
+   "mustard seed",
+   "cumin seed",
+   "curry leaf",
+   "onion",
+   "garlic",
+   "ginger",
+   "turmeric",
+   "coconut milk",
+   "water",
+   "salt",
+   "cilantro",
+   "rice"
+  ]
+ },
+ {
+  "id": "r161",
+  "title": "Aloo Gobi with Tomato and Peas",
+  "page": 499,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tbsp oil",
+   "1 onion, sliced",
+   "2 potatoes, peeled and cubed",
+   "1 medium cauliflower, cut into florets",
+   "1 cup peas",
+   "2 tomatoes, chopped",
+   "2 tsp ground coriander",
+   "1 tsp cumin",
+   "1/2 tsp turmeric",
+   "1/2 tsp chili flakes",
+   "salt",
+   "2 tbsp chopped cilantro"
+  ],
+  "text": "Warm the oil in a large skillet over medium heat and cook the onion for 4 minutes until translucent. Add the potatoes, cauliflower, peas, tomatoes, coriander, cumin, turmeric, chili flakes, and salt, then toss well. Cover and cook over medium-low heat for 20 to 25 minutes, stirring once or twice, until the potatoes are tender and the cauliflower is cooked through. Uncover for the last 3 minutes to reduce any moisture, then top with cilantro.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "potato",
+   "cauliflower",
+   "pea",
+   "tomato",
+   "ground coriander",
+   "cumin",
+   "turmeric",
+   "chili flake",
+   "salt",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r162",
+  "title": "Tandoori Sheet-Pan Chicken and Vegetables",
+  "page": 502,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken drumsticks or thighs",
+   "1 cup plain yogurt",
+   "2 tbsp tandoori spice blend",
+   "1 tbsp lemon juice",
+   "1 tbsp oil",
+   "1 red onion, wedged",
+   "2 bell peppers, sliced",
+   "1 zucchini, thickly sliced",
+   "salt",
+   "lime wedges, for serving"
+  ],
+  "text": "Mix the yogurt, tandoori spice blend, lemon juice, oil, and salt, then coat the chicken and let it marinate for 30 minutes or up to overnight. Heat the oven to 425°F and arrange the chicken, onion, peppers, and zucchini on a lined sheet pan. Roast for 35 to 40 minutes, turning the vegetables once, until the chicken is cooked through and lightly charred at the edges. Serve with lime wedges and naan or rice.",
+  "ingredients": [
+   "chicken drumstick or thigh",
+   "yogurt",
+   "tandoori spice blend",
+   "lemon juice",
+   "oil",
+   "red onion",
+   "bell pepper",
+   "zucchini",
+   "salt",
+   "lime wedge"
+  ]
+ },
+ {
+  "id": "r163",
+  "title": "Vegetable Biryani with Saffron Rice",
+  "page": 505,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 cups basmati rice",
+   "3 cups water",
+   "pinch saffron threads",
+   "2 tbsp ghee",
+   "1 onion, thinly sliced",
+   "1 carrot, diced",
+   "1 cup cauliflower florets",
+   "1 cup green beans, chopped",
+   "1/2 cup frozen peas",
+   "2 tsp biryani masala",
+   "1/2 cup yogurt",
+   "salt",
+   "2 tbsp chopped mint",
+   "2 tbsp chopped cilantro"
+  ],
+  "text": "Soak the rice in water for 20 minutes, then cook it with the saffron until just tender and drain if needed. In a wide pot, heat the ghee over medium heat and fry the onion for 8 minutes until golden, then add the carrot, cauliflower, beans, peas, biryani masala, yogurt, and salt. Cook covered over low heat for 12 minutes, then layer in the rice with mint and cilantro and steam on low for 10 minutes. Fluff gently before serving.",
+  "ingredients": [
+   "basmati rice",
+   "water",
+   "saffron",
+   "ghee",
+   "onion",
+   "carrot",
+   "cauliflower",
+   "green bean",
+   "pea",
+   "biryani masala",
+   "yogurt",
+   "salt",
+   "mint",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r164",
+  "title": "Keema Peas Skillet",
+  "page": 508,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground lamb or beef",
+   "1 tbsp oil",
+   "1 onion, finely chopped",
+   "3 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "2 tsp garam masala",
+   "1 tsp ground cumin",
+   "1/2 tsp turmeric",
+   "1 cup crushed tomatoes",
+   "1 cup peas",
+   "salt",
+   "chopped cilantro, for garnish",
+   "naan or roti, for serving"
+  ],
+  "text": "Heat the oil in a skillet over medium-high heat and brown the meat for 5 to 6 minutes, breaking it up as it cooks. Add the onion, garlic, ginger, garam masala, cumin, and turmeric, and cook for 4 minutes until fragrant. Stir in the crushed tomatoes and peas, lower the heat to medium, and simmer for 10 minutes until the mixture thickens. Season with salt and garnish with cilantro before serving with naan.",
+  "ingredients": [
+   "ground lamb or beef",
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "garam masala",
+   "ground cumin",
+   "turmeric",
+   "crushed tomato",
+   "pea",
+   "salt",
+   "cilantro",
+   "naan or roti"
+  ]
+ },
+ {
+  "id": "r165",
+  "title": "Paneer Tikka Skewers",
+  "page": 511,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "12 oz paneer, cut into cubes",
+   "1 cup plain yogurt",
+   "1 tbsp tandoori spice blend",
+   "1 tbsp lemon juice",
+   "1 tbsp oil",
+   "1 red bell pepper, cut into chunks",
+   "1 red onion, cut into chunks",
+   "salt",
+   "mint chutney, for serving",
+   "wooden or metal skewers"
+  ],
+  "text": "Whisk the yogurt, tandoori spice blend, lemon juice, oil, and salt, then coat the paneer, pepper, and onion and marinate for 20 to 30 minutes. Thread the pieces onto skewers and place them on a greased baking sheet. Broil on high for 8 to 10 minutes, turning once, until browned in spots and heated through. Serve immediately with mint chutney.",
+  "ingredients": [
+   "paneer",
+   "yogurt",
+   "tandoori spice blend",
+   "lemon juice",
+   "oil",
+   "red bell pepper",
+   "red onion",
+   "salt",
+   "mint chutney",
+   "skewer"
+  ]
+ },
+ {
+  "id": "r166",
+  "title": "Methi Chicken Curry",
+  "page": 514,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken thighs, boneless and skinless",
+   "2 tbsp oil",
+   "1 onion, chopped",
+   "3 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "2 tsp ground coriander",
+   "1 tsp cumin",
+   "1 tsp paprika",
+   "1 cup tomato puree",
+   "1 cup chopped fenugreek leaves (fresh or frozen)",
+   "1/2 cup water",
+   "salt",
+   "plain rice, for serving"
+  ],
+  "text": "Heat the oil in a pot over medium heat and cook the onion for 6 minutes until softened. Add the garlic, ginger, coriander, cumin, and paprika, then stir for 1 minute before adding the chicken and browning it lightly. Pour in the tomato puree, fenugreek leaves, water, and salt, then simmer covered over low heat for 25 minutes until the chicken is tender. Uncover for 5 minutes to thicken, then serve with rice.",
+  "ingredients": [
+   "chicken",
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "cilantro",
+   "cumin",
+   "paprika",
+   "tomato puree",
+   "fenugreek leaf",
+   "water",
+   "salt",
+   "rice"
+  ]
+ },
+ {
+  "id": "r167",
+  "title": "Masala Egg Curry",
+  "page": 517,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "6 hard-boiled eggs, peeled",
+   "2 tbsp oil",
+   "1 onion, finely chopped",
+   "2 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "1 tsp ground cumin",
+   "1 tsp ground coriander",
+   "1/2 tsp turmeric",
+   "1 cup tomato sauce",
+   "1/2 cup water",
+   "1/4 cup heavy cream",
+   "salt",
+   "chopped cilantro, for garnish"
+  ],
+  "text": "Heat the oil in a pan over medium heat and cook the onion for 5 to 6 minutes until golden. Add the garlic, ginger, cumin, coriander, and turmeric, and cook for 1 minute, then stir in the tomato sauce, water, and salt. Simmer for 10 minutes over medium-low heat, gently add the eggs, and cook 5 minutes more so they absorb the sauce. Finish with cream and cilantro before serving.",
+  "ingredients": [
+   "egg",
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "cumin",
+   "cilantro",
+   "turmeric",
+   "tomato sauce",
+   "water",
+   "heavy cream",
+   "salt"
+  ]
+ },
+ {
+  "id": "r168",
+  "title": "Coconut Tamarind Fish Curry",
+  "page": 520,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb firm white fish, cut into large pieces",
+   "1 tbsp oil",
+   "1 onion, sliced",
+   "2 cloves garlic, minced",
+   "1 tbsp grated ginger",
+   "1 tsp turmeric",
+   "1 tsp ground coriander",
+   "1 cup coconut milk",
+   "1/2 cup water",
+   "2 tbsp tamarind paste",
+   "salt",
+   "fresh cilantro, for garnish",
+   "cooked rice, for serving"
+  ],
+  "text": "Warm the oil in a skillet over medium heat and cook the onion for 5 minutes, then add the garlic, ginger, turmeric, and coriander and stir for 1 minute. Pour in the coconut milk, water, tamarind paste, and salt, then bring to a gentle simmer. Nestle in the fish, cover, and cook over low heat for 8 to 10 minutes until the fish flakes easily. Garnish with cilantro and serve with rice.",
+  "ingredients": [
+   "fish",
+   "oil",
+   "onion",
+   "garlic",
+   "ginger",
+   "turmeric",
+   "cilantro",
+   "coconut milk",
+   "water",
+   "tamarind paste",
+   "salt",
+   "rice"
+  ]
+ },
+ {
+  "id": "r169",
+  "title": "Spiced Chickpea and Potato Samosa Filling Bowls",
+  "page": 523,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 tbsp oil",
+   "1 onion, diced",
+   "2 potatoes, peeled and cubed",
+   "2 cans chickpeas, drained and rinsed",
+   "1 tsp cumin",
+   "1 tsp ground coriander",
+   "1/2 tsp turmeric",
+   "1/2 tsp chili powder",
+   "1/2 cup peas",
+   "salt",
+   "1 tbsp lemon juice",
+   "chopped cilantro",
+   "plain yogurt or chutney, for serving"
+  ],
+  "text": "Heat the oil in a large skillet over medium heat and cook the onion for 4 minutes. Add the potatoes, chickpeas, cumin, coriander, turmeric, chili powder, and salt, then stir well and cover with a splash of water. Cook over medium-low heat for 18 to 20 minutes, stirring occasionally, until the potatoes are tender; add the peas for the last 3 minutes. Finish with lemon juice and cilantro, then serve warm with yogurt or chutney.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "potato",
+   "chickpea",
+   "cumin",
+   "ground coriander",
+   "turmeric",
+   "chili powder",
+   "pea",
+   "salt",
+   "lemon juice",
+   "cilantro",
+   "plain yogurt",
+   "chutney"
+  ]
+ },
+ {
+  "id": "r170",
+  "title": "Miso-Glazed Eggplant with Sesame Rice",
+  "page": 526,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 medium eggplants, cut into thick wedges",
+   "2 tbsp neutral oil",
+   "3 tbsp white miso",
+   "2 tbsp soy sauce",
+   "1 tbsp honey",
+   "1 tbsp rice vinegar",
+   "2 cups cooked jasmine rice",
+   "1 tbsp toasted sesame seeds"
+  ],
+  "text": "Heat the oven to 425°F and toss the eggplant with oil on a lined baking sheet. Roast for 20 minutes, then brush with a mix of miso, soy sauce, honey, and rice vinegar and return to the oven for 8 to 10 minutes until glossy and tender. Serve over warm jasmine rice and finish with sesame seeds.",
+  "ingredients": [
+   "eggplant",
+   "oil",
+   "white miso",
+   "soy sauce",
+   "honey",
+   "rice vinegar",
+   "jasmine rice",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r171",
+  "title": "Vietnamese Lemongrass Chicken Skillet",
+  "page": 529,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken thighs, sliced",
+   "2 stalks lemongrass, finely minced",
+   "3 cloves garlic, minced",
+   "1 small onion, sliced",
+   "2 tbsp fish sauce",
+   "1 tbsp brown sugar",
+   "1 tbsp oil",
+   "1/2 cup chicken broth",
+   "1 handful cilantro, chopped"
+  ],
+  "text": "Warm the oil in a large skillet over medium-high heat, then cook the chicken with onion, lemongrass, and garlic for 6 to 8 minutes. Stir in fish sauce, brown sugar, and broth, then simmer for 5 minutes until the chicken is cooked through and the sauce clings lightly. Scatter cilantro over the top and serve with steamed rice.",
+  "ingredients": [
+   "chicken",
+   "lemongrass",
+   "garlic",
+   "onion",
+   "fish sauce",
+   "brown sugar",
+   "oil",
+   "chicken broth",
+   "cilantro"
+  ]
+ },
+ {
+  "id": "r172",
+  "title": "Thai Basil Pork Lettuce Cups",
+  "page": 532,
+  "tags": [],
+  "ingredient_lines": [
+   "1 lb ground pork",
+   "3 cloves garlic, minced",
+   "1 red chili, sliced",
+   "1 cup green beans, chopped small",
+   "2 tbsp soy sauce",
+   "1 tbsp oyster sauce",
+   "1 tsp sugar",
+   "1 cup Thai basil leaves",
+   "8 butter lettuce leaves"
+  ],
+  "text": "Brown the pork in a hot skillet over medium-high heat, breaking it up as it cooks for about 5 minutes. Add garlic, chili, green beans, soy sauce, oyster sauce, and sugar, then cook 4 to 5 minutes more until the beans are crisp-tender. Stir in the basil just before serving and spoon the mixture into lettuce leaves.",
+  "ingredients": [
+   "ground pork",
+   "garlic",
+   "chili",
+   "green bean",
+   "soy sauce",
+   "oyster sauce",
+   "sugar",
+   "thai basil leaf",
+   "butter lettuce leaf"
+  ]
+ },
+ {
+  "id": "r173",
+  "title": "Korean Beef and Cabbage Rice Bowl",
+  "page": 535,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground beef",
+   "2 cups shredded cabbage",
+   "2 cloves garlic, minced",
+   "2 tbsp soy sauce",
+   "1 tbsp gochujang",
+   "1 tbsp brown sugar",
+   "1 tsp sesame oil",
+   "2 cups cooked rice",
+   "2 scallions, sliced"
+  ],
+  "text": "Cook the beef in a skillet over medium heat for 5 to 6 minutes, then add garlic, cabbage, soy sauce, gochujang, and brown sugar. Continue cooking for 4 minutes until the cabbage softens and the sauce turns sticky, then stir in sesame oil. Spoon over rice and top with scallions.",
+  "ingredients": [
+   "ground beef",
+   "cabbage",
+   "garlic",
+   "soy sauce",
+   "gochujang",
+   "brown sugar",
+   "sesame oil",
+   "rice",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r174",
+  "title": "Teriyaki Salmon with Broccoli and Rice",
+  "page": 538,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "4 salmon fillets",
+   "3 cups broccoli florets",
+   "2 tbsp soy sauce",
+   "2 tbsp mirin",
+   "1 tbsp honey",
+   "1 tsp grated ginger",
+   "1 tbsp oil",
+   "2 cups cooked rice"
+  ],
+  "text": "Heat the oven to 400°F and place the salmon and broccoli on a sheet pan. Mix soy sauce, mirin, honey, ginger, and oil, then brush over the salmon and drizzle the broccoli. Roast for 12 to 15 minutes until the salmon flakes easily and the broccoli is lightly browned, then serve with rice.",
+  "ingredients": [
+   "salmon fillet",
+   "broccoli",
+   "soy sauce",
+   "mirin",
+   "honey",
+   "ginger",
+   "oil",
+   "rice"
+  ]
+ },
+ {
+  "id": "r175",
+  "title": "Singapore-Style Curry Noodles with Shrimp",
+  "page": 541,
+  "tags": [],
+  "ingredient_lines": [
+   "8 oz rice noodles",
+   "1 lb shrimp, peeled",
+   "1 onion, sliced",
+   "1 red bell pepper, sliced",
+   "2 tbsp curry powder",
+   "1 can coconut milk",
+   "1 cup chicken broth",
+   "2 tbsp oil",
+   "2 scallions, chopped"
+  ],
+  "text": "Soak or cook the noodles according to the package directions, then set them aside. In a large pot, cook onion and bell pepper in oil for 4 minutes, stir in curry powder, coconut milk, and broth, and simmer for 5 minutes. Add shrimp and noodles, then cook 3 to 4 minutes until the shrimp are pink; finish with scallions.",
+  "ingredients": [
+   "rice noodle",
+   "shrimp",
+   "onion",
+   "red bell pepper",
+   "curry powder",
+   "coconut milk",
+   "chicken broth",
+   "oil",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r176",
+  "title": "Japanese Chicken Katsu with Cabbage Salad",
+  "page": 544,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken cutlets",
+   "1/2 cup flour",
+   "2 eggs, beaten",
+   "1 1/2 cups panko breadcrumbs",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper",
+   "1/2 cup oil for frying",
+   "3 cups shredded cabbage",
+   "2 tbsp tonkatsu sauce"
+  ],
+  "text": "Season the chicken with salt and pepper, then coat each piece in flour, egg, and panko. Fry in a skillet over medium heat for 3 to 4 minutes per side until deeply golden and cooked through, then drain briefly on paper towels. Toss the cabbage with tonkatsu sauce and serve alongside the sliced cutlets.",
+  "ingredients": [
+   "chicken cutlet",
+   "flour",
+   "egg",
+   "panko breadcrumb",
+   "salt",
+   "black pepper",
+   "oil",
+   "cabbage",
+   "tonkatsu sauce"
+  ]
+ },
+ {
+  "id": "r177",
+  "title": "Coconut Pumpkin Curry with Green Beans",
+  "page": 547,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 tbsp oil",
+   "1 small onion, chopped",
+   "2 cloves garlic, minced",
+   "1 tbsp curry paste",
+   "2 cups pumpkin or kabocha squash, cubed",
+   "1 can coconut milk",
+   "1 cup green beans, trimmed",
+   "1 tbsp fish sauce",
+   "1 tsp sugar"
+  ],
+  "text": "Cook the onion and garlic in oil over medium heat for 3 minutes, then stir in the curry paste for 30 seconds. Add pumpkin, coconut milk, and enough water to barely cover, then simmer for 15 minutes until the squash is almost tender. Add green beans, fish sauce, and sugar, and cook 5 minutes more before serving with rice.",
+  "ingredients": [
+   "oil",
+   "onion",
+   "garlic",
+   "curry paste",
+   "pumpkin or kabocha squash",
+   "coconut milk",
+   "green bean",
+   "fish sauce",
+   "sugar"
+  ]
+ },
+ {
+  "id": "r178",
+  "title": "Indonesian Tempeh Peanut Noodles",
+  "page": 550,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "8 oz wheat noodles",
+   "8 oz tempeh, sliced thin",
+   "2 tbsp oil",
+   "2 tbsp peanut butter",
+   "1 tbsp soy sauce",
+   "1 tbsp lime juice",
+   "1 tsp chili sauce",
+   "1/4 cup water",
+   "1 cucumber, sliced"
+  ],
+  "text": "Cook the noodles, drain them, and keep them warm. Pan-fry the tempeh in oil over medium heat for 4 to 5 minutes per side until browned, then whisk peanut butter, soy sauce, lime juice, chili sauce, and water into a smooth sauce. Toss the noodles with the sauce and tempeh, and serve with cucumber slices on the side.",
+  "ingredients": [
+   "wheat noodle",
+   "tempeh",
+   "oil",
+   "peanut butter",
+   "soy sauce",
+   "lime juice",
+   "chili sauce",
+   "water",
+   "cucumber"
+  ]
+ },
+ {
+  "id": "r179",
+  "title": "Filipino Garlic Fried Rice with Shrimp",
+  "page": 553,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "3 cups cooked rice, chilled",
+   "1 lb shrimp, peeled",
+   "6 cloves garlic, minced",
+   "2 tbsp oil",
+   "1 tbsp soy sauce",
+   "1/2 tsp black pepper",
+   "2 eggs",
+   "2 scallions, sliced"
+  ],
+  "text": "Heat the oil in a wide skillet over medium heat and cook the garlic until fragrant and lightly golden, about 1 minute. Add the shrimp and cook for 2 to 3 minutes, then stir in the rice, soy sauce, and pepper and fry for 5 minutes until heated through. Push the rice aside, scramble the eggs in the pan, and finish with scallions.",
+  "ingredients": [
+   "rice",
+   "shrimp",
+   "garlic",
+   "oil",
+   "soy sauce",
+   "black pepper",
+   "egg",
+   "green onion"
+  ]
+ },
+ {
+  "id": "r180",
+  "title": "Cambodian Ginger Pork Meatballs",
+  "page": 556,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground pork",
+   "1 egg",
+   "1/3 cup breadcrumbs",
+   "2 tbsp grated ginger",
+   "2 cloves garlic, minced",
+   "2 tbsp soy sauce",
+   "1 tbsp fish sauce",
+   "1 tbsp oil",
+   "1 cup cucumber ribbons"
+  ],
+  "text": "Mix the pork, egg, breadcrumbs, ginger, garlic, soy sauce, and fish sauce, then form into small meatballs. Pan-fry in oil over medium heat for 10 to 12 minutes, turning often, until browned and cooked through. Serve the meatballs with cucumber ribbons and spoon over any pan juices.",
+  "ingredients": [
+   "ground pork",
+   "egg",
+   "breadcrumb",
+   "ginger",
+   "garlic",
+   "soy sauce",
+   "fish sauce",
+   "oil",
+   "cucumber"
+  ]
+ },
+ {
+  "id": "r181",
+  "title": "Stir-Fried Tofu with Long Beans and Chili Garlic Sauce",
+  "page": 559,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 block firm tofu, pressed and cubed",
+   "2 cups long beans or green beans, cut into pieces",
+   "2 cloves garlic, minced",
+   "1 tbsp chili garlic sauce",
+   "2 tbsp soy sauce",
+   "1 tsp sugar",
+   "2 tbsp oil",
+   "1/4 cup water",
+   "1 tbsp sesame seeds"
+  ],
+  "text": "Brown the tofu in oil over medium-high heat for 8 minutes, turning until crisp on most sides. Add garlic and beans and stir-fry for 4 minutes, then mix in chili garlic sauce, soy sauce, sugar, and water. Cook 2 to 3 minutes until the sauce lightly coats everything, and sprinkle with sesame seeds before serving.",
+  "ingredients": [
+   "tofu",
+   "long bean",
+   "green bean",
+   "garlic",
+   "chili garlic sauce",
+   "soy sauce",
+   "sugar",
+   "oil",
+   "water",
+   "sesame seed"
+  ]
+ },
+ {
+  "id": "r182",
+  "title": "Za'atar Chicken with Roasted Potatoes and Onions",
+  "page": 562,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb chicken thighs",
+   "1 1/2 lb Yukon Gold potatoes, chopped",
+   "1 large red onion, sliced",
+   "3 tbsp olive oil",
+   "2 tbsp za'atar",
+   "1 tsp kosher salt",
+   "1/2 tsp black pepper",
+   "1 lemon, cut into wedges"
+  ],
+  "text": "Heat the oven to 425°F. Toss the potatoes and onion with half the oil, half the za'atar, salt, and pepper, then spread on a sheet pan and roast for 20 minutes. Rub the chicken with the remaining oil and za'atar, place it on the pan, and roast 25 to 30 minutes more until the chicken reaches 165°F and the potatoes are tender; serve with lemon wedges.",
+  "ingredients": [
+   "chicken",
+   "yukon gold potato",
+   "red onion",
+   "oil",
+   "za atar",
+   "kosher salt",
+   "black pepper",
+   "lemon"
+  ]
+ },
+ {
+  "id": "r183",
+  "title": "Harissa Chickpea and Tomato Skillet",
+  "page": 565,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 tbsp olive oil",
+   "1 yellow onion, diced",
+   "3 cloves garlic, minced",
+   "1 tbsp harissa paste",
+   "2 cans chickpeas, drained and rinsed",
+   "1 can diced tomatoes",
+   "1/2 cup water",
+   "1 tsp cumin",
+   "salt"
+  ],
+  "text": "Warm the olive oil in a skillet over medium heat, then cook the onion until softened, about 5 minutes. Stir in the garlic and harissa for 30 seconds, then add the chickpeas, tomatoes, water, cumin, and salt; simmer uncovered for 15 to 18 minutes until thickened. Serve hot with bread, rice, or couscous.",
+  "ingredients": [
+   "oil",
+   "yellow onion",
+   "garlic",
+   "harissa paste",
+   "chickpea",
+   "diced tomato",
+   "water",
+   "cumin",
+   "salt"
+  ]
+ },
+ {
+  "id": "r184",
+  "title": "Lemon Herb Fish with Tomatoes and Olives",
+  "page": 568,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 lb white fish fillets",
+   "2 tbsp olive oil",
+   "2 cups cherry tomatoes",
+   "1/2 cup pitted Kalamata olives",
+   "2 cloves garlic, thinly sliced",
+   "1 lemon, zested and juiced",
+   "1 tsp dried oregano",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat the oven to 400°F. In a baking dish, toss the tomatoes, olives, garlic, olive oil, lemon zest, oregano, salt, and pepper, then nestle the fish into the mixture and drizzle with lemon juice. Bake for 12 to 15 minutes, until the fish flakes easily and the tomatoes have burst.",
+  "ingredients": [
+   "white fish fillet",
+   "oil",
+   "cherry tomato",
+   "kalamata olive",
+   "garlic",
+   "lemon",
+   "dried oregano",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r185",
+  "title": "Middle Eastern Beef and Rice Pilaf",
+  "page": 571,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb ground beef",
+   "1 cup basmati rice",
+   "1 small onion, diced",
+   "2 tbsp olive oil",
+   "2 1/2 cups chicken broth",
+   "1 tsp cinnamon",
+   "1 tsp ground allspice",
+   "1/2 cup slivered almonds",
+   "salt"
+  ],
+  "text": "Toast the almonds in a dry saucepan over medium heat until golden, then set aside. In the same pan, cook the onion in olive oil until soft, add the beef and brown it well, then stir in the rice, cinnamon, allspice, salt, and broth. Bring to a simmer, cover, and cook on low for 18 minutes; rest 5 minutes before fluffing and topping with the almonds.",
+  "ingredients": [
+   "ground beef",
+   "basmati rice",
+   "onion",
+   "oil",
+   "chicken broth",
+   "cinnamon",
+   "ground allspice",
+   "slivered almond",
+   "salt"
+  ]
+ },
+ {
+  "id": "r186",
+  "title": "Spinach and Feta Phyllo Pie",
+  "page": 574,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "8 sheets phyllo dough",
+   "4 cups fresh spinach",
+   "1 cup crumbled feta",
+   "1/2 cup ricotta",
+   "2 eggs",
+   "3 tbsp olive oil",
+   "1 small onion, chopped",
+   "1/4 tsp nutmeg",
+   "salt"
+  ],
+  "text": "Heat the oven to 375°F and lightly oil a baking dish. Cook the onion until soft, stir in the spinach just until wilted, then mix with feta, ricotta, eggs, nutmeg, and salt; layer half the phyllo sheets in the dish, brushing each with oil, add the filling, then top with the remaining phyllo. Bake for 30 to 35 minutes until crisp and deeply golden.",
+  "ingredients": [
+   "phyllo dough",
+   "spinach",
+   "feta",
+   "ricotta",
+   "egg",
+   "oil",
+   "onion",
+   "nutmeg",
+   "salt"
+  ]
+ },
+ {
+  "id": "r187",
+  "title": "Moroccan Carrot and Orange Salad",
+  "page": 577,
+  "tags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "6 carrots, peeled and shredded",
+   "2 oranges, segmented",
+   "1/4 cup chopped mint",
+   "2 tbsp olive oil",
+   "1 tbsp lemon juice",
+   "1 tsp honey",
+   "1/2 tsp ground cumin",
+   "salt"
+  ],
+  "text": "Whisk the olive oil, lemon juice, honey, cumin, and a pinch of salt in a large bowl. Add the carrots, orange segments, and mint, then toss until everything is evenly coated. Chill for 15 minutes before serving so the flavors blend.",
+  "ingredients": [
+   "carrot",
+   "orange",
+   "mint",
+   "oil",
+   "lemon juice",
+   "honey",
+   "cumin",
+   "salt"
+  ]
+ },
+ {
+  "id": "r188",
+  "title": "Sheet-Pan Shawarma Cauliflower and Chickpeas",
+  "page": 580,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 large head cauliflower, cut into florets",
+   "2 cans chickpeas, drained and rinsed",
+   "3 tbsp olive oil",
+   "2 tsp shawarma spice blend",
+   "1 tsp salt",
+   "1 red onion, sliced",
+   "1 lemon, juiced",
+   "2 tbsp chopped parsley"
+  ],
+  "text": "Heat the oven to 425°F. Toss the cauliflower, chickpeas, and onion with olive oil, shawarma spice, and salt, then spread on a sheet pan and roast for 25 to 30 minutes, stirring once halfway through. Finish with lemon juice and parsley, then serve right away.",
+  "ingredients": [
+   "cauliflower",
+   "chickpea",
+   "oil",
+   "shawarma spice blend",
+   "salt",
+   "onion",
+   "lemon",
+   "parsley"
+  ]
+ },
+ {
+  "id": "r189",
+  "title": "Turkish-Style Stuffed Bell Peppers",
+  "page": 583,
+  "tags": [
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "6 bell peppers",
+   "1 lb ground lamb",
+   "1 cup cooked rice",
+   "1 small onion, finely chopped",
+   "2 cloves garlic, minced",
+   "1 tsp paprika",
+   "1/2 tsp cumin",
+   "1 cup tomato sauce",
+   "salt"
+  ],
+  "text": "Heat the oven to 375°F and cut the tops off the peppers, removing the seeds. Cook the onion and lamb in a skillet until browned, stir in the garlic, paprika, cumin, rice, half the tomato sauce, and salt, then fill the peppers with the mixture and place them in a baking dish. Spoon the remaining sauce over the tops, cover with foil, and bake for 35 minutes; uncover and bake 10 minutes more.",
+  "ingredients": [
+   "bell pepper",
+   "ground lamb",
+   "rice",
+   "onion",
+   "garlic",
+   "paprika",
+   "cumin",
+   "tomato sauce",
+   "salt"
+  ]
+ },
+ {
+  "id": "r190",
+  "title": "Creamy Tahini Roasted Eggplant Pasta",
+  "page": 586,
+  "tags": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 large eggplant, cubed",
+   "12 oz pasta",
+   "2 tbsp olive oil",
+   "3 tbsp tahini",
+   "1 lemon, juiced",
+   "2 cloves garlic, grated",
+   "1/4 cup pasta water",
+   "2 tbsp chopped parsley",
+   "salt"
+  ],
+  "text": "Heat the oven to 425°F and roast the eggplant with olive oil and salt for 25 minutes until browned and soft. Cook the pasta, then whisk the tahini, lemon juice, garlic, and enough pasta water to make a creamy sauce. Toss the pasta with the eggplant and sauce, then finish with parsley.",
+  "ingredients": [
+   "eggplant",
+   "pasta",
+   "oil",
+   "tahini",
+   "lemon",
+   "garlic",
+   "pasta water",
+   "parsley",
+   "salt"
+  ]
+ },
+ {
+  "id": "r191",
+  "title": "Saffron Shrimp and Couscous Bowls",
+  "page": 589,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb shrimp, peeled and deveined",
+   "1 cup couscous",
+   "1 1/4 cups hot water",
+   "2 tbsp olive oil",
+   "1/2 tsp saffron threads",
+   "1 zucchini, diced",
+   "1 cup diced tomatoes",
+   "1 tsp paprika",
+   "salt"
+  ],
+  "text": "Steep the saffron in the hot water for 5 minutes, then pour it over the couscous, cover, and let stand 10 minutes. Meanwhile, sauté the zucchini in olive oil for 4 to 5 minutes, add the tomatoes, shrimp, paprika, and salt, and cook until the shrimp turn pink, about 3 to 4 minutes. Fluff the couscous and spoon the shrimp mixture over the top.",
+  "ingredients": [
+   "shrimp",
+   "couscous",
+   "water",
+   "oil",
+   "saffron",
+   "zucchini",
+   "tomato",
+   "paprika",
+   "salt"
+  ]
+ },
+ {
+  "id": "r192",
+  "title": "Labneh Chicken Wraps with Cucumber and Herbs",
+  "page": 592,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb chicken breast, sliced",
+   "1 cup labneh",
+   "2 tbsp olive oil",
+   "1 cucumber, thinly sliced",
+   "1 cup cherry tomatoes, halved",
+   "1/4 cup chopped dill",
+   "1/4 cup chopped parsley",
+   "4 flatbreads",
+   "1 tsp sumac"
+  ],
+  "text": "Season the chicken with salt and cook it in olive oil over medium-high heat for 6 to 8 minutes until browned and cooked through. Stir the labneh with sumac and a splash of water to loosen it, then spread it over the flatbreads and top with chicken, cucumber, tomatoes, dill, and parsley. Fold and serve immediately, or wrap tightly for lunch later.",
+  "ingredients": [
+   "chicken",
+   "labneh",
+   "oil",
+   "cucumber",
+   "cherry tomato",
+   "dill",
+   "parsley",
+   "flatbread",
+   "sumac"
+  ]
+ },
+ {
+  "id": "r193",
+  "title": "Baked Feta and Herb Tomato Orzo",
+  "page": 595,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "1 1/2 cups orzo",
+   "2 cups cherry tomatoes",
+   "8 oz feta block",
+   "2 tbsp olive oil",
+   "2 cloves garlic, minced",
+   "1 tsp dried oregano",
+   "2 1/2 cups vegetable broth",
+   "1/4 cup chopped basil",
+   "salt"
+  ],
+  "text": "Heat the oven to 400°F. In a baking dish, combine the orzo, tomatoes, garlic, oregano, broth, olive oil, and a little salt, then place the feta block in the center and bake for 25 minutes. Stir well to melt the feta into the orzo, then finish with basil and serve hot.",
+  "ingredients": [
+   "orzo",
+   "cherry tomato",
+   "feta",
+   "oil",
+   "garlic",
+   "oregano",
+   "vegetable broth",
+   "basil",
+   "salt"
+  ]
+ },
+ {
+  "id": "r194",
+  "title": "Turkey Pesto Mozzarella Melts",
+  "page": 598,
+  "tags": [],
+  "ingredient_lines": [
+   "8 slices sourdough bread",
+   "8 oz sliced roasted turkey",
+   "4 oz mozzarella, sliced",
+   "1/3 cup basil pesto",
+   "2 tbsp mayonnaise",
+   "2 tbsp butter, softened",
+   "1 tomato, sliced",
+   "salt and black pepper"
+  ],
+  "text": "Spread mayonnaise on one side of each bread slice and pesto on the other, then layer turkey, tomato, and mozzarella between 4 sandwiches. Heat a skillet over medium heat, butter the outside of the bread, and cook the sandwiches for 3 to 4 minutes per side until deep golden and the cheese is melted. Let them rest for 1 minute before slicing.",
+  "ingredients": [
+   "sourdough bread",
+   "turkey",
+   "mozzarella",
+   "basil pesto",
+   "mayonnaise",
+   "butter",
+   "tomato",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r195",
+  "title": "Spicy Chickpea Smash Wraps",
+  "page": 601,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "2 cans chickpeas, drained and rinsed",
+   "2 tbsp lemon juice",
+   "3 tbsp plain yogurt",
+   "1 tbsp olive oil",
+   "1 tsp smoked paprika",
+   "1/2 tsp chili flakes",
+   "4 large tortillas",
+   "1 cup shredded lettuce",
+   "1/2 cup diced cucumber",
+   "salt"
+  ],
+  "text": "Mash the chickpeas with yogurt, lemon juice, olive oil, paprika, chili flakes, and salt until chunky but spreadable. Warm the tortillas for 20 seconds in a dry skillet, then fill with the chickpea mixture, lettuce, and cucumber. Roll tightly and serve right away, or chill for 15 minutes for easier slicing.",
+  "ingredients": [
+   "chickpea",
+   "lemon juice",
+   "yogurt",
+   "oil",
+   "smoked paprika",
+   "chili flake",
+   "tortilla",
+   "lettuce",
+   "cucumber",
+   "salt"
+  ]
+ },
+ {
+  "id": "r196",
+  "title": "Ham, Apple, and Cheddar Panini",
+  "page": 604,
+  "tags": [],
+  "ingredient_lines": [
+   "8 slices country bread",
+   "8 oz sliced ham",
+   "6 oz sharp cheddar, sliced",
+   "1 apple, thinly sliced",
+   "2 tbsp Dijon mustard",
+   "2 tbsp butter, softened",
+   "1 tbsp honey",
+   "black pepper"
+  ],
+  "text": "Stir the honey into the mustard, then spread it over the bread and build each sandwich with ham, cheddar, and apple slices. Butter the outsides and grill in a panini press or skillet over medium heat for 4 to 5 minutes, flipping once if needed, until crisp and the cheese is fully melted. Cool for 2 minutes before cutting.",
+  "ingredients": [
+   "bread",
+   "ham",
+   "cheddar",
+   "apple",
+   "mustard",
+   "butter",
+   "honey",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r197",
+  "title": "Creamy Avocado Tuna Tea Sandwiches",
+  "page": 607,
+  "tags": [
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "2 cans tuna, drained",
+   "1 ripe avocado",
+   "2 tbsp mayonnaise",
+   "1 tbsp lime juice",
+   "2 tbsp finely chopped celery",
+   "8 slices soft sandwich bread",
+   "2 tbsp chopped dill",
+   "salt and pepper"
+  ],
+  "text": "Mash the avocado with mayonnaise, lime juice, dill, salt, and pepper, then fold in the tuna and celery. Spread the mixture on 4 bread slices, top with the remaining slices, and trim the crusts if you like. Chill for 10 minutes before cutting into fingers or triangles.",
+  "ingredients": [
+   "tuna",
+   "avocado",
+   "mayonnaise",
+   "lime juice",
+   "celery",
+   "soft sandwich bread",
+   "dill",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r198",
+  "title": "Crispy Potato and Scallion Cakes",
+  "page": 610,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "3 cups mashed potatoes, chilled",
+   "2 scallions, finely chopped",
+   "1 egg",
+   "1/4 cup flour",
+   "1/2 tsp garlic powder",
+   "1/2 tsp salt",
+   "2 tbsp butter",
+   "2 tbsp oil"
+  ],
+  "text": "Mix the mashed potatoes, scallions, egg, flour, garlic powder, and salt into a thick dough. Form into 8 small cakes and pan-fry in butter and oil over medium heat for 3 to 4 minutes per side until crisp and browned. Serve hot with sour cream or ketchup.",
+  "ingredients": [
+   "potato",
+   "green onion",
+   "egg",
+   "flour",
+   "garlic powder",
+   "salt",
+   "butter",
+   "oil"
+  ]
+ },
+ {
+  "id": "r199",
+  "title": "Sesame Honey Pretzel Bites",
+  "page": 613,
+  "tags": [
+   "vegetarian"
+  ],
+  "ingredient_lines": [
+   "1 lb pizza dough",
+   "1 egg",
+   "1 tbsp water",
+   "2 tbsp sesame seeds",
+   "1 tbsp coarse salt",
+   "2 tbsp honey",
+   "1 tbsp butter, melted",
+   "flour for dusting"
+  ],
+  "text": "Heat the oven to 425°F and line a baking sheet with parchment. Roll the dough into small ropes, cut into bite-size pieces, dip in egg wash, and sprinkle with sesame seeds and salt. Bake for 12 to 14 minutes until puffed and golden, then brush with honey-butter while warm.",
+  "ingredients": [
+   "pizza dough",
+   "egg",
+   "water",
+   "sesame seed",
+   "salt",
+   "honey",
+   "butter",
+   "flour"
+  ]
+ },
+ {
+  "id": "r200",
+  "title": "Roasted Red Pepper Yogurt Dip",
+  "page": 616,
+  "tags": [
+   "vegetarian",
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 roasted red peppers",
+   "1 cup Greek yogurt",
+   "1 small garlic clove",
+   "1 tbsp lemon juice",
+   "2 tbsp olive oil",
+   "1/2 tsp cumin",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Blend the roasted peppers, yogurt, garlic, lemon juice, olive oil, cumin, salt, and pepper until smooth. Taste and adjust the seasoning, then chill for at least 20 minutes so the flavors settle. Serve cold with vegetables, pita, or crackers.",
+  "ingredients": [
+   "roasted red pepper",
+   "greek yogurt",
+   "garlic clove",
+   "lemon juice",
+   "oil",
+   "cumin",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r201",
+  "title": "Garlic Herb Mayo",
+  "page": 619,
+  "tags": [
+   "vegetarian",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 cup mayonnaise",
+   "2 garlic cloves, grated",
+   "1 tbsp chopped parsley",
+   "1 tbsp chopped chives",
+   "1 tsp lemon zest",
+   "1 tsp lemon juice",
+   "1/4 tsp salt",
+   "black pepper"
+  ],
+  "text": "Whisk the mayonnaise with garlic, parsley, chives, lemon zest, lemon juice, salt, and pepper until evenly combined. Cover and refrigerate for 15 minutes before using to let the flavors blend. Keep chilled and spread on sandwiches or use as a dip.",
+  "ingredients": [
+   "mayonnaise",
+   "garlic",
+   "parsley",
+   "chive",
+   "lemon",
+   "lemon juice",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r202",
+  "title": "Tomato Basil Bruschetta Toasts",
+  "page": 622,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 baguette, sliced",
+   "2 cups diced tomatoes",
+   "2 tbsp olive oil",
+   "1 tbsp balsamic vinegar",
+   "2 tbsp chopped basil",
+   "1 small garlic clove",
+   "salt",
+   "black pepper"
+  ],
+  "text": "Heat the oven to 400°F and toast the baguette slices for 6 to 8 minutes until crisp. Stir the tomatoes with olive oil, balsamic vinegar, basil, garlic, salt, and pepper, then spoon onto the warm toasts. Serve immediately so the bread stays crunchy.",
+  "ingredients": [
+   "baguette",
+   "tomato",
+   "oil",
+   "balsamic vinegar",
+   "basil",
+   "garlic clove",
+   "salt",
+   "black pepper"
+  ]
+ },
+ {
+  "id": "r203",
+  "title": "Cranberry Chicken Salad Sliders",
+  "page": 625,
+  "tags": [
+   "gluten-free"
+  ],
+  "ingredient_lines": [
+   "2 cups cooked chicken, chopped",
+   "1/3 cup mayonnaise",
+   "2 tbsp plain yogurt",
+   "1/3 cup dried cranberries",
+   "2 tbsp chopped celery",
+   "1 tbsp chopped green onion",
+   "8 slider buns",
+   "lettuce leaves",
+   "salt and pepper"
+  ],
+  "text": "Mix the chicken with mayonnaise, yogurt, cranberries, celery, green onion, salt, and pepper. Split the buns, layer with lettuce and chicken salad, then close and lightly press. Serve at once, or chill for 20 minutes for a firmer filling.",
+  "ingredients": [
+   "chicken",
+   "mayonnaise",
+   "yogurt",
+   "cranberry",
+   "celery",
+   "green onion",
+   "slider bun",
+   "lettuce",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r204",
+  "title": "Warm Spinach Artichoke Pita Pockets",
+  "page": 628,
+  "tags": [],
+  "ingredient_lines": [
+   "4 pita breads",
+   "1 cup chopped spinach",
+   "1 cup chopped artichoke hearts",
+   "4 oz cream cheese, softened",
+   "1/4 cup sour cream",
+   "1/2 cup shredded mozzarella",
+   "1 garlic clove, minced",
+   "salt and pepper"
+  ],
+  "text": "Stir together the cream cheese, sour cream, mozzarella, garlic, spinach, artichokes, salt, and pepper. Warm the mixture in a skillet over low heat for 3 to 4 minutes, stirring until hot, then spoon into split pita breads. Toast the filled pitas in a 375°F oven for 5 minutes if you want extra crunch.",
+  "ingredients": [
+   "pita bread",
+   "spinach",
+   "artichoke heart",
+   "cream cheese",
+   "sour cream",
+   "mozzarella",
+   "garlic",
+   "salt",
+   "pepper"
+  ]
+ },
+ {
+  "id": "r205",
+  "title": "Cilantro Lime Salsa Verde",
+  "page": 631,
+  "tags": [
+   "vegetarian",
+   "vegan",
+   "gluten-free",
+   "dairy-free"
+  ],
+  "ingredient_lines": [
+   "1 lb tomatillos, husked and rinsed",
+   "1 jalapeño",
+   "1/2 onion, quartered",
+   "2 garlic cloves",
+   "1/2 cup cilantro leaves",
+   "2 tbsp lime juice",
+   "1 tsp salt",
+   "1/2 cup water"
+  ],
+  "text": "Place the tomatillos, jalapeño, onion, and garlic on a baking sheet and roast at 425°F for 15 minutes until softened and lightly charred. Blend with cilantro, lime juice, salt, and water until smooth, adding more water for a thinner sauce. Cool before serving, or refrigerate for up to 5 days.",
+  "ingredients": [
+   "tomatillo",
+   "jalape o",
+   "onion",
+   "garlic",
+   "cilantro",
+   "lime juice",
+   "salt",
+   "water"
+  ]
+ }
 ]

@@ -87,17 +87,19 @@ Every merge to `main` runs `ci` (tests, eval, Bicep build). When it passes, `dep
 | 09 | [Safety](cookbook/09-safety.md) |
 
 ## Evaluation
-| metric | local (offline) | Azure (hybrid + semantic, `gpt-5.4-mini`) |
+Golden set: 20 Q&A cases (13 answerable, 7 must-refuse including 3 prompt-injection attempts) and 5 pantry cases, over a 205-recipe corpus.
+
+| metric | local (offline, stub LLM) | Azure (hybrid + semantic, `gpt-5.4-mini`) |
 |---|---|---|
 | retrieval recall@5 / MRR | 1.00 / 1.00 | 1.00 / 1.00 |
-| citation accuracy | 1.00 | 0.86–1.00 (3 runs: 0.86, 1.00, 1.00) |
-| refusal on unanswerable | 1.00 | 1.00 |
+| citation accuracy | 1.00 | 0.92 (2 runs) |
+| refusal on unanswerable / injection | 0.57 (stub can't judge relevance) | 1.00 |
 | pantry top-1 / sorted by missing | 1.00 / 1.00 | 1.00 / 1.00 |
 
-Reasoning-model deployments (gpt-5.x) don't accept `temperature`, so LLM-dependent metrics such as citation accuracy vary slightly between runs. The sample set is small by design (25 recipes); see the roadmap issue on expanding it. Add your own cases to `eval/golden.json`.
+Reasoning-model deployments (gpt-5.x) don't accept `temperature`, so LLM-dependent metrics such as citation accuracy can vary slightly between runs. Add your own cases to `eval/golden.json`.
 
 ## Data
-`data/recipes.raw.json` contains 25 classic recipes written in original wording (no copyrighted text). To scale up, ingest public-domain cookbooks (e.g. Project Gutenberg) and use `python -m ingest.build_dataset --llm` for structured extraction; check each source's license.
+`data/recipes.raw.json` holds 205 recipes in original wording (no copyrighted text): 25 hand-written classics plus 180 synthetic recipes from `python -m ingest.generate_recipes` (LLM-generated across 15 cuisines/themes; dietary tags derived in code). They are demo data, not tested real-world recipes. `python -m ingest.build_dataset --llm` extracts canonical ingredients with an LLM and caches them in the raw file, so offline and CI builds are deterministic.
 
 ## Contributing & license
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).

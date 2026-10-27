@@ -340,10 +340,10 @@ flowchart LR
 
 | Item | Impact | Mitigation / next step |
 |---|---|---|
-| LLM-dependent metrics vary between runs (citation accuracy 0.86–1.00 over 3 runs) because gpt-5.x rejects `temperature` | Flaky eval numbers | Report ranges; add more cases and run several times |
+| LLM-dependent metrics vary between runs (citation accuracy 0.86–1.00 over 5 runs) because gpt-5.x rejects `temperature` | Flaky eval numbers | Report ranges; add more cases and run several times |
 | Free Search tier: shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle | Latency variance, possible loss of the index | Re-run `ingest.index_azure`; use `searchSku=basic` for real workloads |
 | Scale to zero | Cold-start delay on the first request | Accepted for a demo; `minReplicas` stays 0 (set to 1 only for production use) |
-| Small sample corpus (25 recipes) | Metrics are optimistic | Extend `ingest/build_dataset.py` with larger public-domain sources |
+| Corpus is synthetic (205 recipes; 180 LLM-generated) | Metrics are optimistic vs. real-world data | Ingest licensed or public-domain sources via `ingest/build_dataset.py --llm` |
 | Heuristic ingredient extraction | Misses unusual phrasing | LLM-assisted extraction at ingest time |
 
 ## 12. Traceability (design → requirements)
