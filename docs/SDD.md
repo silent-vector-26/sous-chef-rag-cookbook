@@ -269,6 +269,7 @@ flowchart LR
 - Single Bicep template at resource-group scope (`infra/main.bicep`), parameters mapped in `infra/main.parameters.json`.
 - Parameters: `location`, `aiLocation`, `searchLocation`, `searchSku` (`free` default), `principalId`.
 - Deploy flow: `azd provision` → `azd deploy` → `python -m ingest.index_azure` (needs the deployer RBAC roles; propagation can take minutes).
+- CI/CD: a merge to `main` triggers `ci`; on success `deploy.yml` (`workflow_run`) logs in with GitHub OIDC to an Entra app (`gh-sous-chef-deploy`, federated credential for `refs/heads/main`, Owner on the resource group so Bicep can create role assignments), then runs the same provision → deploy → index steps plus an HTTP smoke test. Deploys are serialized (`concurrency`), and `principalType` is `ServicePrincipal` in CI so the pipeline identity also gets the data-plane roles needed for indexing. Hardening option: replace Owner with Contributor + Role Based Access Control Administrator.
 - Reference cost: see §9 (Cost optimization).
 
 ## 9. Cost optimization

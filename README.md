@@ -47,6 +47,10 @@ streamlit run app/streamlit_app.py
 You need RBAC on your own identity for local runs: *Cognitive Services OpenAI User*, *Search Index Data Contributor*, *Search Service Contributor*.
 Cost: the default deployment uses the **Free** AI Search tier (50 MB, 3 indexes, one per subscription) and a scale-to-zero Container App, so idle cost is near zero (only Container Registry, ~$5/month). For production-grade capacity set `searchSku` to `basic` (~$73/month).
 
+### CI/CD
+
+Every merge to `main` runs `ci` (tests, eval, Bicep build). When it passes, `deploy` (`.github/workflows/deploy.yml`) runs `azd provision`, `azd deploy`, re-indexes the recipes and smoke-tests the app URL. It can also be started manually (`gh workflow run deploy.yml`). GitHub authenticates to Azure with OIDC (federated credential, no stored secrets); the target is configured through repository variables (`AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_SUBSCRIPTION_ID`, `AZURE_ENV_NAME`, `AZURE_LOCATION`, `AZURE_RESOURCE_GROUP`, `AZURE_SEARCH_LOCATION`, `AZURE_PRINCIPAL_ID`).
+
 ## The cookbook (one technique per recipe)
 | # | Recipe |
 |---|---|
