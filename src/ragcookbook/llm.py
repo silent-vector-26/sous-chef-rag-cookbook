@@ -4,6 +4,7 @@ import json
 from . import config
 from .ingredient_search import parse_pantry_heuristic
 from .normalize import normalize_list
+from .tracing import span
 
 _client = None
 
@@ -26,10 +27,14 @@ def _aoai():
 def chat(messages: list[dict], json_mode: bool = False) -> str:
     # No temperature: reasoning-family deployments (gpt-5.x) only accept the default.
     kwargs = {"response_format": {"type": "json_object"}} if json_mode else {}
-    r = _aoai().chat.completions.create(
-        model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini"),
-        messages=messages, **kwargs)
-    return r.choices[0].message.content or ""
+    model = config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini")
+    with span("llm.chat", **{"gen_ai.request.model": model, "llm.json_mode": json_mode}) as s:
+        r = _aoai().chat.completions.create(model=model, messages=messages, **kwargs)
+        usage = getattr(r, "usage", None)
+        if usage:
+            s.set_attribute("gen_ai.usage.input_tokens", usage.prompt_tokens)
+            s.set_attribute("gen_ai.usage.output_tokens", usage.completion_tokens)
+        return r.choices[0].message.content or ""
 
 
 def parse_pantry(message: str) -> list[str]:

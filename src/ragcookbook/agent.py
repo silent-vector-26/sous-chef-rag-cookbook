@@ -8,6 +8,7 @@ import json
 from . import llm
 from .rag import cook_with
 from .store import Store
+from .tracing import span
 
 TOOLS = [
     {"type": "function", "function": {
@@ -44,17 +45,22 @@ def run_agent(question: str, store: Store, max_steps: int = 5) -> tuple[str, lis
     client = llm._aoai()
     from . import config
 
-    for _ in range(max_steps):
-        r = client.chat.completions.create(
-            model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini"),
-            messages=messages, tools=TOOLS)
-        msg = r.choices[0].message
-        if not msg.tool_calls:
-            return msg.content or "", trace
-        messages.append(msg)
-        for call in msg.tool_calls:
-            args = json.loads(call.function.arguments)
-            trace.append(f"{call.function.name}({args})")
-            messages.append({"role": "tool", "tool_call_id": call.id,
-                             "content": _run_tool(store, call.function.name, args)})
-    return "I couldn't finish researching that within the step limit.", trace
+    with span("agent.run", **{"agent.max_steps": max_steps}) as s:
+        for step in range(max_steps):
+            with span("agent.step", **{"agent.step": step}):
+                r = client.chat.completions.create(
+                    model=config.get("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-5.4-mini"),
+                    messages=messages, tools=TOOLS)
+                msg = r.choices[0].message
+                if not msg.tool_calls:
+                    s.set_attribute("agent.tool_calls", len(trace))
+                    return msg.content or "", trace
+                messages.append(msg)
+                for call in msg.tool_calls:
+                    args = json.loads(call.function.arguments)
+                    trace.append(f"{call.function.name}({args})")
+                    with span("agent.tool", **{"agent.tool.name": call.function.name}):
+                        result = _run_tool(store, call.function.name, args)
+                    messages.append({"role": "tool", "tool_call_id": call.id, "content": result})
+        s.set_attribute("agent.tool_calls", len(trace))
+        return "I couldn't finish researching that within the step limit.", trace

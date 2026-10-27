@@ -18,7 +18,7 @@ azure = [
   "azure-monitor-opentelemetry>=1.6",
 ]
 ui = ["streamlit>=1.38"]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "opentelemetry-sdk>=1.25"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

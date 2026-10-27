@@ -316,7 +316,39 @@ Result: the deployment costs about **$5/month idle** (versus about $78–80 with
 | Prompt caching and shorter prompts | Fewer input tokens | When traffic grows |
 | Cache frequent query embeddings | Fewer embedding calls | When traffic grows |
 
-## 10. Quality and testing design
+## 10. Observability design (NFR-6)
+
+OpenTelemetry spans are created by `ragcookbook/tracing.py` (a no-op when the SDK is absent). When `APPLICATIONINSIGHTS_CONNECTION_STRING` is set, `azure-monitor-opentelemetry` exports them to Application Insights, where Azure SDK and HTTP dependency calls appear as children.
+
+| Span | Attributes |
+|---|---|
+| `rag.ask` | `rag.question_chars`, `rag.diet`, `rag.grounded`, `rag.citations`, `rag.outcome` (answered/refused/blocked) |
+| `safety.check_input`, `rag.retrieve` | `rag.top`, `rag.hits` |
+| `rag.cook_with` → `rag.candidates`, `rag.rank` | `pantry.items`, `rag.results` |
+| `llm.chat` | `gen_ai.request.model`, `gen_ai.usage.input_tokens`, `gen_ai.usage.output_tokens` |
+| `agent.run` → `agent.step` → `agent.tool` | `agent.tool_calls`, `agent.tool.name` |
+
+Privacy: spans record sizes, counts, and outcomes only, never raw questions or pantry text.
+
+Useful KQL (Application Insights → Logs):
+
+```kusto
+// Latency and outcome by operation
+dependencies
+| where name startswith "rag." or name startswith "agent." or name == "llm.chat"
+| summarize count(), p50=percentile(duration, 50), p95=percentile(duration, 95) by name
+
+// Refusal / block rate
+dependencies | where name == "rag.ask"
+| summarize n=count() by outcome=tostring(customDimensions["rag.outcome"])
+
+// Token usage per day
+dependencies | where name == "llm.chat"
+| summarize tokens_in=sum(toint(customDimensions["gen_ai.usage.input_tokens"])),
+            tokens_out=sum(toint(customDimensions["gen_ai.usage.output_tokens"])) by bin(timestamp, 1d)
+```
+
+## 11. Quality and testing design
 
 ```mermaid
 flowchart LR
@@ -336,7 +368,7 @@ flowchart LR
 | CI | GitHub Actions: pytest, eval on the local backend, `az bicep build` |
 | Live | `BACKEND=azure python -m eval.run_eval` plus manual checks of the agent and fridge-photo paths against the deployed resources |
 
-## 11. Known limitations and risks
+## 12. Known limitations and risks
 
 | Item | Impact | Mitigation / next step |
 |---|---|---|
@@ -346,7 +378,7 @@ flowchart LR
 | Corpus is synthetic (205 recipes; 180 LLM-generated) | Metrics are optimistic vs. real-world data | Ingest licensed or public-domain sources via `ingest/build_dataset.py --llm` |
 | Heuristic ingredient extraction | Misses unusual phrasing | LLM-assisted extraction at ingest time |
 
-## 12. Traceability (design → requirements)
+## 13. Traceability (design → requirements)
 
 | Design element | Satisfies |
 |---|---|
@@ -357,7 +389,7 @@ flowchart LR
 | `llm.describe_image_ingredients` | FR-8 |
 | `agent.py` | FR-9 |
 | `ingest/`, §5 | FR-1 |
-| `eval/run_eval.py`, §10 | FR-12, NFR-2…4 |
+| `eval/run_eval.py`, §11 | FR-12, NFR-2…4 |
 | §7 identities and RBAC | NFR-1 |
-| App Insights in §8 | NFR-6 |
+| App Insights in §8, tracing in §10 | NFR-6 |
 | D10, D11, §8, §9 | NFR-7, NFR-8 |
