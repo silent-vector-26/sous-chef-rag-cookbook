@@ -269,9 +269,53 @@ flowchart LR
 - Single Bicep template at resource-group scope (`infra/main.bicep`), parameters mapped in `infra/main.parameters.json`.
 - Parameters: `location`, `aiLocation`, `searchLocation`, `searchSku` (`free` default), `principalId`.
 - Deploy flow: `azd provision` → `azd deploy` → `python -m ingest.index_azure` (needs the deployer RBAC roles; propagation can take minutes).
-- Reference cost: Free Search + scale to zero ≈ $5/month idle (Container Registry); Search Basic would add ≈ $73/month.
+- Reference cost: see §9 (Cost optimization).
 
-## 9. Quality and testing design
+## 9. Cost optimization
+
+Prices are Azure retail pay-as-you-go (USD) at the time of writing; verify on the Azure pricing calculator.
+
+### 9.1 Cost drivers
+
+| Resource | Billing model | Basic-tier baseline | Current design | Idle cost |
+|---|---|---|---|---|
+| Azure AI Search | Per hour per search unit | Basic: $0.10/h ≈ $73/month | **Free** tier (`searchSku=free`) | $0 |
+| Container Registry | Per day + storage | Basic: ~$0.167/day ≈ $5/month | Basic, no admin user | ~$5/month |
+| Container Apps | Per-second vCPU/memory + requests; monthly free grant | Always-on replica ≈ $5–15/month | `minReplicas: 0` (scale to zero) | ~$0 |
+| Azure OpenAI | Per token | Pay per use | `gpt-5.4-mini` + `text-embedding-3-small`, GlobalStandard/Standard | $0 when unused |
+| Content Safety | Per 1,000 text records | Pay per use | Called once per user input | $0 when unused |
+| Log Analytics / App Insights | Per GB ingested, 5 GB/month free | Pay per use | 30-day retention, demo volume | $0 |
+| Managed identity, RBAC | Free | — | — | $0 |
+
+Result: the deployment costs about **$5/month idle** (versus about $78–80 with Search Basic) and cents per demo session.
+
+### 9.2 Optimization decisions
+
+| # | Measure | Effect | Trade-off |
+|---|---|---|---|
+| C1 | AI Search Free tier by default | Removes the largest cost (~90%) | 50 MB, 3 indexes, shared capacity, no SLA, ~1,000 semantic queries/month, deleted after 90 days idle; cannot be upgraded in place |
+| C2 | Container App scales to zero | No compute cost while idle | Cold start on the first request (a gateway timeout is possible) |
+| C3 | Small chat model (`gpt-5.4-mini`) and small embeddings (`text-embedding-3-small`, 1536 dims) | Lowest per-token cost that meets the eval targets | Lower reasoning depth than larger models |
+| C4 | Ranking, shopping list and unlock tips in code, not LLM calls | Zero tokens for the core feature, plus determinism | — |
+| C5 | Only one LLM call per question or pantry message (agent capped at 5 steps) | Bounded token spend | Agent answers may be cut at the step limit |
+| C6 | Only the top 4 sources are put into the prompt | Smaller prompts | Possible recall loss on broad questions |
+| C7 | Embeddings are computed once at ingest, not per document at query time (only the query is embedded) | One embedding call per search | Re-ingest needed when the corpus changes |
+| C8 | Content Safety is skipped by the offline backend | Free dev/CI | Heuristic only |
+| C9 | ACR Basic with remote build | No build agent or Docker needed locally | ~$5/month floor |
+| C10 | Single resource group, one `azd down --purge` | Clean teardown between demos | Re-provision and re-index to restore |
+
+### 9.3 Further options
+
+| Option | Saves | When to use |
+|---|---|---|
+| Delete the registry after deploy and pull from a public image | ~$5/month | Only if the registry is not needed again |
+| Lower OpenAI deployment capacity (currently 30) | Nothing directly (pay per token) but limits runaway spend | Always reasonable for demos |
+| Azure budget with alerts on the resource group | Prevents surprises | Recommended |
+| Set `searchSku=basic`, `minReplicas: 1` | Costs ~$73 + ~$5–15/month more | Production-like demos needing no cold start or SLA |
+| Prompt caching and shorter prompts | Fewer input tokens | When traffic grows |
+| Cache frequent query embeddings | Fewer embedding calls | When traffic grows |
+
+## 10. Quality and testing design
 
 ```mermaid
 flowchart LR
@@ -291,7 +335,7 @@ flowchart LR
 | CI | GitHub Actions: pytest, eval on the local backend, `az bicep build` |
 | Live | Manual smoke test against Azure (ingredient ranking, grounded answer, refusal) |
 
-## 10. Known limitations and risks
+## 11. Known limitations and risks
 
 | Item | Impact | Mitigation / next step |
 |---|---|---|
@@ -301,7 +345,7 @@ flowchart LR
 | Small sample corpus (25 recipes) | Metrics are optimistic | Extend `ingest/build_dataset.py` with larger public-domain sources |
 | Heuristic ingredient extraction | Misses unusual phrasing | LLM-assisted extraction at ingest time |
 
-## 11. Traceability (design → requirements)
+## 12. Traceability (design → requirements)
 
 | Design element | Satisfies |
 |---|---|
@@ -312,7 +356,7 @@ flowchart LR
 | `llm.describe_image_ingredients` | FR-8 |
 | `agent.py` | FR-9 |
 | `ingest/`, §5 | FR-1 |
-| `eval/run_eval.py`, §9 | FR-12, NFR-2…4 |
+| `eval/run_eval.py`, §10 | FR-12, NFR-2…4 |
 | §7 identities and RBAC | NFR-1 |
 | App Insights in §8 | NFR-6 |
-| D10, D11, §8 | NFR-7, NFR-8 |
+| D10, D11, §8, §9 | NFR-7, NFR-8 |
