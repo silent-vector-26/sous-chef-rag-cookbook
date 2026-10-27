@@ -55,9 +55,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
       - name: Re-index recipes
         run: |
-          eval "$(azd env get-values)"
+          set -a; eval "$(azd env get-values)"; set +a
           pip install -e ".[azure]"
           python -m ingest.build_dataset
           BACKEND=azure python -m ingest.index_azure
