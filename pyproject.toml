@@ -2,6 +2,9 @@
 name = "rag-cookbook"
 version = "0.1.0"
 description = "Sous-chef: a recipe RAG demo (Azure AI Search + Azure OpenAI) documented as a technical cookbook"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Alex Khorozov" }]
 requires-python = ">=3.10"
 dependencies = ["python-dotenv>=1.0"]
 
