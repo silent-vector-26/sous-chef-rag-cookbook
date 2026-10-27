@@ -7,16 +7,38 @@ A recipe RAG app **and** a technical cookbook of RAG techniques, built on Azure 
 - 🥕 **Cook with what you have** — "I have chicken, potatoes and carrots" → recipes ranked by the *fewest ingredients you still need to buy*, with a shopping list and "buy X to unlock N more recipes" tips.
 - 💬 **Ask the cookbook** — grounded answers with citations (book + page) and an honest "I don't know".
 - 📸 **Fridge photo** (multimodal) and 🧭 **research agent** (tool-calling agentic RAG).
-- 🛡️ Prompt Shields / Content Safety, Entra-only auth, evaluation harness, `azd` deploy.
+- 🛡️ Prompt Shields / Content Safety, Entra-only auth, evaluation harness, `azd` deploy, CI/CD with GitHub Actions + OIDC.
+
+**▶ Live demo:** https://ca-sous-chef-pqx3s64cfzndu.grayocean-96ef41ba.eastus2.azurecontainerapps.io — it scales to zero to keep costs near nothing, so the first load after idle can take up to a minute.
+
+| Cook with what you have | Ask the cookbook | Research agent |
+|---|---|---|
+| ![Ingredient search ranked by fewest missing ingredients](docs/img/cook.png) | ![Grounded answer with citation](docs/img/ask.png) | ![Multi-step agent with tool trace](docs/img/agent.png) |
 
 ```mermaid
 flowchart LR
-    U([User]) --> UI[Streamlit] --> SAFE[Safety] --> CORE[RAG core]
+    U([User]) --> UI[Streamlit on Container Apps] --> SAFE[Content Safety<br/>Prompt Shields] --> CORE[RAG core<br/>ask / cook_with / agent]
     CORE --> RANK[Fewest-missing ranker]
-    CORE --> AIS[(AI Search: BM25 + vector + semantic)]
-    CORE --> AOAI[Azure OpenAI]
+    CORE --> AIS[(AI Search<br/>BM25 + vector + semantic)]
+    CORE --> AOAI[Azure OpenAI<br/>chat, vision, embeddings]
+    UI -.-> AI[Application Insights]
+    MI[Managed identity] -.RBAC.-> AIS & AOAI & SAFE
 ```
 Full requirements and diagrams: [`docs/SRS.md`](docs/SRS.md). Design and decisions: [`docs/SDD.md`](docs/SDD.md).
+
+## Design decisions (and the Azure AI skills they show)
+| Decision | Why | Skill area |
+|---|---|---|
+| Hybrid retrieval (BM25 + vector) with the semantic ranker | Keyword exactness plus semantic recall, calibrated rerank score | Azure AI Search, RAG |
+| Ingredient ranking in deterministic code, LLM only parses the pantry text | Exact, testable ordering; zero tokens for the core feature | RAG design, cost control |
+| Grounded prompt + citations + refusal enforced twice | Trustworthy answers, honest "I don't know" | Responsible AI, grounding |
+| Prompt Shields and harm categories before retrieval | Defends against prompt injection | Azure AI Content Safety |
+| Tool-calling agent with a visible trace | Agentic RAG that can be inspected | Agents, function calling |
+| Vision input for fridge photos | Multimodal extraction | Azure OpenAI (vision) |
+| Entra ID only (no keys), managed identity, RBAC | Zero secrets in repo or config | Azure security |
+| Golden-set evaluation harness, run against local and live backends | Measurable quality, regression safety | Evaluation |
+| Free AI Search tier + scale-to-zero Container Apps | About $5/month idle | Cost optimization |
+| Bicep + `azd` + GitHub Actions OIDC deploy | Reproducible, keyless delivery | IaC, CI/CD |
 
 ## Quick start (offline, no Azure needed)
 ```powershell
