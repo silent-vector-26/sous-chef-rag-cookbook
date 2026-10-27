@@ -46,6 +46,13 @@ h1, h2, h3, h4, .serif { font-family: Georgia, 'Times New Roman', serif !importa
 .ok { background: #dcefe3; color: #2f7d4f; }
 .need { background: #f6dfd6; color: #b4472b; }
 .meta { font-size: .82rem; color: #6b5a4a; }
+.grid { align-items: start; }
+.tile details { margin-top: .7rem; border-top: 1px solid #e6dac4; padding-top: .5rem; font-size: .92rem; }
+.tile summary { cursor: pointer; font: 700 .85rem 'Trebuchet MS', sans-serif; color: #b4472b; }
+.tile details p { margin: .45rem 0; }
+.tile .steps { line-height: 1.5; }
+.bar { height: 6px; background: #eadfca; border-radius: 9px; margin-top: .6rem; }
+.bar i { display: block; height: 100%; background: #b4472b; border-radius: 9px; }
 .sect { font: 700 1.6rem Georgia, serif; margin: 1rem 0 .1rem; }
 .sect + .meta { margin-bottom: .6rem; }
 .stButton > button[kind="primary"] { background: #2b2118; color: #fffaf1; border: 0; border-radius: 99px;
@@ -83,10 +90,20 @@ def _photo_style(recipe) -> tuple[str, str]:
     return "background:#e9dfc9", "🍽️"
 
 
-def _tile(recipe, badges: str) -> str:
+def _tile(recipe, badges: str, detail: str = "") -> str:
     style, emoji = _photo_style(recipe)
     return (f'<div class="tile"><div class="ph" style="{style}">{emoji}</div><div class="body">'
-            f"<h3>{html.escape(recipe.title)}</h3>{badges}</div></div>")
+            f"<h3>{html.escape(recipe.title)}</h3>{badges}{detail}</div></div>")
+
+
+def _detail(m) -> str:
+    e = html.escape
+    need = e(", ".join(m.missing)) or "nothing — cook it now!"
+    return ('<details><summary>View recipe</summary>'
+            f'<div class="bar"><i style="width:{round(m.coverage * 100)}%"></i></div>'
+            f'<p>✅ {e(", ".join(m.have))}</p><p>🛒 Need: {need}</p>'
+            f'<p class="steps">{e(m.recipe.text)}</p>'
+            f'<p class="meta">{e(str(m.recipe.source))}, p.{m.recipe.page}</p></details>')
 
 
 def _hero() -> str:
@@ -138,15 +155,9 @@ with tab_cook:
             total = len(m.have) + len(m.missing)
             badge = ('<span class="badge ok">cook it now</span>' if not m.missing
                      else f'<span class="badge need">missing {len(m.missing)}</span>')
-            tiles.append(_tile(m.recipe, f'{badge}<span class="meta">you have {len(m.have)}/{total}</span>'))
+            tiles.append(_tile(m.recipe, f'{badge}<span class="meta">you have {len(m.have)}/{total}</span>',
+                               _detail(m)))
         st.markdown(f'<div class="grid">{"".join(tiles)}</div>', unsafe_allow_html=True)
-        for m in res.matches:
-            with st.expander(f"{m.recipe.title} — recipe", expanded=m is res.matches[0]):
-                st.progress(m.coverage)
-                st.markdown("✅ " + ", ".join(m.have))
-                st.markdown("🛒 Need: " + (", ".join(m.missing) or "nothing — cook it now!"))
-                st.write(m.recipe.text)
-                st.caption(f"{m.recipe.source}, p.{m.recipe.page}")
         if res.shopping:
             st.subheader("Shopping list")
             st.write(", ".join(res.shopping))
