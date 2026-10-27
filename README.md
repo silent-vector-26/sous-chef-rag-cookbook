@@ -101,6 +101,8 @@ Reasoning-model deployments (gpt-5.x) don't accept `temperature`, so LLM-depende
 ## Data
 `data/recipes.raw.json` holds 205 recipes in original wording (no copyrighted text): 25 hand-written classics plus 180 synthetic recipes from `python -m ingest.generate_recipes` (LLM-generated across 15 cuisines/themes; dietary tags derived in code). They are demo data, not tested real-world recipes. Recipe card photos in `app/static/img/` are AI-generated (`ingest/generate_images.py`, gpt-image-1-mini, one-time offline run) and may not match a dish exactly. `python -m ingest.build_dataset --llm` extracts canonical ingredients with an LLM and caches them in the raw file, so offline and CI builds are deterministic.
 
+The featured gallery reads the bundled `data/recipes.json` for both backends, without making Azure requests. Recipe searches and answers still use the selected retrieval backend.
+
 ## Contributing & license
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).
 

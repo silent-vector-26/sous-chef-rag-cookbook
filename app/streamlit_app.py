@@ -12,7 +12,7 @@ import streamlit as st  # noqa: E402
 from ragcookbook import config, llm  # noqa: E402
 from ragcookbook.agent import run_agent  # noqa: E402
 from ragcookbook.rag import ask, cook_with  # noqa: E402
-from ragcookbook.store import get_store  # noqa: E402
+from ragcookbook.store import get_store, load_recipes  # noqa: E402
 
 IMG_DIR = Path(__file__).parent / "static" / "img"
 PANTRY = ["chicken", "potatoes", "carrots", "rice", "eggs", "tomatoes", "onion", "garlic",
@@ -164,7 +164,7 @@ with tab_cook:
         for item, n in res.unlocks:
             st.success(f"Buy **{item}** and {n} more recipe(s) become fully cookable.")
     else:
-        feat = [r for r in store.recipes if _data_uri(r.id)][6:14]
+        feat = [r for r in st.cache_data(load_recipes)() if _data_uri(r.id)][6:14]
         st.markdown('<div class="sect">From the cookbook</div><div class="meta">A few to get you hungry.</div>',
                     unsafe_allow_html=True)
         st.markdown('<div class="grid">' + "".join(
